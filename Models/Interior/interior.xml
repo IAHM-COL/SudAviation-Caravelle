@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>tour</object-name>
+    <object-name>planchet</object-name>
+    <object-name>cloisons</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Caravelle/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -16.707 </x-m>
+      <y-m>  -0.372 </y-m>
+      <z-m>   0.020 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Caravelle/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -17.072 </x-m>
+      <y-m>   0.000 </y-m>
+      <z-m>  -0.050 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Les sièges -->
+  <model>
+    <path>Aircraft/Caravelle/Models/Interior/seats.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
