@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">Air France</name>
-        <texture>Air-France1.png</texture>
+        <texture>Liveries/Air-France1.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">Air Maroc 2048x2048</name>
-        <texture>Air-Maroc-High.png</texture>
+        <texture>Liveries/Air-Maroc-High.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
