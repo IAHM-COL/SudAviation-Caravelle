@@ -29,6 +29,7 @@
     <object-name>plus2</object-name>
     <object-name>moteurs</object-name>
     <object-name>entreemoteurs</object-name>
+    <object-name>silencieux</object-name>
     <object-name>profondeurG</object-name>
     <object-name>profondeurD</object-name>
     <object-name>accroches</object-name>
@@ -100,6 +101,7 @@
     <object-name>plus2</object-name>
     <object-name>moteurs</object-name>
     <object-name>entreemoteurs</object-name>
+    <object-name>silencieux</object-name>
     <object-name>profondeurG</object-name>
     <object-name>profondeurD</object-name>
     <object-name>accroches</object-name>
