@@ -203,6 +203,27 @@
     </condition>
   </animation>
 
+  <!-- Les flammes -->
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/Caravelle/Models/Effects/trailL.xml</path>
+    <offsets>
+      <x-m> 10.791 </x-m>
+      <y-m> -2.652 </y-m>
+      <z-m>  0.440 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Droite -->
+  <model>
+    <path>Aircraft/Caravelle/Models/Effects/trailR.xml</path>
+    <offsets>
+      <x-m> 10.791 </x-m>
+      <y-m>  2.652 </y-m>
+      <z-m>  0.440 </z-m>
+    </offsets>
+  </model>
+
   <!-- Interieur -->
   <model>
     <path>Aircraft/Caravelle/Models/Interior/interior.xml</path>
