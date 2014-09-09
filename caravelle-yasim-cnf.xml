@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList include="caravelle-base.xml">
+
+  <sim>
+
+    <description>Caravelle (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">caravelle-yasim</aero>
+
+  </sim>
+
+</PropertyList>
