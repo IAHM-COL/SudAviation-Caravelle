@@ -10,15 +10,15 @@
     <fuel-fraction>1.0</fuel-fraction>
 
     <startup>
-      <splash-texture>Aircraft/Caravelle/caravelle-splash.png</splash-texture>
+      <splash-texture>Aircraft/SudAviation-Caravelle/caravelle-splash.png</splash-texture>
     </startup>
 
     <sound>
-      <path archive="y">Aircraft/Caravelle/Sounds/caravelle-sound.xml</path>
+      <path archive="y">Aircraft/SudAviation-Caravelle/Sounds/caravelle-sound.xml</path>
     </sound>
 
     <model>
-      <path archive="y">Aircraft/Caravelle/Models/caravelle.xml</path>
+      <path archive="y">Aircraft/SudAviation-Caravelle/Models/caravelle.xml</path>
       <livery>
         <file type="string">default</file>
       </livery>
@@ -56,10 +56,10 @@
  
   <nasal>
     <caravelle>
-      <file>Aircraft/Caravelle/Nasal/doors.nas</file>
-      <file>Aircraft/Caravelle/Nasal/light.nas</file>
-      <file>Aircraft/Caravelle/Nasal/liveries.nas</file>
-<!--  <file>Aircraft/Caravelle/Nasal/immat.nas</file> -->
+      <file>Aircraft/SudAviation-Caravelle/Nasal/doors.nas</file>
+      <file>Aircraft/SudAviation-Caravelle/Nasal/light.nas</file>
+      <file>Aircraft/SudAviation-Caravelle/Nasal/liveries.nas</file>
+<!--  <file>Aircraft/SudAviation-Caravelle/Nasal/immat.nas</file> -->
     </caravelle>
   </nasal>
    

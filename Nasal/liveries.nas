@@ -1,3 +1,3 @@
-aircraft.livery.init("Aircraft/Caravelle/Models/Liveries");
+aircraft.livery.init("Aircraft/SudAviation-Caravelle/Models/Liveries");
 
 

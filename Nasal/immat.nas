@@ -20,7 +20,7 @@ var refresh_immat = func {
 }
 
 var immat_dialog = gui.Dialog.new("/sim/gui/dialogs/caravelle/status/dialog",
-				  "Aircraft/Caravelle/Dialogs/immat.xml");
+				  "Aircraft/SudAviation-Caravelle/Dialogs/immat.xml");
 
 setlistener("/sim/signals/fdm-initialized", func {
   if (props.globals.getNode("/sim/model/immat") == nil) {

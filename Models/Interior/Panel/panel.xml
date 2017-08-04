@@ -13,7 +13,7 @@
 
   <!-- ASI -->
   <model>
-    <path>Aircraft/Caravelle/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
       <x-m> -0.116 </x-m>
       <y-m> -0.413 </y-m>
@@ -23,7 +23,7 @@
 
   <!-- AI -->
   <model>
-    <path>Aircraft/Caravelle/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
       <x-m> -0.144 </x-m>
       <y-m> -0.316 </y-m>
@@ -33,7 +33,7 @@
 
   <!-- ALT -->
   <model>
-    <path>Aircraft/Caravelle/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
       <x-m> -0.116 </x-m>
       <y-m> -0.222 </y-m>

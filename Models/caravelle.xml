@@ -6,7 +6,7 @@
 
   <nasal>
     <load>
-      var livery_update = aircraft.livery_update.new("Aircraft/Caravelle/Models/Liveries", 10);
+      var livery_update = aircraft.livery_update.new("Aircraft/SudAviation-Caravelle/Models/Liveries", 10);
     </load>
     <unload>
       livery_update.stop();
@@ -230,7 +230,7 @@
   <!-- Une ombre pour OSG -->
   <model>
     <name>shadowOSG</name>
-    <path>Aircraft/Caravelle/Models/shadow.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/shadow.xml</path>
   </model>
 
   <animation>
@@ -247,7 +247,7 @@
   <!-- Les flammes -->
   <!-- Gauche -->
   <model>
-    <path>Aircraft/Caravelle/Models/Effects/trailL.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/Effects/trailL.xml</path>
     <offsets>
       <x-m> 10.791 </x-m>
       <y-m> -2.652 </y-m>
@@ -257,7 +257,7 @@
 
   <!-- Droite -->
   <model>
-    <path>Aircraft/Caravelle/Models/Effects/trailR.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/Effects/trailR.xml</path>
     <offsets>
       <x-m> 10.791 </x-m>
       <y-m>  2.652 </y-m>
@@ -267,7 +267,7 @@
 
   <!-- Interieur -->
   <model>
-    <path>Aircraft/Caravelle/Models/Interior/interior.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/Interior/interior.xml</path>
     <offsets>
       <x-m> 0 </x-m>
       <y-m> 0 </y-m>
@@ -280,7 +280,7 @@
 
   <!-- Immatriculatoin
   <model>
-    <path>Aircraft/Caravelle/Models/Immat/immat.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/Immat/immat.xml</path>
     <offsets>
       <x-m> 0 </x-m>
       <y-m> 0 </y-m>
@@ -1064,7 +1064,7 @@
 
   <!-- Ajout des effets lumineux -->
   <model>
-    <path>Aircraft/Caravelle/Models/lights/beacon.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/lights/beacon.xml</path>
     <offsets>
       <x-m> -2.442 </x-m>
       <y-m>  0.000 </y-m>
@@ -1073,7 +1073,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Caravelle/Models/lights/beacon.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/lights/beacon.xml</path>
     <offsets>
       <x-m> -4.470 </x-m>
       <y-m>  0.000 </y-m>
@@ -1082,7 +1082,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Caravelle/Models/lights/RedLight.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/lights/RedLight.xml</path>
     <offsets>
       <x-m>   3.470 </x-m>
       <y-m> -17.057 </y-m>
@@ -1091,7 +1091,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Caravelle/Models/lights/GreenLight.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/lights/GreenLight.xml</path>
     <offsets>
       <x-m>  3.470 </x-m>
       <y-m> 17.057 </y-m>
@@ -1101,7 +1101,7 @@
 
   <!-- Phares -->
   <model>
-    <path>Aircraft/Caravelle/Models/lights/flash.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/lights/flash.xml</path>
     <offsets>
       <x-m> -17.307 </x-m>
       <y-m>  -0.571 </y-m>
@@ -1110,7 +1110,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Caravelle/Models/lights/flash.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/lights/flash.xml</path>
     <offsets>
       <x-m> -17.307 </x-m>
       <y-m>   0.571 </y-m>
@@ -1121,7 +1121,7 @@
   <!-- light cone left -->
   <model>
     <name>Taxi-Light-Left</name>
-    <path>Aircraft/Caravelle/Models/lights/light-cone.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/lights/light-cone.xml</path>
     <offsets>
       <x-m>        -17.307 </x-m>
       <y-m>         -0.571 </y-m>
@@ -1134,7 +1134,7 @@
   <!-- light cone right -->
   <model>
     <name>Taxi-Light-Right</name>
-    <path>Aircraft/Caravelle/Models/lights/light-cone.xml</path>
+    <path>Aircraft/SudAviation-Caravelle/Models/lights/light-cone.xml</path>
     <offsets>
       <x-m>        -17.307 </x-m>
       <y-m>          0.571 </y-m>
