@@ -10,7 +10,7 @@
     <fuel-fraction>1.0</fuel-fraction>
 
     <startup>
-      <splash-texture>Aircraft/SudAviation-Caravelle/caravelle-splash.png</splash-texture>
+      <splash-texture>Aircraft/SudAviation-Caravelle/Splash/caravelle-splash.png</splash-texture>
     </startup>
 
     <sound>
