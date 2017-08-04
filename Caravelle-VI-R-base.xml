@@ -18,7 +18,7 @@
     </sound>
 
     <model>
-      <path archive="y">Aircraft/SudAviation-Caravelle/Models/caravelle.xml</path>
+      <path archive="y">Aircraft/SudAviation-Caravelle/Models/Caravelle-VI-R.xml</path>
       <livery>
         <file type="string">default</file>
       </livery>
