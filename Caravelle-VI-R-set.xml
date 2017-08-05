@@ -1,12 +1,76 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<!-- <PropertyList include="caravelle-jsbsim-cnf.xml"> -->
-<PropertyList include="caravelle-yasim-cnf.xml">
+<PropertyList>
 
-  <sim>
-    <description>caravelle</description>
-    <author>Emmanuel BARANGER (3D/FDM)</author>
+  <sim include="Nasal/views.xml">
+ 
+     <description>SudAviation Caravelle VI R</description>
+     <author>IAHM-COL. External 3D Model by Helijah</author>
+     <aircraft-version>V00.00.00</aircraft-version>
+     <status>Alpha</status>
+
+     <rating>
+         <FDM type="int">0</FDM>
+	 <systems type="int">0</systems>
+	 <cockpit type="int">0</cockpit>
+	 <model type="int">0</model>
+    </rating>
+
+    <flight-model>jsb</flight-model>
+    <aero>aero/SudAviation-Caravelle</aero>
+
+    <startup>
+      <splash-texture>Aircraft/SudAviation-Caravelle/Splash/caravelle-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/SudAviation-Caravelle/Sounds/caravelle-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/SudAviation-Caravelle/Models/Caravelle-VI-R.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int" n="0">0</int>
+        <int type="int" n="1">0</int>
+        <int type="int" n="2">0</int>
+        <int type="int" n="3">0</int>
+        <int type="int" n="4">0</int>
+        <int type="int" n="5">0</int>
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Caravelle</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close door</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/caravelle-menu.xml"/>
+
   </sim>
-
+ 
+  <input>
+    <keyboard include="Nasal/caravelle-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <caravelle>
+      <file>Aircraft/SudAviation-Caravelle/Nasal/doors.nas</file>
+      <file>Aircraft/SudAviation-Caravelle/Nasal/light.nas</file>
+      <file>Aircraft/SudAviation-Caravelle/Nasal/liveries.nas</file>
+<!--  <file>Aircraft/SudAviation-Caravelle/Nasal/immat.nas</file> -->
+    </caravelle>
+  </nasal>
+   
 </PropertyList>
-
