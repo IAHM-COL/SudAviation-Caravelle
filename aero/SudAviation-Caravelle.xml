@@ -267,7 +267,6 @@
  </ground_reactions>
 
  <system file="Propulsion.xml"/>
- <system file="ThrustReverse.xml"/>
  <system file="AircraftControl.xml"/>
  <system file="LandingGear.xml"/>
  <system file="Flaps.xml"/>
@@ -616,7 +615,7 @@
              <independentVar lookup="row">aero/alpha-rad</independentVar>
              <independentVar lookup="column">aero/Re</independentVar>
              <tableData>
-                         79088544 86997400118632808157806896
+                          79088544  86997400  118632808  157806896
                  -0.0349  -0.2540  -0.1122  -0.1075  -0.1083
                   0.3491  -2.7002  -0.3492  -0.3590  -0.3882
              </tableData>
