@@ -1,12 +1,11 @@
 <?xml version="1.0"?>
 
-
 <system name="Fuel">
-<!-- tank[2] collector tank connected to the engine fuel pump, tank[0] and tank[1] feeds the collector through valves.
-Negative Gs (<-0.5g) cuts the supply to the collector tanks -->
+  <!-- tank[2] collector tank connected to the engine fuel pump, tank[0] and tank[1] feeds the collector through valves.
+       Negative Gs (<-0.5g) cuts the supply to the collector tanks -->
 
-   <property value="1">propulsion/tank[0]/collector-valve</property>
-   <property value="1">propulsion/tank[1]/collector-valve</property>
+  <property value="1">propulsion/tank[0]/collector-valve</property>
+  <property value="1">propulsion/tank[1]/collector-valve</property>
 
   <channel name="Fuel pumping">    
 
