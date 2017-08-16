@@ -115,7 +115,7 @@
        <roll>0.00</roll>
         <yaw>0.00</yaw>
     </orient>
-    <feed>0</feed>
+    <feed>2</feed>
 
     <thruster file="direct">
      <sense>1</sense>
@@ -143,7 +143,7 @@
        <roll>0.00</roll>
         <yaw>0.00</yaw>
     </orient>
-    <feed>1</feed>
+    <feed>2</feed>
 
     <thruster file="direct">
      <sense>1</sense>
@@ -166,8 +166,8 @@
        <y>0.00</y>
        <z>-0.75</z>
      </location>
-     <capacity unit="LBS">9363.52</capacity>
-     <contents unit="LBS">4681.76</contents>
+     <capacity unit="LBS">18770</capacity>
+     <contents unit="LBS">9000</contents>
   </tank>
   <tank type="FUEL" number="1">
      <location unit="M">
@@ -175,8 +175,8 @@
        <y>-3.80</y>
        <z>-0.75</z>
      </location>
-     <capacity unit="LBS">9363.52</capacity>
-     <contents unit="LBS">4681.76</contents>
+     <capacity unit="LBS">18770</capacity>
+     <contents unit="LBS">9000</contents>
   </tank>
   <tank type="FUEL" number="2">
      <location unit="M">
@@ -184,8 +184,8 @@
        <y>3.80</y>
        <z>-0.75</z>
      </location>
-     <capacity unit="LBS">9363.52</capacity>
-     <contents unit="LBS">4681.76</contents>
+     <capacity unit="LBS">130</capacity>
+     <contents unit="LBS">115</contents>
   </tank>
 
  </propulsion>
@@ -267,6 +267,7 @@
  </ground_reactions>
 
  <system file="Propulsion.xml"/>
+ <system file="Fuel.xml"/>
  <system file="AircraftControl.xml"/>
  <system file="LandingGear.xml"/>
  <system file="Flaps.xml"/>
