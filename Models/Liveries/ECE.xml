@@ -4,8 +4,8 @@
   <sim>
     <model>
       <livery>
-        <name type="string">Transavia (2048x2048)</name>
-        <texture>Liveries/TRA-High.png</texture>
+        <name type="string">Air City (ECE)</name>
+        <texture>Liveries/ECE.png</texture>
         <specular>
           <red>0.3</red>
           <green>0.3</green>
