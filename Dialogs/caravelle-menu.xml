@@ -13,15 +13,15 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
-<!--
-      <item>
-        <label>Immatriculation</label>
-        <binding>
+      <!--
+	  <item>
+          <label>Immatriculation</label>
+          <binding>
           <command>nasal</command>
           <script>caravelle.immat_dialog.toggle()</script>
-        </binding>
-      </item>
--->
+          </binding>
+	  </item>
+      -->
     </menu>
   </default>
 

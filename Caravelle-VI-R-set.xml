@@ -3,17 +3,17 @@
 <PropertyList>
 
   <sim include="Nasal/views.xml">
- 
-     <description>SudAviation Caravelle VI R</description>
-     <author>IAHM-COL. External 3D Model by Helijah</author>
-     <aircraft-version>V00.00.00</aircraft-version>
-     <status>Alpha</status>
+    
+    <description>SudAviation Caravelle VI R</description>
+    <author>IAHM-COL. External 3D Model by Helijah</author>
+    <aircraft-version>V00.00.00</aircraft-version>
+    <status>Alpha</status>
 
-     <rating>
-         <FDM type="int">0</FDM>
-	 <systems type="int">0</systems>
-	 <cockpit type="int">0</cockpit>
-	 <model type="int">0</model>
+    <rating>
+      <FDM type="int">0</FDM>
+      <systems type="int">0</systems>
+      <cockpit type="int">0</cockpit>
+      <model type="int">0</model>
     </rating>
 
     <flight-model>jsb</flight-model>
@@ -59,18 +59,18 @@
     <menubar include="Dialogs/caravelle-menu.xml"/>
 
   </sim>
- 
+  
   <input>
     <keyboard include="Nasal/caravelle-keyboard.xml"/>
   </input>
- 
+  
   <nasal>
     <caravelle>
       <file>Aircraft/SudAviation-Caravelle/Nasal/doors.nas</file>
       <file>Aircraft/SudAviation-Caravelle/Nasal/light.nas</file>
       <file>Aircraft/SudAviation-Caravelle/Nasal/liveries.nas</file>
-<!--  <file>Aircraft/SudAviation-Caravelle/Nasal/immat.nas</file> -->
+      <!--  <file>Aircraft/SudAviation-Caravelle/Nasal/immat.nas</file> -->
     </caravelle>
   </nasal>
-   
+  
 </PropertyList>

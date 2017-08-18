@@ -15,9 +15,9 @@
   <model>
     <path>Aircraft/SudAviation-Caravelle/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m> -0.116 </x-m>
-      <y-m> -0.413 </y-m>
-      <z-m>  0.282 </z-m>
+      <x-m>-0.116</x-m>
+      <y-m>-0.413</y-m>
+      <z-m>0.282</z-m>
     </offsets>
   </model>
 
@@ -25,9 +25,9 @@
   <model>
     <path>Aircraft/SudAviation-Caravelle/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m> -0.144 </x-m>
-      <y-m> -0.316 </y-m>
-      <z-m>  0.282 </z-m>
+      <x-m>-0.144</x-m>
+      <y-m>-0.316</y-m>
+      <z-m>0.282</z-m>
     </offsets>
   </model>
 
@@ -35,9 +35,9 @@
   <model>
     <path>Aircraft/SudAviation-Caravelle/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m> -0.116 </x-m>
-      <y-m> -0.222 </y-m>
-      <z-m>  0.282 </z-m>
+      <x-m>-0.116</x-m>
+      <y-m>-0.222</y-m>
+      <z-m>0.282</z-m>
     </offsets>
   </model>
 
