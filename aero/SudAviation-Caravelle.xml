@@ -19,11 +19,12 @@
       type:          Multi-engine Passenger Jet Airliner, Transonic Jet Transport
       stall speed:   95.00kts
       max weight:    101410.00 lb
-      length:        105.00 ft
+      length:        32 m
       wing: 
-      span:         112.50 ft
-      area:         1579.00 sq-ft
-      mean chord:   77.40 ft
+      span:         35 m
+      area:         146.7 sq-m
+      mean chord:   24 m
+
       aspect ratio: 8.00:1
       taper ratio:  5.11:1
       incidence:    4.00 degrees
@@ -51,19 +52,20 @@
       K:                  0.04
       Mcrit:              0.79
 
-      min. turn radius    441.14 ft
+      min. turn radius    134.5 m
       max. turn rate:     0.40 deg/s
   -->
 
   <metrics>
-    <wingarea  unit="FT2">1579.00</wingarea>
-    <wingspan  unit="FT" >112.50</wingspan>
+    <wingarea  unit="M2">146.6939</wingarea>
+    <wingspan  unit="M" >34.30</wingspan>
     <wing_incidence unit="DEG">4.00</wing_incidence>
-    <chord     unit="FT" >77.40</chord>
-    <htailarea unit="FT2">326.14</htailarea>
-    <htailarm  unit="FT" >46.20</htailarm>
-    <vtailarea  unit="FT2">184.25</vtailarea>
-    <vtailarm  unit="FT" >63.14</vtailarm>
+    <chord     unit="M" >23.60</chord>
+    <htailarea unit="M2">30.30</htailarea>
+    <htailarm  unit="M" >14.082</htailarm>
+    <vtailarea  unit="M2">17.12</vtailarea>
+    <vtailarm  unit="M" >19.245</vtailarm>
+
     <location name="AERORP" unit="M">
       <x>14.55692</x>
       <y>0.00</y>
@@ -82,22 +84,41 @@
   </metrics>
 
   <mass_balance>
-    <ixx unit="SLUG*FT2">327448.53</ixx>
-    <iyy unit="SLUG*FT2">659027.75</iyy>
-    <izz unit="SLUG*FT2">1035934.25</izz>
-    <emptywt unit="LBS" >53318.00</emptywt>
+    <ixx unit="SLUG*FT2">704014.30</ixx>
+    <iyy unit="SLUG*FT2">1416910.00</iyy>
+    <izz unit="SLUG*FT2">2227259.00</izz>
+    <emptywt unit="LBS" >59256</emptywt>
     <location name="CG" unit="M">
       <x>14.55692</x>
       <y>0.00</y>
       <z>-0.8001</z>
     </location>
     <pointmass name="Payload">
-      <description>20001.43 LBS should bring model up to entered max weight </description>
+      <description>38236.5 LBS should bring model up to entered max weight </description>
       <weight unit="LBS">10000.71</weight>
       <location name="POINTMASS" unit="M">
 	<x>14.55692</x>
 	<y>0.00</y>
 	<z>-0.8001</z>
+      </location>
+    </pointmass>
+    <!--engines pointmass-->  
+    <pointmass name="Payload">
+      <description>Left RR-Avon</description>
+      <weight unit="LBS">2890</weight>
+      <location name="POINTMASS" unit="M">
+	<x>21.58</x>
+	<y>-2.643</y>
+	<z>-0.777</z>
+      </location>
+    </pointmass>
+    <pointmass name="Payload">
+      <description>Right RR-Avon</description>
+      <weight unit="LBS">2890</weight>
+      <location name="POINTMASS" unit="M">
+	<x>21.58</x>
+	<y>2.643</y>
+	<z>-0.777</z>
       </location>
     </pointmass>
   </mass_balance>
