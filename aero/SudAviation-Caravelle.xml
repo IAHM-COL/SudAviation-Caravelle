@@ -103,19 +103,38 @@
     <ixx unit="SLUG*FT2">704014.30</ixx>
     <iyy unit="SLUG*FT2">1416910.00</iyy>
     <izz unit="SLUG*FT2">2227259.00</izz>
-    <emptywt unit="LBS" >53318.00</emptywt>
+    <emptywt unit="LBS" >59256</emptywt>
     <location name="CG" unit="M">
       <x>14.55692</x>
       <y>0.00</y>
       <z>-0.8001</z>
     </location>
     <pointmass name="Payload">
-      <description>20001.43 LBS should bring model up to entered max weight </description>
+      <description>38236.5 LBS should bring model up to entered max weight </description>
       <weight unit="LBS">10000.71</weight>
       <location name="POINTMASS" unit="M">
 	<x>14.55692</x>
 	<y>0.00</y>
 	<z>-0.8001</z>
+      </location>
+    </pointmass>
+    <!--engines pointmass-->  
+    <pointmass name="Payload">
+      <description>Left RR-Avon</description>
+      <weight unit="LBS">2890</weight>
+      <location name="POINTMASS" unit="M">
+	<x>21.58</x>
+	<y>-2.643</y>
+	<z>-0.777</z>
+      </location>
+    </pointmass>
+    <pointmass name="Payload">
+      <description>Right RR-Avon</description>
+      <weight unit="LBS">2890</weight>
+      <location name="POINTMASS" unit="M">
+	<x>21.58</x>
+	<y>2.643</y>
+	<z>-0.777</z>
       </location>
     </pointmass>
   </mass_balance>
