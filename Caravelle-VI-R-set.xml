@@ -164,15 +164,15 @@
 		<fuel>
 
 			<tank n="0">
-				<name>Center</name>
-			</tank>
-
-			<tank n="1">
 				<name>Left</name>
 			</tank>
 
-			<tank n="2">
+			<tank n="1">
 				<name>Right</name>
+			</tank>
+
+			<tank n="2">
+				<name>Collector</name>
 			</tank>
 
 		</fuel>
@@ -450,7 +450,7 @@
 			<range_nm type="double">0.00</range_nm>
 		</engines>
 
-		<menubar2 include="Aircraft/JPack/Voodoomaster/Dialogs/menubar.xml"></menubar2>
+		<!-- menubar2 include="Aircraft/JPack/Voodoomaster/Dialogs/menubar.xml"></menubar2 -->
 
 		<weather>
 			<relative-wind type="float">0.00</relative-wind>
@@ -507,6 +507,7 @@
 
 	<nasal>
 		<caravelle>
+			<file>Aircraft/SudAviation-Caravelle/Nasal/caravelle-autostart.nas</file>
 			<file>Aircraft/SudAviation-Caravelle/Nasal/doors.nas</file>
 			<file>Aircraft/SudAviation-Caravelle/Nasal/light.nas</file>
 			<file>Aircraft/SudAviation-Caravelle/Nasal/liveries.nas</file>
