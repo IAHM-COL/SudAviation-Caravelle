@@ -88,11 +88,13 @@
     <iyy unit="SLUG*FT2">1416910.00</iyy>
     <izz unit="SLUG*FT2">2227259.00</izz>
     <emptywt unit="LBS" >59256</emptywt>
+
     <location name="CG" unit="M">
       <x>14.55692</x>
       <y>0.00</y>
       <z>-0.8001</z>
     </location>
+
     <pointmass name="Payload">
       <description>38236.5 LBS should bring model up to entered max weight </description>
       <weight unit="LBS">10000.71</weight>
@@ -102,8 +104,10 @@
 	<z>-0.8001</z>
       </location>
     </pointmass>
+
+	<!-- Poinbtmasses are for changeable masses, like more or less passengers, fatter pilots, more cargo. The engines are part of the plane weight -->
     <!--engines pointmass-->  
-    <pointmass name="Payload">
+    <!-- pointmass name="Payload">
       <description>Left RR-Avon</description>
       <weight unit="LBS">2890</weight>
       <location name="POINTMASS" unit="M">
@@ -112,6 +116,7 @@
 	<z>-0.777</z>
       </location>
     </pointmass>
+
     <pointmass name="Payload">
       <description>Right RR-Avon</description>
       <weight unit="LBS">2890</weight>
@@ -120,7 +125,36 @@
 	<y>2.643</y>
 	<z>-0.777</z>
       </location>
-    </pointmass>
+    </pointmass -->
+
+		<!-- but we have people, only I have not figured where yet -->
+		<pointmass name="CockpitCrew">
+			<weight unit="LBS">660</weight>
+			<location name="POINTMASS" unit="IN">
+				<x>-416.458</x>
+				<y>0</y>
+				<z>1.14</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="CabinCrew">
+			<weight unit="LBS">220</weight>
+			<location name="POINTMASS" unit="IN">
+				<x>-416.458</x>
+				<y>0</y>
+				<z>1.14</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="Passengers">
+			<weight unit="LBS">16000</weight>
+			<location name="POINTMASS" unit="IN">
+				<x>-100.102</x>
+				<y>0</y>
+				<z>1.14</z>
+			</location>
+		</pointmass>
+
   </mass_balance>
 
   <propulsion>
@@ -190,6 +224,7 @@
       <capacity unit="LBS">18770</capacity>
       <contents unit="LBS">9000</contents>
     </tank>
+
     <tank type="FUEL" number="1">
       <location unit="M">
 	<x>15.25</x>
@@ -199,6 +234,7 @@
       <capacity unit="LBS">18770</capacity>
       <contents unit="LBS">9000</contents>
     </tank>
+
     <tank type="FUEL" number="2">
       <location unit="M">
 	<x>15.25</x>

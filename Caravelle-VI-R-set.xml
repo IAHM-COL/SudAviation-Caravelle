@@ -1,76 +1,517 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+	This is the Sud Aviation Caravelle. God knows where Israel found it, but it's a nice old plane.
+
+	2019: We give her a touch of life, shall we?
+
+	License : GPL 2.0
+    		
+ -->
+
 
 <PropertyList>
 
-  <sim include="Nasal/views.xml">
+	<sim include="Nasal/views.xml">
     
-    <description>SudAviation Caravelle VI R</description>
-    <author>IAHM-COL. External 3D Model by Helijah</author>
-    <aircraft-version>V00.00.00</aircraft-version>
-    <status>Alpha</status>
+		<description>SudAviation Caravelle VI R</description>
+		<author>IAHM-COL. External 3D Model by Helijah</author>
+		<aircraft-version>V00.00.00</aircraft-version>
+		<minimum-fg-version>2018.2.1</minimum-fg-version>
+		<status>Alpha</status>
 
-    <rating>
-      <FDM type="int">0</FDM>
-      <systems type="int">0</systems>
-      <cockpit type="int">0</cockpit>
-      <model type="int">0</model>
-    </rating>
+		<rating>
+			<FDM type="int">0</FDM>
+			<systems type="int">0</systems>
+			<cockpit type="int">0</cockpit>
+			<model type="int">0</model>
+		</rating>
 
-    <flight-model>jsb</flight-model>
-    <aero>aero/SudAviation-Caravelle</aero>
+		<flight-model>jsb</flight-model>
+		<aero>Aero/SudAviation-Caravelle</aero>
 
-    <startup>
-      <splash-texture>Aircraft/SudAviation-Caravelle/Splash/caravelle-splash.png</splash-texture>
-    </startup>
+		<startup>
+			<splash-texture>Aircraft/SudAviation-Caravelle/Splash/caravelle-splash.png</splash-texture>
+		</startup>
 
-    <sound>
-      <path archive="y">Aircraft/SudAviation-Caravelle/Sounds/caravelle-sound.xml</path>
-    </sound>
+		<model>
+			<path archive="y">Aircraft/SudAviation-Caravelle/Models/Caravelle-VI-R.xml</path>
+	
+			<livery>
+				<file type="string">default</file>
+			</livery>
+		</model>
 
-    <model>
-      <path archive="y">Aircraft/SudAviation-Caravelle/Models/Caravelle-VI-R.xml</path>
-      <livery>
-        <file type="string">default</file>
-      </livery>
-    </model>
+		<!-- Subsection for submodels if submodels exist -->
+		<!-- submodels>
+			<serviceable type="bool">1</serviceable>
+			<path>Aircraft/JPack/Voodoomaster/Services/Military/MilitarySub.xml</path>
+		</submodels -->  
 
-    <multiplay>
-      <chat_display>1</chat_display>
-      <generic>
-        <int type="int" n="0">0</int>
-        <int type="int" n="1">0</int>
-        <int type="int" n="2">0</int>
-        <int type="int" n="3">0</int>
-        <int type="int" n="4">0</int>
-        <int type="int" n="5">0</int>
-        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
-        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
-      </generic>
-    </multiplay>
+		<!-- basic startup settings for sim -->
+		<freeze>
+			<fuel>false</fuel>	<!-- false is default, only here for quick change while testing -->
+		</freeze>
 
-    <help>
-      <title>Caravelle</title>
-      <key>
-        <name>d</name>
-        <desc>Open/Close door</desc>
-      </key>
-    </help>
+		<gui>
+			<dialogs>
+				<autopilot>
+					<!-- speed in kts for SYS7/8/9 APs -->
+					<kts-select type="bool">true</kts-select>
+					<mach-select tpye="bool">false</mach-select>
+				</autopilot>
+			</dialogs>
+		</gui>
 
-    <menubar include="Dialogs/caravelle-menu.xml"/>
+		<chase-distance-m>-100</chase-distance-m>
+		
+		<sound>
+			<audible>true</audible>
+			<path archive="y">Aircraft/SudAviation-Caravelle/Sounds/caravelle-sound.xml</path>
+		</sound>
 
-  </sim>
-  
-  <input>
-    <keyboard include="Nasal/caravelle-keyboard.xml"/>
-  </input>
-  
-  <nasal>
-    <caravelle>
-      <file>Aircraft/SudAviation-Caravelle/Nasal/doors.nas</file>
-      <file>Aircraft/SudAviation-Caravelle/Nasal/light.nas</file>
-      <file>Aircraft/SudAviation-Caravelle/Nasal/liveries.nas</file>
-      <!--  <file>Aircraft/SudAviation-Caravelle/Nasal/immat.nas</file> -->
-    </caravelle>
-  </nasal>
+		<autostart>
+			<started>0</started>
+		</autostart>
+
+		<flaps>
+			<setting>0.00</setting>
+			<setting>0.10</setting>
+			<setting>0.20</setting>
+			<setting>0.30</setting>
+			<setting>0.40</setting>
+		</flaps>
+
+		<virtual-cockpit archive="y">true</virtual-cockpit>
+
+		<instrumentation>
+			<path>Aircraft/JH-Lineage1000/Systems/Instrumentation.xml</path>
+		</instrumentation>
+
+		<multiplay>
+			<chat_display>1</chat_display>
+
+			<generic>
+				<int type="int" n="0">0</int>
+				<int type="int" n="1">0</int>
+				<int type="int" n="2">0</int>
+				<int type="int" n="3">0</int>
+				<int type="int" n="4">0</int>
+				<int type="int" n="5">0</int>
+
+				<float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+				<float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+			</generic>
+		</multiplay>
+
+		<!-- #### I would later add HUDs here, then blackout rendering and then the views (seems, Helijah has them in an include, which is okay, but not on top because everybody looks for them down in the sim section -->
+
+		<help>
+			<title>Caravelle</title>
+			<key>
+				<name>d</name>
+				<desc>Open/Close door</desc>
+			</key>
+		</help>
+
+		<menubar include="Dialogs/caravelle-menu.xml"/>
+
+		<!-- Systems -->
+		<systems>
+			<!-- path>Aircraft/SudAviation-Caravelle/Systems/Caravelle.xml</path -->	<!-- #### not existing yet because no system installed yet -->
+			<electrical>
+				<path>Aircraft/Generic/generic-electrical.xml</path>
+			</electrical>
+
+			<autopilot>
+				<path>Aircraft/SudAviation-Caravelle/Systems/Autoflight/SYS9_0_autopilot.xml</path>	<!-- just took the AP from the Lineage for now -->
+			</autopilot>
+		</systems>
+
+	</sim>
+
+	<!-- FDM section for direct FDM access -->
+
+	<engines>
+
+		<!-- I just assume for now rwo wngines one apu-->
+
+		<apu>
+			<rpm type="double">0</rpm>
+			<on-fire type="bool">false</on-fire>
+			<running type="bool">false</running>
+			<serviceable type="bool">true</serviceable>
+		</apu>
+
+		<engine n="0">
+			<on-fire type="bool">false</on-fire>
+			<reverser-pos-norm type="double">0</reverser-pos-norm>
+			<running type="bool">false</running>
+		</engine>
+
+		<engine n="1">
+			<on-fire type="bool">false</on-fire>
+			<reverser-pos-norm type="double">0</reverser-pos-norm>
+			<running type="bool">false</running>
+		</engine>
+
+	</engines>
+
+	<consumables>
+
+		<!-- rhis is just to name the tanks in the fuel and payload dialog -->
+
+		<fuel>
+
+			<tank n="0">
+				<name>Center</name>
+			</tank>
+
+			<tank n="1">
+				<name>Left</name>
+			</tank>
+
+			<tank n="2">
+				<name>Right</name>
+			</tank>
+
+		</fuel>
+
+	</consumables>
+
+	<payload>
+
+		<weight n="0">
+			<name>Cockpit Crew</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]" />
+			<min-lb type="double">220</min-lb>
+			<max-lb type="double">660</max-lb>
+		</weight>
+
+		<weight n="1">
+			<name>Cabin Crew</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]" />
+			<min-lb type="double">220</min-lb>
+			<max-lb type="double">660</max-lb>
+		</weight>
+
+		<weight n="2">
+			<name>Cabin/Passengers</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]" />
+			<min-lb type="double">0</min-lb>
+			<max-lb type="double">16000</max-lb>
+		</weight>
+
+	</payload>
+
+	<!-- Systems parallel to sim -->
+	<systems>
+		<path>Aircraft/SudAviation-Caravelle/Systems/Caravelle.xml</path>
+		<electrical>
+			<path>Aircraft/Generic/generic-electrical.xml</path>
+		</electrical>
+	</systems>
+
+	<input>
+		<keyboard include="Nasal/caravelle-keyboard.xml"/>
+	</input>
+    
+	<!-- Autopilot initialization -->
+	<autopilot>
+
+		<settings>
+			<ap-armed type="bool">false</ap-armed>
+			<kts-mach-select type="string">kts</kts-mach-select>
+			<max-pitch type="float"> 8.0</max-pitch>
+			<min-pitch type="float">-6.0</min-pitch>
+			<bank-angle-limit-deg type="int">35</bank-angle-limit-deg>
+			<propgain-roll type="float">-4.0</propgain-roll>
+		</settings>
+
+		<internal>
+			<target-pitch-deg type="float">0.00</target-pitch-deg>
+			<max-pitch type="float"> 8.0</max-pitch>
+			<min-pitch type="float">-6.0</min-pitch>
+		</internal>
+
+	</autopilot>
+
+	<!-- Voodoomaster plane specific initializations -->
+	<voodoomaster>
+		<dialogs>
+			<!-- fuel-and-payload type="string">Antonov An-124 Weight and Fuel</fuel-and-payload -->
+			<system-settings type="string">Antonov An-124 System Settings</system-settings>
+		</dialogs>
+
+		<pilots>
+			<setting>
+				<name type="string">Nosewheel Steering</name>
+				<current type="int">1</current>
+				<listen type="int">1</listen>
+				<listenprop type="string">/fdm/jsbsim/systems/NWS/engaged</listenprop>
+				<options>
+					<opt>
+						<name type="string">On</name>
+						<pkey type="string">/fdm/jsbsim/systems/NWS/engaged</pkey>
+						<value type="int">1</value>
+					</opt>
+					<opt>
+						<name type="string">Off</name>
+						<pkey type="string">/fdm/jsbsim/systems/NWS/engaged</pkey>
+						<value type="int">0</value>
+					</opt>
+				</options>
+			</setting>
+		</pilots>
+
+		<systems>
+			<electrical>
+				<number-apus type="int">1</number-apus>
+			</electrical>
+
+			<engines>
+				<number type="int">2</number>
+				<set>
+					<name type="string">CF34-10R7-B</name>
+					<number type="int">2</number>
+				</set>
+			</engines>
+
+			<fuel>
+				<number-pumps type="int">2</number-pumps>
+			</fuel>
+		</systems>
+
+		<!-- settings>
+			<setting>
+				<name type="string">Engines</name>
+				<current type="int">0</current>
+				<options>
+					<opt>
+						<name type="string">Ivchenko D-18T</name>
+						<pkey type="string">/engines/engine-set</pkey>
+						<value type="string">DT18T</value>
+					</opt>
+					<opt>
+						<name type="string">Alliance GP7277</name>
+						<pkey type="string">/engines/engine-set</pkey>
+						<value type="string">GP7277</value>
+					</opt>
+				</options>
+			</setting>
+			<setting>
+				<name type="string">Cockpit</name>
+				<current type="int">1</current>
+				<options>
+					<opt>
+						<name type="string">Original</name>
+						<pkey type="string">/voodoomaster/cockpit/style</pkey>
+						<value type="string">Original</value>
+					</opt>
+					<opt>
+						<name type="string">Generic Classic</name>
+						<pkey type="string">/voodoomaster/cockpit/style</pkey>
+						<value type="string">GenClassic</value>
+					</opt>
+					<opt>
+						<name type="string">Experimental</name>
+						<pkey type="string">/voodoomaster/cockpit/style</pkey>
+						<value type="string">Experimental</value>
+					</opt>
+				</options>
+			</setting>
+		</settings -->
+
+		<internal>
+			<message-header type="string">...</message-header>
+			<message-switcher type="string">...</message-switcher>
+
+			<msg_pump0 type="string">Fuel pumps left wing starting!</msg_pump0>
+			<msg_pump1 type="string">Fuel pumps right wing starting!</msg_pump1>
+
+			<msg_engine0 type="string">Engine 1 starting up!</msg_engine0>
+			<msg_engine1 type="string">Engine 2 starting up!</msg_engine1>
+
+			<msg_engspin0 type="string">Engine 1 spinning up!</msg_engspin0>
+			<msg_engspin1 type="string">Engine 2 spinning up!</msg_engspin1>
+
+			<msg_engwatch0 type="string">Engine 1 is running!</msg_engwatch0>
+			<msg_engwatch1 type="string">Engine 2 is running!</msg_engwatch1>
+
+			<msg_engine0_stop type="string">Engine 1 shutting down!</msg_engine0_stop>
+			<msg_engine1_stop type="string">Engine 2 shutting down!</msg_engine1_stop>
+		</internal>
+
+		<steering-wheel type="int">0</steering-wheel>
+		<steering-type type="string">TriCycle</steering-type>	<!-- Alternativ: Taildragger-lock or Taildragger-steer -->
+		<steering-mode-rudder type="bool">true</steering-mode-rudder>
+		<steering-mode-aileron type="bool">false</steering-mode-aileron>
+		<steering>
+			<steering-type type="string">TriCycle</steering-type>	<!-- Alternativ: Taildragger-lock or TriCycle -->
+			<steering-wheel type="int">0</steering-wheel>
+		</steering>
+
+		<migraine-mode type="bool">false</migraine-mode>
+
+		<model-direction>0.00</model-direction>
+
+		<pushback>
+			<activated type="bool">false</activated>
+		</pushback>
+
+		<engines>2</engines>
+
+		<hud>
+			<mode type="int">0</mode>
+		</hud>
+
+		<route>
+			<marker n="0" type="string"></marker>
+			<number n="0" type="int"></number>
+			<code n="0" type="string"></code>
+			<title n="0" type="string"></title>
+			<bearing n="0" type="float"></bearing>
+			<distance n="0" type="float"></distance>
+
+			<marker n="1" type="string"></marker>
+			<number n="1" type="int"></number>
+			<code n="1" type="string"></code>
+			<title n="1" type="string"></title>
+			<bearing n="1" type="float"></bearing>
+			<distance n="1" type="float"></distance>
+
+			<marker n="2" type="string"></marker>
+			<number n="2" type="int"></number>
+			<code n="2" type="string"></code>
+			<title n="2" type="string"></title>
+			<bearing n="2" type="float"></bearing>
+			<distance n="2" type="float"></distance>
+
+			<marker n="3" type="string"></marker>
+			<number n="3" type="int"></number>
+			<code n="3" type="string"></code>
+			<title n="3" type="string"></title>
+			<bearing n="3" type="float"></bearing>
+			<distance n="3" type="float"></distance>
+
+			<marker n="4" type="string"></marker>
+			<number n="4" type="int"></number>
+			<code n="4" type="string"></code>
+			<title n="4" type="string"></title>
+			<bearing n="4" type="float"></bearing>
+			<distance n="4" type="float"></distance>
+
+			<marker n="5" type="string"></marker>
+			<number n="5" type="int"></number>
+			<code n="5" type="string"></code>
+			<title n="5" type="string"></title>
+			<bearing n="5" type="float"></bearing>
+			<distance n="5" type="float"></distance>
+
+			<marker n="6" type="string"></marker>
+			<number n="6" type="int"></number>
+			<code n="6" type="string"></code>
+			<title n="6" type="string"></title>
+			<bearing n="6" type="float"></bearing>
+			<distance n="6" type="float"></distance>
+
+			<marker n="7" type="string"></marker>
+			<number n="7" type="int"></number>
+			<code n="7" type="string"></code>
+			<title n="7" type="string"></title>
+			<bearing n="7" type="float"></bearing>
+			<distance n="7" type="float"></distance>
+
+			<marker n="8" type="string"></marker>
+			<number n="8" type="int"></number>
+			<code n="8" type="string"></code>
+			<title n="8" type="string"></title>
+			<bearing n="8" type="float"></bearing>
+			<distance n="8" type="float"></distance>
+
+			<marker n="9" type="string"></marker>
+			<number n="9" type="int"></number>
+			<code n="9" type="string"></code>
+			<title n="9" type="string"></title>
+			<bearing n="9" type="float"></bearing>
+			<distance n="9" type="float"></distance>
+
+			<marker n="10" type="string"></marker>
+			<number n="10" type="int"></number>
+			<code n="10" type="string"></code>
+			<title n="10" type="string"></title>
+			<bearing n="10" type="float"></bearing>
+			<distance n="10" type="float"></distance>
+		</route>
+
+		<engines>
+			<fuel_flow_total_pps type="double">0.00</fuel_flow_total_pps>
+			<airtime type="double">0.00</airtime>
+			<range_nm type="double">0.00</range_nm>
+		</engines>
+
+		<menubar2 include="Aircraft/JPack/Voodoomaster/Dialogs/menubar.xml"></menubar2>
+
+		<weather>
+			<relative-wind type="float">0.00</relative-wind>
+		</weather>
+
+		<ground-service>
+			<fuel-truck>
+				<truck n="0">
+					<clean type="bool">false</clean>
+					<connect type="bool">false</connect>
+					<enable type="bool">false</enable>
+					<state type="double">0.00</state>
+					<transfer type="bool">false</transfer>
+				</truck>
+				<truck n="1">
+					<clean type="bool">false</clean>
+					<connect type="bool">false</connect>
+					<enable type="bool">false</enable>
+					<state type="double">0.00</state>
+					<transfer type="bool">false</transfer>
+				</truck>
+				<truck n="2">
+					<clean type="bool">false</clean>
+					<connect type="bool">false</connect>
+					<enable type="bool">false</enable>
+					<state type="double">0.00</state>
+					<transfer type="bool">false</transfer>
+				</truck>
+				<truck n="3">
+					<clean type="bool">false</clean>
+					<connect type="bool">false</connect>
+					<enable type="bool">false</enable>
+					<state type="double">0.00</state>
+					<transfer type="bool">false</transfer>
+				</truck>
+				<truck n="4">
+					<clean type="bool">false</clean>
+					<connect type="bool">false</connect>
+					<enable type="bool">false</enable>
+					<state type="double">0.00</state>
+					<transfer type="bool">false</transfer>
+				</truck>
+				<truck n="5">
+					<clean type="bool">false</clean>
+					<connect type="bool">false</connect>
+					<enable type="bool">false</enable>
+					<state type="double">0.00</state>
+					<transfer type="bool">false</transfer>
+				</truck>
+			</fuel-truck>
+		</ground-service>
+
+	</voodoomaster>
+
+	<nasal>
+		<caravelle>
+			<file>Aircraft/SudAviation-Caravelle/Nasal/doors.nas</file>
+			<file>Aircraft/SudAviation-Caravelle/Nasal/light.nas</file>
+			<file>Aircraft/SudAviation-Caravelle/Nasal/liveries.nas</file>
+			<!--  <file>Aircraft/SudAviation-Caravelle/Nasal/immat.nas</file> -->
+		</caravelle>
+	</nasal>
   
 </PropertyList>
