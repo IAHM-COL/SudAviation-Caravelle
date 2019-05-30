@@ -85,7 +85,7 @@
 		<location name="VRP" unit="M">
 			<x>0.0</x>
 			<y>0.0</y>
-			<z>0.0</z>
+			<z>0.50</z>
 		</location>
 	</metrics>
 
@@ -111,7 +111,7 @@
 			</location>
 		</pointmass>
 
-		<!-- Poinbtmasses are for changeable masses, like more or less passengers, fatter pilots, more cargo. The engines are part of the plane weight -->
+		<!-- Pointmasses are for changeable masses, like more or less passengers, fatter pilots, more cargo. The engines are part of the plane weight -->
 		<!--engines pointmass-->  
 		<!-- pointmass name="Payload">
 			<description>Left RR-Avon</description>
@@ -262,9 +262,9 @@
 			<static_friction>0.80</static_friction>
 			<dynamic_friction>0.50</dynamic_friction>
 			<rolling_friction>0.02</rolling_friction>
-			<spring_coeff  unit="LBS/FT">30423.00</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">15211.50</damping_coeff>
-			<max_steer unit="DEG">15.00</max_steer>
+			<spring_coeff  unit="LBS/FT">110230.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">27000.00</damping_coeff>
+			<max_steer unit="DEG">45.00</max_steer>
 			<brake_group>NONE</brake_group>
 			<retractable>1</retractable>
 		</contact>
@@ -278,8 +278,8 @@
 			<static_friction>0.80</static_friction>
 			<dynamic_friction>0.50</dynamic_friction>
 			<rolling_friction>0.02</rolling_friction>
-			<spring_coeff  unit="LBS/FT">101410.00</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">50705.00</damping_coeff>
+			<spring_coeff  unit="LBS/FT">110230.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">27000.00</damping_coeff>
 			<max_steer unit="DEG">0</max_steer>
 			<brake_group>LEFT</brake_group>
 			<retractable>1</retractable>
@@ -294,8 +294,8 @@
 			<static_friction>0.80</static_friction>
 			<dynamic_friction>0.50</dynamic_friction>
 			<rolling_friction>0.02</rolling_friction>
-			<spring_coeff  unit="LBS/FT">101410.00</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">50705.00</damping_coeff>
+			<spring_coeff  unit="LBS/FT">110230.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">27000.00</damping_coeff>
 			<max_steer unit="DEG">0</max_steer>
 			<brake_group>RIGHT</brake_group>
 			<retractable>1</retractable>
