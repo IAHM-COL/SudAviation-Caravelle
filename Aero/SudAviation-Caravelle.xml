@@ -71,9 +71,9 @@
 		<vtailarm  unit="FT" >63.1693</vtailarm>
 
 		<location name="AERORP" unit="M">
-			<x>18.55692</x>
+			<x>21.55</x>
 			<y>0.00</y>
-			<z>0.20</z>
+			<z>0.35</z>
 		</location>
 
 		<location name="EYEPOINT" unit="M">
@@ -96,68 +96,46 @@
 		<emptywt unit="LBS" >59256</emptywt>
 
 		<location name="CG" unit="M">
-			<x>12.0000</x>
+			<x>15.553</x>
 			<y>0.00</y>
-			<z>0.20</z>
+			<z>0.35</z>
 		</location>
 
-		<!-- pointmass name="Payload">
+		<pointmass name="Payload">
 			<description>38236.5 LBS should bring model up to entered max weight </description>
 			<weight unit="LBS">10000.71</weight>
 			<location name="POINTMASS" unit="M">
-				<x>14.55692</x>
+				<x>10.9353</x>
 				<y>0.00</y>
-				<z>-0.8001</z>
-			</location>
-		</pointmass -->
-
-		<!-- Pointmasses are for changeable masses, like more or less passengers, fatter pilots, more cargo. The engines are part of the plane weight -->
-		<!--engines pointmass-->  
-		<!-- pointmass name="Payload">
-			<description>Left RR-Avon</description>
-			<weight unit="LBS">2890</weight>
-			<location name="POINTMASS" unit="M">
-				<x>21.58</x>
-				<y>-2.643</y>
-				<z>-0.777</z>
+				<z>-0.80221</z>
 			</location>
 		</pointmass>
-
-		<pointmass name="Payload">
-			<description>Right RR-Avon</description>
-			<weight unit="LBS">2890</weight>
-			<location name="POINTMASS" unit="M">
-				<x>21.58</x>
-				<y>2.643</y>
-				<z>-0.777</z>
-			</location>
-		</pointmass -->
 
 		<!-- but we have people, only I have not figured where yet -->
 		<pointmass name="CockpitCrew">
 			<weight unit="LBS">0.00</weight>
 			<location name="POINTMASS" unit="M">
-				<x>4.82224</x>
-				<y>0</y>
-				<z>1.14</z>
+				<x>1.24742</x>
+				<y>0.1541</y>
+				<z>0.44773</z>
 			</location>
 		</pointmass>
 
 		<pointmass name="CabinCrew">
 			<weight unit="LBS">0.00</weight>
 			<location name="POINTMASS" unit="M">
-				<x>16.0</x>
-				<y>0</y>
-				<z>1.14</z>
+				<x>5.04282</x>
+				<y>0.1533</y>
+				<z>0.75193</z>
 			</location>
 		</pointmass>
 
 		<pointmass name="Passengers">
 			<weight unit="LBS">0.00</weight>
 			<location name="POINTMASS" unit="M">
-				<x>16.0</x>
-				<y>0</y>
-				<z>1.14</z>
+				<x>15.98179</x>
+				<y>0.70331</y>
+				<z>0.71599</z>
 			</location>
 		</pointmass>
 
@@ -167,9 +145,9 @@
 
 		<engine file="Avon">
 			<location unit="M">
-				<x>22.19453</x>
-				<y>-2.64774</y>
-				<z>0.73107</z>
+				<x>24.65700</x>
+				<y>-2.67095</y>
+				<z>0.77148</z>
 			</location>
 			<orient unit="DEG">
 				<pitch>0.00</pitch>
@@ -180,9 +158,9 @@
 			<thruster file="direct">
 				<sense>1</sense>
 				<location unit="M">
-					<x>22.19453</x>
-					<y>-2.64774</y>
-					<z>0.73107</z>
+					<x>23.72096</x>
+					<y>-2.65031</y>
+					<z>0.76492</z>
 				</location>
 				<orient unit="DEG">
 					<pitch>0.00</pitch>
@@ -194,9 +172,9 @@
 
 		<engine file="Avon">
 			<location unit="M">
-				<x>22.19453</x>
-				<y>2.64774</y>
-				<z>0.73107</z>
+				<x>24.65700</x>
+				<y>2.67095</y>
+				<z>0.77148</z>
 			</location>
 			<orient unit="DEG">
 				<pitch>0.00</pitch>
@@ -207,9 +185,9 @@
 			<thruster file="direct">
 				<sense>1</sense>
 				<location unit="M">
-					<x>22.19453</x>
-					<y>2.64774</y>
-					<z>0.73107</z>
+					<x>23.72096</x>
+					<y>-2.65031</y>
+					<z>0.76492</z>
 				</location>
 				<orient unit="DEG">
 					<pitch>0.00</pitch>
@@ -221,9 +199,9 @@
 
 		<tank type="FUEL" number="0">
 			<location unit="M">
-				<x>18.25</x>
-				<y>-3.80</y>
-				<z>-0.75</z>
+				<x>17.32607</x>
+				<y>-3.58937</y>
+				<z>-0.62005</z>
 			</location>
 			<capacity unit="LBS">18770</capacity>
 			<contents unit="LBS">9000</contents>
@@ -231,9 +209,9 @@
 
 		<tank type="FUEL" number="1">
 			<location unit="M">
-				<x>18.25</x>
-				<y>3.80</y>
-				<z>-0.75</z>
+				<x>17.32607</x>
+				<y>3.58937</y>
+				<z>-0.62005</z>
 			</location>
 			<capacity unit="LBS">18770</capacity>
 			<contents unit="LBS">9000</contents>
@@ -241,9 +219,9 @@
 
 		<tank type="FUEL" number="2">
 			<location unit="M">
-				<x>22.25</x>
-				<y>0.80</y>
-				<z>-0.75</z>
+				<x>22.62801</x>
+				<y>-1.18377</y>
+				<z>-0.86410</z>
 			</location>
 			<capacity unit="LBS">130</capacity>
 			<contents unit="LBS">115</contents>
@@ -300,8 +278,8 @@
 			<brake_group>RIGHT</brake_group>
 			<retractable>1</retractable>
 		</contact>
-
-		<!-- contact type="STRUCTURE" name="LEFT_WING">
+<!--
+		<contact type="STRUCTURE" name="LEFT_WING">
 			<location unit="M">
 				<x>21.40401</x>
 				<y>-17.07</y>
@@ -323,7 +301,8 @@
 			<dynamic_friction>1</dynamic_friction>
 			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
 			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
-		</contact -->
+		</contact>
+-->
 
 	</ground_reactions>
 
