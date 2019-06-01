@@ -96,20 +96,10 @@
 		<emptywt unit="LBS" >59256</emptywt>
 
 		<location name="CG" unit="M">
-			<x>15.553</x>
+			<x>13.553</x>
 			<y>0.00</y>
 			<z>0.35</z>
 		</location>
-
-		<pointmass name="Payload">
-			<description>38236.5 LBS should bring model up to entered max weight </description>
-			<weight unit="LBS">10000.71</weight>
-			<location name="POINTMASS" unit="M">
-				<x>10.9353</x>
-				<y>0.00</y>
-				<z>-0.80221</z>
-			</location>
-		</pointmass>
 
 		<!-- but we have people, only I have not figured where yet -->
 		<pointmass name="CockpitCrew">
