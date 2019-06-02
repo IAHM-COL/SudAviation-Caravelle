@@ -71,9 +71,9 @@
 		<vtailarm  unit="FT" >63.1693</vtailarm>
 
 		<location name="AERORP" unit="M">
-			<x>21.55</x>
+			<x>13.76918</x>
 			<y>0.00</y>
-			<z>0.35</z>
+			<z>-0.49977</z>
 		</location>
 
 		<location name="EYEPOINT" unit="M">
@@ -96,36 +96,36 @@
 		<emptywt unit="LBS" >59256</emptywt>
 
 		<location name="CG" unit="M">
-			<x>13.553</x>
+			<x>17.48014</x>
 			<y>0.00</y>
-			<z>0.35</z>
+			<z>-0.49977</z>
 		</location>
 
 		<!-- but we have people, only I have not figured where yet -->
 		<pointmass name="CockpitCrew">
 			<weight unit="LBS">0.00</weight>
 			<location name="POINTMASS" unit="M">
-				<x>1.24742</x>
-				<y>0.1541</y>
-				<z>0.44773</z>
+				<x>1.40791</x>
+				<y>0.09932</y>
+				<z>0.40649</z>
 			</location>
 		</pointmass>
 
 		<pointmass name="CabinCrew">
 			<weight unit="LBS">0.00</weight>
 			<location name="POINTMASS" unit="M">
-				<x>5.04282</x>
-				<y>0.1533</y>
-				<z>0.75193</z>
+				<x>5.72397</x>
+				<y>-0.39202</y>
+				<z>0.64734</z>
 			</location>
 		</pointmass>
 
 		<pointmass name="Passengers">
 			<weight unit="LBS">0.00</weight>
 			<location name="POINTMASS" unit="M">
-				<x>15.98179</x>
-				<y>0.70331</y>
-				<z>0.71599</z>
+				<x>15.56233</x>
+				<y>0.0000</y>
+				<z>0.38722</z>
 			</location>
 		</pointmass>
 
@@ -135,9 +135,9 @@
 
 		<engine file="Avon">
 			<location unit="M">
-				<x>24.65700</x>
-				<y>-2.67095</y>
-				<z>0.77148</z>
+				<x>24.64173</x>
+				<y>-2.65235</y>
+				<z>0.76462</z>
 			</location>
 			<orient unit="DEG">
 				<pitch>0.00</pitch>
@@ -148,9 +148,9 @@
 			<thruster file="direct">
 				<sense>1</sense>
 				<location unit="M">
-					<x>23.72096</x>
-					<y>-2.65031</y>
-					<z>0.76492</z>
+					<x>23.32832</x>
+					<y>-2.65279</y>
+					<z>0.76031</z>
 				</location>
 				<orient unit="DEG">
 					<pitch>0.00</pitch>
@@ -162,9 +162,9 @@
 
 		<engine file="Avon">
 			<location unit="M">
-				<x>24.65700</x>
-				<y>2.67095</y>
-				<z>0.77148</z>
+				<x>24.64173</x>
+				<y>2.65235</y>
+				<z>0.76462</z>
 			</location>
 			<orient unit="DEG">
 				<pitch>0.00</pitch>
@@ -175,9 +175,9 @@
 			<thruster file="direct">
 				<sense>1</sense>
 				<location unit="M">
-					<x>23.72096</x>
-					<y>-2.65031</y>
-					<z>0.76492</z>
+					<x>23.32832</x>
+					<y>-2.65279</y>
+					<z>0.76031</z>
 				</location>
 				<orient unit="DEG">
 					<pitch>0.00</pitch>
