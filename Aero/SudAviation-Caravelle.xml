@@ -60,15 +60,14 @@
 	-->
 
 	<metrics>
-		<wingarea  unit="FT2">1579.0657</wingarea>
-		<wingspan  unit="FT" >112.5328</wingspan>
+		<wingarea unit="FT2">1553.0657</wingarea>
+		<wingspan unit="FT">112.5328</wingspan>
 		<wing_incidence unit="DEG">4.00</wing_incidence>
-		<!-- chord     unit="M" >23.60</chord --> <!-- chord was some unreasonable value, not sure where it came form -->
-	   	<chord     unit="FT" >   14.72 </chord>
+	   	<chord unit="FT">16.4042</chord>
 		<htailarea unit="FT2">326.1465</htailarea>
-		<htailarm  unit="FT" >46.2008</htailarm>
-		<vtailarea  unit="FT2">184.27815</vtailarea>
-		<vtailarm  unit="FT" >63.1693</vtailarm>
+		<htailarm unit="FT">46.2008</htailarm>
+		<vtailarea unit="FT2">184.27815</vtailarea>
+		<vtailarm unit="FT">63.1693</vtailarm>
 
 		<location name="AERORP" unit="M">
 			<x>13.76918</x>
