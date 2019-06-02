@@ -70,7 +70,7 @@
 		<vtailarm unit="FT">63.1693</vtailarm>
 
 		<location name="AERORP" unit="M">
-			<x>13.76918</x>
+			<x>19.25507</x>
 			<y>0.00</y>
 			<z>-0.49977</z>
 		</location>
@@ -95,7 +95,7 @@
 		<emptywt unit="LBS" >59256</emptywt>
 
 		<location name="CG" unit="M">
-			<x>17.48014</x>
+			<x>14.56026</x>
 			<y>0.00</y>
 			<z>-0.49977</z>
 		</location>
