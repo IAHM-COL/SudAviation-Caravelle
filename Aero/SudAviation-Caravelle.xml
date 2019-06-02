@@ -140,9 +140,9 @@
 				<z>0.76462</z>
 			</location>
 			<orient unit="DEG">
-				<pitch>0.00</pitch>
+				<pitch>2.22</pitch>
 				<roll>0.00</roll>
-				<yaw>0.00</yaw>
+				<yaw>-1.80</yaw>
 			</orient>
 			<feed>2</feed>
 			<thruster file="direct">
@@ -153,9 +153,9 @@
 					<z>0.76031</z>
 				</location>
 				<orient unit="DEG">
-					<pitch>0.00</pitch>
+					<pitch>2.22</pitch>
 					<roll>0.00</roll>
-					<yaw>0.00</yaw>
+					<yaw>-1.80</yaw>
 				</orient>
 			</thruster>
 		</engine>
@@ -167,9 +167,9 @@
 				<z>0.76462</z>
 			</location>
 			<orient unit="DEG">
-				<pitch>0.00</pitch>
+				<pitch>2.22</pitch>
 				<roll>0.00</roll>
-				<yaw>0.00</yaw>
+				<yaw>1.80</yaw>
 			</orient>
 			<feed>2</feed>
 			<thruster file="direct">
@@ -180,9 +180,9 @@
 					<z>0.76031</z>
 				</location>
 				<orient unit="DEG">
-					<pitch>0.00</pitch>
+					<pitch>2.22</pitch>
 					<roll>0.00</roll>
-					<yaw>0.00</yaw>
+					<yaw>1.80</yaw>
 				</orient>
 			</thruster>
 		</engine>
