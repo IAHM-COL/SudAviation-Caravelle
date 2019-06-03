@@ -1032,32 +1032,393 @@
 			<brake_group>RIGHT</brake_group>
 			<retractable>1</retractable>
 		</contact>
-<!--
-		<contact type="STRUCTURE" name="LEFT_WING">
+
+                <!-- Contacts structure for collision with ground effects -->
+                <!-- disabled contacts structure
+		<contact type="STRUCTURE" name="Fuselage.Bottom.000">
 			<location unit="M">
-				<x>23.20108</x>
-				<y>-17.15271</y>
-				<z>-0.002405</z>
+				<x>24.1900616</x>
+				<y>0</y>
+				<z>-1.314667</z>
 			</location>
 			<static_friction>1</static_friction>
 			<dynamic_friction>1</dynamic_friction>
 			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
 			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
 		</contact>
-
-		<contact type="STRUCTURE" name="RIGHT_WING">
+		
+		<contact type="STRUCTURE" name="Fuselage.Bottom.001">
 			<location unit="M">
-				<x>23.20108</x>
-				<y>17.15271</y>
-				<z>-0.002405</z>
+				<x>0.6354561</x>
+				<y>0</y>
+				<z>-0.490905</z>
 			</location>
 			<static_friction>1</static_friction>
 			<dynamic_friction>1</dynamic_friction>
 			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
 			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
 		</contact>
--->
-
+		
+		<contact type="STRUCTURE" name="Fuselage.Bottom.002">
+			<location unit="M">
+				<x>1.6814346</x>
+				<y>0</y>
+				<z>-0.8338531</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Bottom.003">
+			<location unit="M">
+				<x>3.1407013</x>
+				<y>0</y>
+				<z>-1.0602043</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Bottom.004">
+			<location unit="M">
+				<x>5.2664299</x>
+				<y>0</y>
+				<z>-1.212882</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Bottom.005">
+			<location unit="M">
+				<x>35.6104164</x>
+				<y>0</y>
+				<z>1.1516268</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Bottom.006">
+			<location unit="M">
+				<x>32.4402199</x>
+				<y>0</y>
+				<z>-0.0347366</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Bottom.007">
+			<location unit="M">
+				<x>28.3588905</x>
+				<y>0</y>
+				<z>-0.8026935</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Bottom.008">
+			<location unit="M">
+				<x>9.6870441</x>
+				<y>0</y>
+				<z>-1.8052838</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Bottom.009">
+			<location unit="M">
+				<x>9.921875</x>
+				<y>0</y>
+				<z>-1.3146648</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Bottom.010">
+			<location unit="M">
+				<x>19.730423</x>
+				<y>0</y>
+				<z>-1.314667</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Bottom.011">
+			<location unit="M">
+				<x>14.9830475</x>
+				<y>0</y>
+				<z>-1.314667</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Bottom.012">
+			<location unit="M">
+				<x>7.4005756</x>
+				<y>0</y>
+				<z>-1.3146648</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Nose.000">
+			<location unit="M">
+				<x>0</x>
+				<y>0</y>
+				<z>0</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Nose.001">
+			<location unit="M">
+				<x>0.151098</x>
+				<y>0.2383901</y>
+				<z>0.0110913</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Nose.002">
+			<location unit="M">
+				<x>0.151098</x>
+				<y>-0.2383925</y>
+				<z>0.0110913</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Top.000">
+			<location unit="M">
+				<x>3.2054827</x>
+				<y>0</y>
+				<z>1.8060127</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Top.001">
+			<location unit="M">
+				<x>1.3260863</x>
+				<y>0</y>
+				<z>1.1225957</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Fuselage.Top.002">
+			<location unit="M">
+				<x>2.3023961</x>
+				<y>0</y>
+				<z>1.5619351</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="HStab.Left.000">
+			<location unit="M">
+				<x>36.331028</x>
+				<y>-5.1750836</y>
+				<z>3.1364384</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="HStab.Left.001">
+			<location unit="M">
+				<x>34.2542038</x>
+				<y>-5.1750841</y>
+				<z>3.1707077</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="HStab.Right.000">
+			<location unit="M">
+				<x>36.331028</x>
+				<y>5.1211329</y>
+				<z>3.1364384</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="HStab.Right.001">
+			<location unit="M">
+				<x>34.2542</x>
+				<y>5.1750798</y>
+				<z>3.1707077</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="VStab.000">
+			<location unit="M">
+				<x>34.1907463</x>
+				<y>0</y>
+				<z>6.5187583</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="VStab.001">
+			<location unit="M">
+				<x>34.9732552</x>
+				<y>0</y>
+				<z>6.2251616</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="VStab.002">
+			<location unit="M">
+				<x>33.5946121</x>
+				<y>0</y>
+				<z>6.4767728</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Wing.Left.000">
+			<location unit="M">
+				<x>22.2116165</x>
+				<y>-17.1537724</y>
+				<z>-0.035098</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Wing.Left.001">
+			<location unit="M">
+				<x>24.4579124</x>
+				<y>-17.1094933</y>
+				<z>-0.0398751</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Wing.Left.002">
+			<location unit="M">
+				<x>21.414402</x>
+				<y>-17.1094933</y>
+				<z>-0.0608648</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Wing.Right.000">
+			<location unit="M">
+				<x>22.2116165</x>
+				<y>17.1511497</y>
+				<z>-0.035098</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Wing.Right.001">
+			<location unit="M">
+				<x>24.4579124</x>
+				<y>17.1094875</y>
+				<z>-0.0398751</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		
+		<contact type="STRUCTURE" name="Wing.Right.002">
+			<location unit="M">
+				<x>21.4144039</x>
+				<y>17.1094894</y>
+				<z>-0.0608648</z>
+			</location>
+			<static_friction>1</static_friction>
+			<dynamic_friction>1</dynamic_friction>
+			<spring_coeff unit="LBS/FT">101410.00</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">101410.00</damping_coeff>
+		</contact>
+		-->
 	</ground_reactions>
 
 	<!-- let's hold back on the system files for now, that is a total different beast here -->
