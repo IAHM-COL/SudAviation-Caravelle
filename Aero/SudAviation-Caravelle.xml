@@ -1009,7 +1009,7 @@
 			</location>
 			<static_friction>0.7098506</static_friction>
 			<dynamic_friction>0.5564869</dynamic_friction>
-		v	<rolling_friction>0.01770725</rolling_friction>
+			<rolling_friction>0.01770725</rolling_friction>
 			<spring_coeff  unit="LBS/FT">64402.43</spring_coeff>
 			<damping_coeff unit="LBS/FT/SEC">76113.61</damping_coeff>
 			<max_steer unit="DEG">25.00</max_steer>
