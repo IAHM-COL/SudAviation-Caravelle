@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
 
 <fdm_config 
@@ -70,7 +69,7 @@
 		<vtailarm unit="FT">63.1693</vtailarm>
 
 		<location name="AERORP" unit="M">
-			<x>19.25507</x>
+			<x>20.25507</x>
 			<y>0.00</y>
 			<z>-0.49977</z>
 		</location>
@@ -95,8 +94,8 @@
 		<emptywt unit="LBS" >59256</emptywt>
 
 		<location name="CG" unit="M">
-			<x>14.56026</x>
-			<y>0.00</y>
+			<x>18.0000</x>
+			<y>0.10</y>
 			<z>-0.49977</z>
 		</location>
 
@@ -131,7 +130,7 @@
 		</pointmass>
 	
 		<!-- Cabin crew, also asymetric, 3 persons, to the sme side as the cockpit and, according to thei Y-posistions on the laps of passengers -->
-		<!-- Maybe ebacuse it's a French plane? -->
+		<!-- Maybe because it's a French plane? -->
 		<pointmass name="Steward.1">
 			<weight unit="LBS">142.40375</weight>
 			<location name="Steward.1" unit="M">
@@ -159,336 +158,116 @@
 			</location>
 		</pointmass>
 	
-		<!-- Passenegers, kind fo over the classes and side -->
-		<pointmass name="passenger.1">
-			<weight unit="LBS">122.47899</weight>
-			<location name="ClassTourist.40" unit="M">
-				<x>19.0185356</x>
-				<y>0.7905347</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
+		<!-- PAX 1st Class -->
 	
-		<pointmass name="passenger.2">
-			<weight unit="LBS">127.34103</weight>
-			<location name="ClassTourist.33" unit="M">
-				<x>17.155941</x>
-				<y>-1.2807872</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.3">
-			<weight unit="LBS">143.72353</weight>
-			<location name="ClassTourist.50" unit="M">
-				<x>20.8008385</x>
-				<y>0.7905347</y>
-				<z>0.3225819</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.4">
-			<weight unit="LBS">121.4433</weight>
-			<location name="ClassTourist.20" unit="M">
-				<x>15.4057655</x>
-				<y>0.7825077</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.5">
-			<weight unit="LBS">140.47939</weight>
-			<location name="ClassTourist.19" unit="M">
-				<x>15.4057636</x>
-				<y>1.2401254</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.6">
-			<weight unit="LBS">110.11978</weight>
-			<location name="ClassTourist.34" unit="M">
-				<x>18.0631752</x>
-				<y>1.2481551</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.7">
-			<weight unit="LBS">141.84422</weight>
-			<location name="ClassTourist.37" unit="M">
-				<x>18.0551262</x>
-				<y>-0.8793683</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.8">
-			<weight unit="LBS">145.93409</weight>
-			<location name="ClassTourist.13" unit="M">
-				<x>13.6716347</x>
-				<y>-1.2807887</y>
-				<z>0.3225821</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.9">
-			<weight unit="LBS">114.62736</weight>
-			<location name="ClassTourist.36" unit="M">
-				<x>18.063158</x>
-				<y>0.3489748</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.10">
-			<weight unit="LBS">118.17457</weight>
-			<location name="ClassTourist.15" unit="M">
-				<x>14.5467358</x>
-				<y>0.7825077</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.11">
-			<weight unit="LBS">131.87657</weight>
-			<location name="ClassTourist.64" unit="M">
-				<x>11.8973637</x>
-				<y>-1.2807891</y>
-				<z>0.3225821</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.12">
-			<weight unit="LBS">151.09945</weight>
-			<location name="ClassTourist.17" unit="M">
-				<x>14.5387001</x>
-				<y>-0.8873976</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.13">
-			<weight unit="LBS">123.30449</weight>
-			<location name="ClassTourist.39" unit="M">
-				<x>19.0185452</x>
-				<y>1.2481551</y>
-				<z>0.3225821</z>
-			</location>
-		</pointmass>
-		
-		<pointmass name="passenger.14">
-			<weight unit="LBS">140.5418</weight>
-			<location name="ClassTourist.29" unit="M">
-				<x>17.1639919</x>
-				<y>1.2401255</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.15">
-			<weight unit="LBS">105.14392</weight>
-			<location name="ClassTourist.1" unit="M">
-				<x>11.9053917</x>
-				<y>1.2401263</y>
-				<z>0.3225822</z>
-			</location>
-		</pointmass>
-	
+		<!-- Already in the 1st row of the 1st class, the aisle seeats were hanging 5cm to the left, the window seats then 50cm -->
+		<!-- So, I work now with the average -->
 		<pointmass name="passenger.16">
 			<weight unit="LBS">137.98139</weight>
 			<location name="ClassFirst.1" unit="M">
+				<!-- 1WR -->
 				<x>8.2438374</x>
-				<y>1.1946323</y>
+				<y>1.22031545</y>
 				<z>0.3225822</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.17">
-			<weight unit="LBS">135.56209</weight>
-			<location name="ClassTourist.47" unit="M">
-				<x>19.8936157</x>
-				<y>-0.8793683</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.18">
-			<weight unit="LBS">206.5594</weight>
-			<location name="ClassTourist.9" unit="M">
-				<x>13.6796665</x>
-				<y>1.2401257</y>
-				<z>0.3225821</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.19">
-			<weight unit="LBS">145.42397</weight>
-			<location name="ClassTourist.48" unit="M">
-				<x>19.8936119</x>
-				<y>-1.2727585</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.20">
-			<weight unit="LBS">138.41333</weight>
-			<location name="ClassTourist.26" unit="M">
-				<x>16.2648125</x>
-				<y>0.3409476</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.21">
-			<weight unit="LBS">99.69366</weight>
-			<location name="ClassTourist.5" unit="M">
-				<x>12.7965412</x>
-				<y>0.7825078</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.22">
-			<weight unit="LBS">143.37847</weight>
-			<location name="ClassTourist.2" unit="M">
-				<x>11.9053917</x>
-				<y>0.7825081</y>
-				<z>0.3225821</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.23">
-			<weight unit="LBS">129.90332</weight>
-			<location name="ClassTourist.18" unit="M">
-				<x>14.5387001</x>
-				<y>-1.2807885</y>
-				<z>0.3225821</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.24">
-			<weight unit="LBS">155.77062</weight>
-			<location name="ClassTourist.55" unit="M">
-				<x>21.5795898</x>
-				<y>0.7905344</y>
-				<z>0.3225819</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.25">
-			<weight unit="LBS">143.90824</weight>
-			<location name="ClassFirst.6" unit="M">
-				<x>9.3611221</x>
-				<y>0.6674358</y>
-				<z>0.3225822</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.26">
-			<weight unit="LBS">121.04746</weight>
-			<location name="ClassTourist.38" unit="M">
-				<x>18.0551205</x>
-				<y>-1.2727585</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.27">
-			<weight unit="LBS">110.49392</weight>
-			<location name="ClassFirst.8" unit="M">
-				<x>9.3611221</x>
-				<y>-1.2459986</y>
-				<z>0.3225822</z>
-			</location>
-		</pointmass>
-		
-		<pointmass name="passenger.28">
-			<weight unit="LBS">141.87166</weight>
-			<location name="ClassFirst.11" unit="M">
-				<x>10.4650269</x>
-				<y>-0.7188015</y>
-				<z>0.3225822</z>
-			</location>
-		</pointmass>
-		
-		<pointmass name="passenger.29">
-			<weight unit="LBS">108.84105</weight>
-			<location name="ClassTourist.60" unit="M">
-				<x>22.5349693</x>
-				<y>-1.2727585</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.30">
-			<weight unit="LBS">150.04277</weight>
-			<location name="ClassTourist.12" unit="M">
-				<x>13.6716347</x>
-				<y>-0.8873976</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.31">
-			<weight unit="LBS">125.71939</weight>
-			<location name="ClassFirst.4" unit="M">
-				<x>8.2438364</x>
-				<y>-1.2459986</y>
-				<z>0.3225822</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.32">
-			<weight unit="LBS">134.6806</weight>
-			<location name="ClassTourist.11" unit="M">
-				<x>13.6796656</x>
-				<y>0.3409477</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.33">
-			<weight unit="LBS">142.40145</weight>
-			<location name="ClassTourist.43" unit="M">
-				<x>19.0105076</x>
-				<y>-1.2727585</y>
-				<z>0.3225821</z>
 			</location>
 		</pointmass>
 	
 		<pointmass name="passenger.34">
 			<weight unit="LBS">121.47272</weight>
 			<location name="ClassFirst.2" unit="M">
+				<!-- 1AR -->
 				<x>8.2438364</x>
-				<y>0.6674353</y>
+				<y>0.6931183</y>
 				<z>0.3225822</z>
 			</location>
 		</pointmass>
 	
-		<pointmass name="passenger.35">
-			<weight unit="LBS">132.81288</weight>
-			<location name="ClassTourist.21" unit="M">
-				<x>15.4057636</x>
-				<y>0.3409475</y>
-				<z>0.322582</z>
+		<pointmass name="passenger.65">
+			<weight unit="LBS">118.05601</weight>
+			<location name="ClassFirst.3" unit="M">
+				<!-- 1AL -->
+				<x>8.2438374</x>
+				<y>-0.6931183</y>
+				<z>0.3225822</z>
 			</location>
 		</pointmass>
 	
-		<pointmass name="passenger.36">
-			<weight unit="LBS">124.88479</weight>
-			<location name="ClassTourist.16" unit="M">
-				<x>14.5467377</x>
-				<y>0.3409478</y>
-				<z>0.322582</z>
+		<pointmass name="passenger.31">
+			<weight unit="LBS">125.71939</weight>
+			<location name="ClassFirst.4" unit="M">
+				<!-- 1WL -->
+				<x>8.2438364</x>
+				<y>-1.22031545</y>
+				<z>0.3225822</z>
 			</location>
 		</pointmass>
 	
 		<pointmass name="passenger.37">
 			<weight unit="LBS">104.05781</weight>
 			<location name="ClassFirst.5" unit="M">
+				<!-- 1WR -->
 				<x>9.3611221</x>
-				<y>1.1946322</y>
+				<y>1.22031545</y>
+				<z>0.3225822</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.25">
+			<weight unit="LBS">143.90824</weight>
+			<location name="ClassFirst.6" unit="M">
+				<!-- 1AR -->
+				<x>9.3611221</x>
+				<y>0.6931183</y>
+				<z>0.3225822</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.59">
+			<weight unit="LBS">124.88726</weight>
+			<location name="ClassFirst.7" unit="M">
+				<!-- 1AL -->
+				<x>9.3611231</x>
+				<y>-0.6931183</y>
+				<z>0.3225822</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.27">
+			<weight unit="LBS">110.49392</weight>
+			<location name="ClassFirst.8" unit="M">
+				<!-- 1WL -->
+				<x>9.3611221</x>
+				<y>-1.22031545</y>
+				<z>0.3225822</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.51">
+			<weight unit="LBS">127.86019</weight>
+			<location name="ClassFirst.9" unit="M">
+				<!-- 1WR -->
+				<x>10.4650249</x>
+				<y>1.22031545</y>
+				<z>0.3225822</z>
+			</location>
+		</pointmass>
+			
+		<pointmass name="passenger.53">
+			<weight unit="LBS">144.15553</weight>
+			<location name="ClassFirst.10" unit="M">
+				<!-- 1AR -->
+				<x>10.4650259</x>
+				<y>0.6931183</y>
+				<z>0.3225822</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="passenger.28">
+			<weight unit="LBS">141.87166</weight>
+			<location name="ClassFirst.11" unit="M">
+				<!-- 1AL -->
+				<x>10.4650269</x>
+				<y>-0.6931183</y>
 				<z>0.3225822</z>
 			</location>
 		</pointmass>
@@ -496,17 +275,97 @@
 		<pointmass name="passenger.38">
 			<weight unit="LBS">125.4944</weight>
 			<location name="ClassFirst.12" unit="M">
+				<!-- 1WL -->
 				<x>10.4650249</x>
-				<y>-1.2459986</y>
+				<y>-1.22031545</y>
+				<z>0.3225822</z>
+			</location>
+		</pointmass>
+
+
+
+		<!-- PAX Tourist class -->
+
+		<!-- row 4 -->	
+		<pointmass name="passenger.15">
+			<weight unit="LBS">105.14392</weight>
+			<location name="ClassTourist.1" unit="M">
+				<!-- 3WR -->
+				<x>11.9053917</x>
+				<y>1.2401263</y>
 				<z>0.3225822</z>
 			</location>
 		</pointmass>
 	
-		<pointmass name="passenger.39">
-			<weight unit="LBS">130.93973</weight>
-			<location name="ClassTourist.46" unit="M">
-				<x>19.9016438</x>
-				<y>0.3489748</y>
+		<pointmass name="passenger.22">
+			<weight unit="LBS">143.37847</weight>
+			<location name="ClassTourist.2" unit="M">
+				<!-- 3MR -->
+				<x>11.9053917</x>
+				<y>0.7825081</y>
+				<z>0.3225821</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.55">
+			<weight unit="LBS">144.91988</weight>
+			<location name="ClassTourist.3" unit="M">
+				<!-- 3AR -->
+				<x>11.9053936</x>
+				<y>0.3409482</y>
+				<z>0.3225821</z>
+			</location>
+		</pointmass>
+			
+		<pointmass name="passenger.43">
+			<weight unit="LBS">111.6851</weight>
+			<location name="ClassTourist.63" unit="M">
+				<!-- 3AL -->
+				<x>11.8973627</x>
+				<y>-0.8873981</y>
+				<z>0.3225821</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="passenger.11">
+			<weight unit="LBS">131.87657</weight>
+			<location name="ClassTourist.64" unit="M">
+				<!-- 3WL -->
+				<x>11.8973637</x>
+				<y>-1.2807891</y>
+				<z>0.3225821</z>
+			</location>
+		</pointmass>
+
+
+	
+		<!-- row 5 -->
+		<pointmass name="passenger.64">
+			<weight unit="LBS">133.98133</weight>
+			<location name="ClassTourist.4" unit="M">
+				<!-- 3WR -->
+				<x>12.7965412</x>
+				<y>1.2401263</y>
+				<z>0.3225821</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.21">
+			<weight unit="LBS">99.69366</weight>
+			<location name="ClassTourist.5" unit="M">
+				<!-- 3MR -->
+				<x>12.7965412</x>
+				<y>0.7825081</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.52">
+			<weight unit="LBS">130.71013</weight>
+			<location name="ClassTourist.6" unit="M">
+				<!-- 3AR -->
+				<x>12.7965412</x>
+				<y>0.3409482</y>
 				<z>0.322582</z>
 			</location>
 		</pointmass>
@@ -514,242 +373,9 @@
 		<pointmass name="passenger.40">
 			<weight unit="LBS">147.51406</weight>
 			<location name="ClassTourist.7" unit="M">
+				<!-- 3AL -->
 				<x>12.7885122</x>
-				<y>-0.8873976</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.41">
-			<weight unit="LBS">120.37926</weight>
-			<location name="ClassTourist.52" unit="M">
-				<x>20.7928047</x>
-				<y>-0.8793684</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-		
-		<pointmass name="passenger.42">
-			<weight unit="LBS">136.98623</weight>
-			<location name="ClassTourist.32" unit="M">
-				<x>17.1559372</x>
-				<y>-0.8873966</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-		
-		<pointmass name="passenger.43">
-			<weight unit="LBS">111.6851</weight>
-			<location name="ClassTourist.63" unit="M">
-				<x>11.8973627</x>
 				<y>-0.8873981</y>
-				<z>0.3225821</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.44">
-			<weight unit="LBS">128.88429</weight>
-			<location name="ClassTourist.59" unit="M">
-				<x>22.5349693</x>
-				<y>-0.8793683</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.45">
-			<weight unit="LBS">144.57251</weight>
-			<location name="ClassTourist.28" unit="M">
-				<x>16.2567749</x>
-				<y>-1.2807887</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.46">
-			<weight unit="LBS">126.72832</weight>
-			<location name="ClassTourist.53" unit="M">
-				<x>20.7928047</x>
-				<y>-1.2727585</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-		
-		<pointmass name="passenger.47">
-			<weight unit="LBS">131.73589</weight>
-			<location name="ClassTourist.30" unit="M">
-				<x>17.1639748</x>
-				<y>0.7825072</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.48">
-			<weight unit="LBS">119.52815</weight>
-			<location name="ClassTourist.10" unit="M">
-				<x>13.6796627</x>
-				<y>0.7825078</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.49">
-			<weight unit="LBS">137.22372</weight>
-			<location name="ClassTourist.41" unit="M">
-				<x>19.0185356</x>
-				<y>0.3489748</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.50">
-			<weight unit="LBS">125.94436</weight>
-			<location name="ClassTourist.42" unit="M">
-				<x>19.0105114</x>
-				<y>-0.8793684</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.51">
-			<weight unit="LBS">127.86019</weight>
-			<location name="ClassFirst.9" unit="M">
-				<x>10.4650249</x>
-				<y>1.1946322</y>
-				<z>0.3225822</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.52">
-			<weight unit="LBS">130.71013</weight>
-			<location name="ClassTourist.6" unit="M">
-				<x>12.7965412</x>
-				<y>0.3409476</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.53">
-			<weight unit="LBS">144.15553</weight>
-			<location name="ClassFirst.10" unit="M">
-				<x>10.4650259</x>
-				<y>0.6674359</y>
-				<z>0.3225822</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.54">
-			<weight unit="LBS">141.86993</weight>
-			<location name="ClassTourist.44" unit="M">
-				<x>19.9016685</x>
-				<y>1.248155</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.55">
-			<weight unit="LBS">144.91988</weight>
-			<location name="ClassTourist.3" unit="M">
-				<x>11.9053936</x>
-				<y>0.3409482</y>
-				<z>0.3225821</z>
-			</location>
-		</pointmass>
-		
-		<pointmass name="passenger.56">
-			<weight unit="LBS">123.00018</weight>
-			<location name="ClassTourist.57" unit="M">
-				<x>21.5715561</x>
-				<y>-0.8793683</y>
-				<z>0.3225819</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.57">
-			<weight unit="LBS">138.65072</weight>
-			<location name="ClassTourist.54" unit="M">
-				<x>21.5796089</x>
-				<y>1.248155</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.58">
-			<weight unit="LBS">113.77789</weight>
-			<location name="ClassTourist.14" unit="M">
-				<x>14.5467339</x>
-				<y>1.2401254</y>
-				<z>0.3225821</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.59">
-			<weight unit="LBS">124.88726</weight>
-			<location name="ClassFirst.7" unit="M">
-				<x>9.3611231</x>
-				<y>-0.7188013</y>
-				<z>0.3225822</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.60">
-			<weight unit="LBS">144.1954</weight>
-			<location name="ClassTourist.22" unit="M">
-				<x>15.3977432</x>
-				<y>-0.8873976</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.61">
-			<weight unit="LBS">116.20223</weight>
-			<location name="ClassTourist.27" unit="M">
-				<x>16.2567787</x>
-				<y>-0.8873976</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.62">
-			<weight unit="LBS">142.80407</weight>
-			<location name="ClassTourist.23" unit="M">
-				<x>15.3977404</x>
-				<y>-1.2807884</y>
-				<z>0.322582</z>
-			</location>
-		</pointmass>
-		
-		<pointmass name="passenger.63">
-			<weight unit="LBS">132.15214</weight>
-			<location name="ClassTourist.62" unit="M">
-				<x>23.4501896</x>
-				<y>-1.2727585</y>
-				<z>0.3225821</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.64">
-			<weight unit="LBS">133.98133</weight>
-			<location name="ClassTourist.4" unit="M">
-				<x>12.7965412</x>
-				<y>1.2401259</y>
-				<z>0.3225821</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.65">
-			<weight unit="LBS">118.05601</weight>
-			<location name="ClassFirst.3" unit="M">
-				<x>8.2438374</x>
-				<y>-0.7188013</y>
-				<z>0.3225822</z>
-			</location>
-		</pointmass>
-	
-		<pointmass name="passenger.66">
-			<weight unit="LBS">121.71637</weight>
-			<location name="ClassTourist.51" unit="M">
-				<x>20.8008404</x>
-				<y>0.3489748</y>
 				<z>0.322582</z>
 			</location>
 		</pointmass>
@@ -757,53 +383,177 @@
 		<pointmass name="passenger.67">
 			<weight unit="LBS">122.94841</weight>
 			<location name="ClassTourist.8" unit="M">
+				<!-- 3WL -->
 				<x>12.7885113</x>
-				<y>-1.2807887</y>
+				<y>-1.2807891</y>
+				<z>0.3225821</z>
+			</location>
+		</pointmass>
+
+
+		<!-- row 6 -->	
+		<pointmass name="passenger.18">
+			<weight unit="LBS">206.5594</weight>
+			<location name="ClassTourist.9" unit="M">
+				<!-- 3WR -->
+				<x>13.6796665</x>
+				<y>1.2401263</y>
+				<z>0.3225821</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="passenger.48">
+			<weight unit="LBS">119.52815</weight>
+			<location name="ClassTourist.10" unit="M">
+				<!-- 3MR -->
+				<x>13.6796627</x>
+				<y>0.7825081</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.32">
+			<weight unit="LBS">134.6806</weight>
+			<location name="ClassTourist.11" unit="M">
+				<!-- 3AR -->
+				<x>13.6796656</x>
+				<y>0.3409482</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.30">
+			<weight unit="LBS">150.04277</weight>
+			<location name="ClassTourist.12" unit="M">
+				<!-- 3AL -->
+				<x>13.6716347</x>
+				<y>-0.8873981</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="passenger.8">
+			<weight unit="LBS">145.93409</weight>
+			<location name="ClassTourist.13" unit="M">
+				<!-- 3WL -->
+				<x>13.6716347</x>
+				<y>-1.2807891</y>
 				<z>0.3225821</z>
 			</location>
 		</pointmass>
 	
-		<pointmass name="passenger.68">
-			<weight unit="LBS">139.99359</weight>
-			<location name="ClassTourist.45" unit="M">
-				<x>19.9016418</x>
-				<y>0.7905345</y>
-				<z>0.322582</z>
+	
+		<!-- row 7 -->
+		<pointmass name="passenger.58">
+			<weight unit="LBS">113.77789</weight>
+			<location name="ClassTourist.14" unit="M">
+				<!-- 3WR -->
+				<x>14.5467339</x>
+				<y>1.2401263</y>
+				<z>0.3225821</z>
 			</location>
 		</pointmass>
-		
-		<pointmass name="passenger.69">
-			<weight unit="LBS">113.6687</weight>
-			<location name="ClassTourist.58" unit="M">
-				<x>21.5715504</x>
-				<y>-1.2727586</y>
+
+		<pointmass name="passenger.10">
+			<weight unit="LBS">118.17457</weight>
+			<location name="ClassTourist.15" unit="M">
+				<!-- 3MR -->
+				<x>14.5467358</x>
+				<y>0.7825081</y>
 				<z>0.322582</z>
 			</location>
 		</pointmass>
 	
-		<pointmass name="passenger.70">
-			<weight unit="LBS">134.47718</weight>
-			<location name="ClassTourist.56" unit="M">
-				<x>21.5795898</x>
-				<y>0.3489748</y>
-				<z>0.3225819</z>
+		<pointmass name="passenger.36">
+			<weight unit="LBS">124.88479</weight>
+			<location name="ClassTourist.16" unit="M">
+				<!-- 3AR -->
+				<x>14.5467377</x>
+				<y>0.3409482</y>
+				<z>0.322582</z>
 			</location>
 		</pointmass>
 	
-		<pointmass name="passenger.71">
-			<weight unit="LBS">124.89853</weight>
-			<location name="ClassTourist.35" unit="M">
-				<x>18.0631638</x>
-				<y>0.7905347</y>
+		<pointmass name="passenger.12">
+			<weight unit="LBS">151.09945</weight>
+			<location name="ClassTourist.17" unit="M">
+				<!-- 3AL -->
+				<x>14.5387001</x>
+				<y>-0.8873981</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="passenger.23">
+			<weight unit="LBS">129.90332</weight>
+			<location name="ClassTourist.18" unit="M">
+				<!-- 3WL -->
+				<x>14.5387001</x>
+				<y>-1.2807891</y>
+				<z>0.3225821</z>
+			</location>
+		</pointmass>
+
+
+		<!-- row 8 -->	
+		<pointmass name="passenger.5">
+			<weight unit="LBS">140.47939</weight>
+			<location name="ClassTourist.19" unit="M">
+				<!-- 3WR -->
+				<x>15.4057636</x>
+				<y>1.2401263</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="passenger.4">
+			<weight unit="LBS">121.4433</weight>
+			<location name="ClassTourist.20" unit="M">
+				<!-- 3MR -->
+				<x>15.4057655</x>
+				<y>0.7825081</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="passenger.35">
+			<weight unit="LBS">132.81288</weight>
+			<location name="ClassTourist.21" unit="M">
+				<!-- 3AR -->
+				<x>15.4057636</x>
+				<y>0.3409482</y>
 				<z>0.322582</z>
 			</location>
 		</pointmass>
 		
+		<pointmass name="passenger.60">
+			<weight unit="LBS">144.1954</weight>
+			<location name="ClassTourist.22" unit="M">
+				<!-- 3AL -->
+				<x>15.3977432</x>
+				<y>-0.8873981</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.62">
+			<weight unit="LBS">142.80407</weight>
+			<location name="ClassTourist.23" unit="M">
+				<!-- 3WL -->
+				<x>15.3977404</x>
+				<y>-1.2807891</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+
+
+		<!-- row 9 -->
 		<pointmass name="passenger.72">
 			<weight unit="LBS">134.66391</weight>
 			<location name="ClassTourist.24" unit="M">
+				<!-- 3WR -->
 				<x>16.2648125</x>
-				<y>1.2401254</y>
+				<y>1.2401263</y>
 				<z>0.322582</z>
 			</location>
 		</pointmass>
@@ -811,17 +561,61 @@
 		<pointmass name="passenger.73">
 			<weight unit="LBS">129.56529</weight>
 			<location name="ClassTourist.25" unit="M">
+				<!-- 3MR -->
 				<x>16.2648067</x>
-				<y>0.7825077</y>
+				<y>0.7825081</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="passenger.20">
+			<weight unit="LBS">138.41333</weight>
+			<location name="ClassTourist.26" unit="M">
+				<!-- 3AR -->
+				<x>16.2648125</x>
+				<y>0.3409482</y>
 				<z>0.322582</z>
 			</location>
 		</pointmass>
 	
-		<pointmass name="passenger.74">
-			<weight unit="LBS">208.5535</weight>
-			<location name="ClassTourist.49" unit="M">
-				<x>20.8008537</x>
-				<y>1.248155</y>
+		<pointmass name="passenger.61">
+			<weight unit="LBS">116.20223</weight>
+			<location name="ClassTourist.27" unit="M">
+				<!-- 3AL -->
+				<x>16.2567787</x>
+				<y>-0.8873981</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.45">
+			<weight unit="LBS">144.57251</weight>
+			<location name="ClassTourist.28" unit="M">
+				<!-- 3WL -->
+				<x>16.2567749</x>
+				<y>-1.2807891</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+
+
+		<!-- row 10 -->
+		<pointmass name="passenger.14">
+			<weight unit="LBS">140.5418</weight>
+			<location name="ClassTourist.29" unit="M">
+				<!-- 3WR -->
+				<x>17.1639919</x>
+				<y>1.2401263</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+		
+		<pointmass name="passenger.47">
+			<weight unit="LBS">131.73589</weight>
+			<location name="ClassTourist.30" unit="M">
+				<!-- 3MR -->
+				<x>17.1639748</x>
+				<y>0.7825081</y>
 				<z>0.322582</z>
 			</location>
 		</pointmass>
@@ -829,20 +623,337 @@
 		<pointmass name="passenger.75">
 			<weight unit="LBS">138.7183</weight>
 			<location name="ClassTourist.31" unit="M">
+				<!-- 3AR -->
 				<x>17.1639748</x>
-				<y>0.3409462</y>
+				<y>0.3409482</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+		
+		<pointmass name="passenger.42">
+			<weight unit="LBS">136.98623</weight>
+			<location name="ClassTourist.32" unit="M">
+				<!-- 3AL -->
+				<x>17.1559372</x>
+				<y>-0.8873981</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+		
+		<pointmass name="passenger.2">
+			<weight unit="LBS">127.34103</weight>
+			<location name="ClassTourist.33" unit="M">
+				<!-- 3WL -->
+				<x>17.155941</x>
+				<y>-1.2807891</y>
 				<z>0.322582</z>
 			</location>
 		</pointmass>
 	
-		<pointmass name="passenger.76">
-			<weight unit="LBS">132.87543</weight>
-			<location name="ClassTourist.61" unit="M">
-				<x>23.4502068</x>
-				<y>-0.8793687</y>
+
+		<!-- row 11 -->
+		<pointmass name="passenger.6">
+			<weight unit="LBS">110.11978</weight>
+			<location name="ClassTourist.34" unit="M">
+				<!-- 3WR -->
+				<x>18.0631752</x>
+				<y>1.2401263</y>
 				<z>0.322582</z>
 			</location>
 		</pointmass>
+	
+		<pointmass name="passenger.71">
+			<weight unit="LBS">124.89853</weight>
+			<location name="ClassTourist.35" unit="M">
+				<!-- 3MR -->
+				<x>18.0631638</x>
+				<y>0.7825081</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.9">
+			<weight unit="LBS">114.62736</weight>
+			<location name="ClassTourist.36" unit="M">
+				<!-- 3AR -->
+				<x>18.063158</x>
+				<y>0.3409482</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="passenger.7">
+			<weight unit="LBS">141.84422</weight>
+			<location name="ClassTourist.37" unit="M">
+				<!-- 3AL -->
+				<x>18.0551262</x>
+				<y>-0.8873981</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.26">
+			<weight unit="LBS">121.04746</weight>
+			<location name="ClassTourist.38" unit="M">
+				<!-- 3WL -->
+				<x>18.0551205</x>
+				<y>-1.2807891</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+
+
+		<!-- row 12 -->
+		<pointmass name="passenger.13">
+			<weight unit="LBS">123.30449</weight>
+			<location name="ClassTourist.39" unit="M">
+				<!-- 3WR -->
+				<x>19.0185452</x>
+				<y>1.2401263</y>
+				<z>0.3225821</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.1">
+			<weight unit="LBS">122.47899</weight>
+			<location name="ClassTourist.40" unit="M">
+				<!-- 3MR -->
+				<x>19.0185356</x>
+				<y>0.7825081</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.49">
+			<weight unit="LBS">137.22372</weight>
+			<location name="ClassTourist.41" unit="M">
+				<!-- 3AR -->
+				<x>19.0185356</x>
+				<y>0.3409482</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.50">
+			<weight unit="LBS">125.94436</weight>
+			<location name="ClassTourist.42" unit="M">
+				<!-- 3AL -->
+				<x>19.0105114</x>
+				<y>-0.8873981</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+		
+		<pointmass name="passenger.33">
+			<weight unit="LBS">142.40145</weight>
+			<location name="ClassTourist.43" unit="M">
+				<!-- 3WL -->
+				<x>19.0105076</x>
+				<y>-1.2807891</y>
+				<z>0.3225821</z>
+			</location>
+		</pointmass>
+
+
+		<!-- row 13 -->
+		<pointmass name="passenger.54">
+			<weight unit="LBS">141.86993</weight>
+			<location name="ClassTourist.44" unit="M">
+				<!-- 3WR -->
+				<x>19.9016685</x>
+				<y>1.2401263</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.68">
+			<weight unit="LBS">139.99359</weight>
+			<location name="ClassTourist.45" unit="M">
+				<!-- 3MR -->
+				<x>19.9016418</x>
+				<y>0.7825081</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.39">
+			<weight unit="LBS">130.93973</weight>
+			<location name="ClassTourist.46" unit="M">
+				<!-- 3AR -->
+				<x>19.9016438</x>
+				<y>0.3409482</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.17">
+			<weight unit="LBS">135.56209</weight>
+			<location name="ClassTourist.47" unit="M">
+				<!-- 3AL -->
+				<x>19.8936157</x>
+				<y>-0.8873981</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.19">
+			<weight unit="LBS">145.42397</weight>
+			<location name="ClassTourist.48" unit="M">
+				<!-- 3WL -->
+				<x>19.8936119</x>
+				<y>-1.2807891</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+
+	
+		<!-- row 14 -->
+		<pointmass name="passenger.74">
+			<weight unit="LBS">208.5535</weight>
+			<location name="ClassTourist.49" unit="M">
+				<!-- 3WR -->
+				<x>20.8008537</x>
+				<y>1.2401263</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="passenger.3">
+			<weight unit="LBS">143.72353</weight>
+			<location name="ClassTourist.50" unit="M">
+				<!-- 3MR -->
+				<x>20.8008385</x>
+				<y>0.7825081</y>
+				<z>0.3225819</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.66">
+			<weight unit="LBS">121.71637</weight>
+			<location name="ClassTourist.51" unit="M">
+				<!-- 3AR -->
+				<x>20.8008404</x>
+				<y>0.3409482</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.41">
+			<weight unit="LBS">120.37926</weight>
+			<location name="ClassTourist.52" unit="M">
+				<!-- 3AL -->
+				<x>20.7928047</x>
+				<y>-0.8873981</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.46">
+			<weight unit="LBS">126.72832</weight>
+			<location name="ClassTourist.53" unit="M">
+				<!-- 3WL -->
+				<x>20.7928047</x>
+				<y>-1.2807891</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+
+		<!-- row 15 -->
+		<pointmass name="passenger.57">
+			<weight unit="LBS">138.65072</weight>
+			<location name="ClassTourist.54" unit="M">
+				<!-- 3WR -->
+				<x>21.5796089</x>
+				<y>1.2401263</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+		
+		<pointmass name="passenger.24">
+			<weight unit="LBS">155.77062</weight>
+			<location name="ClassTourist.55" unit="M">
+				<!-- 3MR -->
+				<x>21.5795898</x>
+				<y>0.7825081</y>
+				<z>0.3225819</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.70">
+			<weight unit="LBS">134.47718</weight>
+			<location name="ClassTourist.56" unit="M">
+				<!-- 3AR -->
+				<x>21.5795898</x>
+				<y>0.3409482</y>
+				<z>0.3225819</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="passenger.56">
+			<weight unit="LBS">123.00018</weight>
+			<location name="ClassTourist.57" unit="M">
+				<!-- 3AL -->
+				<x>21.5715561</x>
+				<y>-0.8873981</y>
+				<z>0.3225819</z>
+			</location>
+		</pointmass>
+	
+		<pointmass name="passenger.69">
+			<weight unit="LBS">113.6687</weight>
+			<location name="ClassTourist.58" unit="M">
+				<!-- 3WL -->
+				<x>21.5715504</x>
+				<y>-1.2807891</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+		
+
+		<!-- row 16 -->
+		<pointmass name="passenger.44">
+			<weight unit="LBS">128.88429</weight>
+			<location name="ClassTourist.59" unit="M">
+				<!-- 3AL -->
+				<x>22.5349693</x>
+				<y>-0.8873981</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+		
+		<pointmass name="passenger.29">
+			<weight unit="LBS">108.84105</weight>
+			<location name="ClassTourist.60" unit="M">
+				<!-- 3WL -->
+				<x>22.5349693</x>
+				<y>-1.2727585</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+	
+
+		<!-- row 17 -->
+		<pointmass name="passenger.76">
+			<weight unit="LBS">132.87543</weight>
+			<location name="ClassTourist.61" unit="M">
+				<!-- 3AL -->
+				<x>23.4502068</x>
+				<y>-0.8873981</y>
+				<z>0.322582</z>
+			</location>
+		</pointmass>
+
+		<pointmass name="passenger.63">
+			<weight unit="LBS">132.15214</weight>
+			<location name="ClassTourist.62" unit="M">
+				<!-- 3WL -->
+				<x>23.4501896</x>
+				<y>-1.2807891</y>
+				<z>0.3225821</z>
+			</location>
+		</pointmass>
+
 
 		<!-- Cargo compartments -->
 		<pointmass name="Cargo.port.beam">
@@ -901,94 +1012,6 @@
 
 	</mass_balance>
 
-	<propulsion>
-
-		<engine file="Avon">
-			<location unit="M">
-				<x>24.64173</x>
-				<y>-2.65235</y>
-				<z>0.76462</z>
-			</location>
-			<orient unit="DEG">
-				<pitch>2.22</pitch>
-				<roll>0.00</roll>
-				<yaw>-1.80</yaw>
-			</orient>
-			<feed>2</feed>
-			<thruster file="direct">
-				<sense>1</sense>
-				<location unit="M">
-					<x>23.32832</x>
-					<y>-2.65279</y>
-					<z>0.76031</z>
-				</location>
-				<orient unit="DEG">
-					<pitch>2.22</pitch>
-					<roll>0.00</roll>
-					<yaw>-1.80</yaw>
-				</orient>
-			</thruster>
-		</engine>
-
-		<engine file="Avon">
-			<location unit="M">
-				<x>24.64173</x>
-				<y>2.65235</y>
-				<z>0.76462</z>
-			</location>
-			<orient unit="DEG">
-				<pitch>2.22</pitch>
-				<roll>0.00</roll>
-				<yaw>1.80</yaw>
-			</orient>
-			<feed>2</feed>
-			<thruster file="direct">
-				<sense>1</sense>
-				<location unit="M">
-					<x>23.32832</x>
-					<y>2.65279</y>
-					<z>0.76031</z>
-				</location>
-				<orient unit="DEG">
-					<pitch>2.22</pitch>
-					<roll>0.00</roll>
-					<yaw>1.80</yaw>
-				</orient>
-			</thruster>
-		</engine>
-
-		<tank type="FUEL" number="0">
-			<location unit="M">
-				<x>17.32607</x>
-				<y>-3.58937</y>
-				<z>-0.62005</z>
-			</location>
-			<capacity unit="LBS">18770</capacity>
-			<contents unit="LBS">9000</contents>
-		</tank>
-
-		<tank type="FUEL" number="1">
-			<location unit="M">
-				<x>17.32607</x>
-				<y>3.58937</y>
-				<z>-0.62005</z>
-			</location>
-			<capacity unit="LBS">18770</capacity>
-			<contents unit="LBS">9000</contents>
-		</tank>
-
-		<tank type="FUEL" number="2">
-			<location unit="M">
-				<x>22.62801</x>
-				<y>0</y>
-				<z>-0.86410</z>
-			</location>
-			<capacity unit="LBS">130</capacity>
-			<contents unit="LBS">115</contents>
-		</tank>
-
-	</propulsion>
-
 	<ground_reactions>
 
 		<contact type="BOGEY" name="NOSE_RIGHT">
@@ -1023,6 +1046,7 @@
 			<retractable>1</retractable>
 		</contact>
 
+
 		<contact type="BOGEY" name="MAIN_LEFT.FRONT.1">
 			<location unit="M">
 				<x>18.07187</x>
@@ -1054,6 +1078,7 @@
 			<brake_group>LEFT</brake_group>
 			<retractable>1</retractable>
 		</contact>
+
 		<contact type="BOGEY" name="MAIN_LEFT.REAR.1">
 			<location unit="M">
 				<x>19.17659</x>
@@ -1085,6 +1110,8 @@
 			<brake_group>LEFT</brake_group>
 			<retractable>1</retractable>
 		</contact>
+
+
 		<contact type="BOGEY" name="MAIN_RIGHT.FRONT.1">
 			<location unit="M">
 				<x>18.07187</x>
@@ -1116,6 +1143,7 @@
 			<brake_group>RIGHT</brake_group>
 			<retractable>1</retractable>
 		</contact>
+
 		<contact type="BOGEY" name="MAIN_RIGHT.REAR.1">
 			<location unit="M">
 				<x>19.17659</x>
@@ -1536,13 +1564,101 @@
 		-->
 	</ground_reactions>
 
+	<propulsion>
+
+		<engine file="Avon">
+			<location unit="M">
+				<x>24.64173</x>
+				<y>-2.65235</y>
+				<z>0.76462</z>
+			</location>
+			<orient unit="DEG">
+				<pitch>2.22</pitch>
+				<roll>0.00</roll>
+				<yaw>-1.80</yaw>
+			</orient>
+			<feed>2</feed>
+			<thruster file="direct">
+				<sense>1</sense>
+				<location unit="M">
+					<x>23.32832</x>
+					<y>-2.65279</y>
+					<z>0.76031</z>
+				</location>
+				<orient unit="DEG">
+					<pitch>2.22</pitch>
+					<roll>0.00</roll>
+					<yaw>-1.80</yaw>
+				</orient>
+			</thruster>
+		</engine>
+
+		<engine file="Avon">
+			<location unit="M">
+				<x>24.64173</x>
+				<y>2.65235</y>
+				<z>0.76462</z>
+			</location>
+			<orient unit="DEG">
+				<pitch>2.22</pitch>
+				<roll>0.00</roll>
+				<yaw>1.80</yaw>
+			</orient>
+			<feed>2</feed>
+			<thruster file="direct">
+				<sense>1</sense>
+				<location unit="M">
+					<x>23.32832</x>
+					<y>2.65279</y>
+					<z>0.76031</z>
+				</location>
+				<orient unit="DEG">
+					<pitch>2.22</pitch>
+					<roll>0.00</roll>
+					<yaw>1.80</yaw>
+				</orient>
+			</thruster>
+		</engine>
+
+		<tank type="FUEL" number="0">
+			<location unit="M">
+				<x>17.32607</x>
+				<y>-3.58937</y>
+				<z>-0.62005</z>
+			</location>
+			<capacity unit="LBS">18770</capacity>
+			<contents unit="LBS">9000</contents>
+		</tank>
+
+		<tank type="FUEL" number="1">
+			<location unit="M">
+				<x>17.32607</x>
+				<y>3.58937</y>
+				<z>-0.62005</z>
+			</location>
+			<capacity unit="LBS">18770</capacity>
+			<contents unit="LBS">9000</contents>
+		</tank>
+
+		<tank type="FUEL" number="2">
+			<location unit="M">
+				<x>22.62801</x>
+				<y>0</y>
+				<z>-0.86410</z>
+			</location>
+			<capacity unit="LBS">130</capacity>
+			<contents unit="LBS">115</contents>
+		</tank>
+
+	</propulsion>
+
 	<!-- let's hold back on the system files for now, that is a total different beast here -->
 	<!-- system file="Propulsion.xml"/ -->
 	<system file="Fuel.xml"/>
 	<!-- system file="AircraftControl.xml"/ -->
-	<system file="LandingGear.xml"/>
+	<!-- system file="LandingGear.xml"/ -->
 	<!-- system file="Flaps.xml"/ -->
-	<system file="Spoilers.xml"/>
+	<!-- system file="Spoilers.xml"/ -->
 	<!-- system file="Speedbrake.xml"/ -->
 
 	<flight_control name="FCS: SudAviation-Caravelle">
@@ -1561,8 +1677,8 @@
 			<aerosurface_scale name="Elevator Control">
 				<input>fcs/pitch-trim-sum</input>
 				<range>
-					<min> -0.85 </min>
-					<max>  0.85 </max>
+					<min> -0.35 </min>
+					<max>  0.35 </max>
 				</range>
 				<output>fcs/elevator-pos-rad</output>
 			</aerosurface_scale>
@@ -1731,19 +1847,11 @@
 						<time>0.0000</time>
 					</setting>
 					<setting>
-						<position>10.000</position>
+						<position>18.000</position>
 						<time>5.0000</time>
 					</setting>
 					<setting>
-						<position>25.0000</position>
-						<time>10.0000</time>
-					</setting>
-					<setting>
-						<position>30.0000</position>
-						<time>10.0000</time>
-					</setting>
-					<setting>
-						<position>40.0000</position>
+						<position>36.0000</position>
 						<time>10.0000</time>
 					</setting>
 				</traverse>
@@ -1754,7 +1862,7 @@
 				<input>fcs/flap-pos-deg</input>
 				<domain>
 					<min>  0 </min>
-					<max> 35 </max>
+					<max> 36 </max>
 				</domain>
 				<range>
 					<min> 0 </min>
@@ -1764,8 +1872,16 @@
 			</aerosurface_scale>
 
 		</channel>
-
+  
 		<channel name="Landing Gear">
+
+			<switch name="fcs/gear-no-wow">
+				<default value="1"/>
+				<test logic="AND" value="0">
+					gear/unit[1]/WOW eq 1
+					gear/unit[2]/WOW eq 1
+				</test>
+			</switch>
 
 			<kinematic name="Gear Control">
 				<input>gear/gear-cmd-norm</input>
@@ -1776,12 +1892,29 @@
 					</setting>
 					<setting>
 						<position> 1 </position>
-						<time>     15 </time>
+						<time>    15 </time>
 					</setting>
 				</traverse>
 				<output>gear/gear-pos-norm</output>
 			</kinematic>
 
+		</channel>
+
+		<channel name="Spoilers">
+			<kinematic name="Spoilers Control">
+				<input>fcs/spoiler-cmd-norm</input>
+				<traverse>
+					<setting>
+						<position>0</position>
+						<time>0 </time>
+					</setting>
+					<setting>
+						<position>1</position>
+						<time>1 </time>
+					</setting>
+				</traverse>
+				<output>fcs/spoilers-pos-norm</output>
+			</kinematic>
 		</channel>
 
 		<channel name="Speedbrake">
@@ -1803,33 +1936,31 @@
 
 		</channel>
 
-
-
 	</flight_control>
 
 	<aerodynamics>
 
+		<!-- Lift due to ground effects to make the take off faster -->
+		<function name="aero/function/kCLge">
+			<description>Change_in_lift_due_to_ground_effect</description>
+			<product>
+				<table>
+					<independentVar>aero/h_b-mac-ft</independentVar>
+					<tableData>
+						0.0000	1.2000	
+						0.1000	1.3200	
+						0.1500	1.3600	
+						0.2000	1.4000	
+						1.1000	1.2000
+						1.5000  1.0000	
+					</tableData>
+				</table>
+			</product>
+		</function>
+
 		<axis name="LIFT">
 
-			<!-- Lift due to ground effects to make the take off faster -->
-			<function name="aero/function/kCLge">
-				<description>Change_in_lift_due_to_ground_effect</description>
-				<product>
-					<table>
-						<independentVar>aero/h_b-mac-ft</independentVar>
-						<tableData>
-							0.0000	1.2000	
-							0.1000	1.3200	
-							0.1500	1.3600	
-							0.2000	1.4000	
-							1.1000	1.2000
-							1.5000  1.0000	
-						</tableData>
-					</table>
-				</product>
-			</function>
-
-			<function name="aero/coefficient/lift_alpha">
+			<function name="aero/coefficient/CLalpha">
 				<description>Lift_due_to_alpha</description>
 				<product>
 					<property>aero/qbar-psf</property>
@@ -1844,6 +1975,7 @@
 							 0.60  1.300
 						</tableData>
 					</table>
+					<value>2.0</value>
 				</product>
 			</function>
 

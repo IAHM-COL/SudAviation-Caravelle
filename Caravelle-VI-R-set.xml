@@ -76,10 +76,8 @@
 
 		<flaps>
 			<setting>0.00</setting>
-			<setting>0.10</setting>
-			<setting>0.20</setting>
-			<setting>0.30</setting>
-			<setting>0.40</setting>
+			<setting>0.50</setting>
+			<setting>1.00</setting>
 		</flaps>
 
 		<virtual-cockpit archive="y">true</virtual-cockpit>
@@ -183,21 +181,21 @@
 
 		<weight n="0">
 			<name>Cockpit Crew</name>
-			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]" />
+			<!-- weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]" / -->
 			<min-lb type="double">0</min-lb>
 			<max-lb type="double">660</max-lb>
 		</weight>
 
 		<weight n="1">
 			<name>Cabin Crew</name>
-			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]" />
+			<!-- weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]" / -->
 			<min-lb type="double">0</min-lb>
 			<max-lb type="double">660</max-lb>
 		</weight>
 
 		<weight n="2">
 			<name>PAX</name>
-			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]" />
+			<!-- weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]" / -->
 			<min-lb type="double">0</min-lb>
 			<max-lb type="double">16000</max-lb>
 		</weight>
