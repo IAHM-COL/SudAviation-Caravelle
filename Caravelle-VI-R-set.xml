@@ -132,7 +132,7 @@
 
 	<engines>
 
-		<!-- I just assume for now rwo wngines one apu-->
+		<!-- I just assume for now two engines and one apu-->
 
 		<apu>
 			<rpm type="double">0</rpm>

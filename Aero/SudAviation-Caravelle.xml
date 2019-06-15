@@ -68,10 +68,10 @@
 		<vtailarea unit="FT2">184.27815</vtailarea>
 		<vtailarm unit="FT">63.1693</vtailarm>
 
-		<location name="AERORP" unit="M">
-			<x>20.25507</x>
+		<location name="AERORP" unit="IN">
+			<x>638.0000</x>
 			<y>0.00</y>
-			<z>-0.49977</z>
+			<z>0.00</z>
 		</location>
 
 		<location name="EYEPOINT" unit="M">
@@ -80,10 +80,16 @@
 			<z>0.77088</z>
 		</location>
 
-		<location name="VRP" unit="M">
+		<!--location name="VRP" unit="M">
 			<x>0.0</x>
 			<y>0.0</y>
 			<z>0.465</z>
+		</location-->
+
+		<location name="VRP" unit="IN">
+			<x>0.00</x>
+			<y>0.00</y>
+			<z>1.50</z>
 		</location>
 	</metrics>
 
@@ -93,17 +99,18 @@
 		<izz unit="SLUG*FT2">2227259.00</izz>
 		<emptywt unit="LBS" >59256</emptywt>
 
-		<location name="CG" unit="M">
-			<x>18.0000</x>
-			<y>0.10</y>
-			<z>-0.49977</z>
+		<location name="CG" unit="IN">
+			<x>628.0000</x>
+			<y>0.00</y>
+			<z>0.00</z>
 		</location>
 
 	        <!-- cargo, passengers, and crew as pointmasses -->
 	
 		<!-- cockpit crew, asymetric because of 3 persons -->
 		<pointmass name="Captain">
-			<weight unit="LBS">124.44098</weight>
+			<!-- weight unit="LBS">124.44098</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="Captain" unit="M">
 				<x>3.6631913</x>
 				<y>-0.8380443</y>
@@ -112,7 +119,8 @@
 		</pointmass>
 	
 		<pointmass name="FirstOfficer">
-			<weight unit="LBS">133.63101</weight>
+			<!-- weight unit="LBS">133.63101</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="FirstOfficer" unit="M">
 				<x>3.6631913</x>
 				<y>0.7419441</y>
@@ -121,7 +129,8 @@
 		</pointmass>
 	
 		<pointmass name="Engineer">
-			<weight unit="LBS">132.03898</weight>
+			<!-- weight unit="LBS">132.03898</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="Engineer" unit="M">
 				<x>4.2267842</x>
 				<y>1.0662913</y>
@@ -132,7 +141,8 @@
 		<!-- Cabin crew, also asymetric, 3 persons, to the sme side as the cockpit and, according to thei Y-posistions on the laps of passengers -->
 		<!-- Maybe because it's a French plane? -->
 		<pointmass name="Steward.1">
-			<weight unit="LBS">142.40375</weight>
+			<!-- weight unit="LBS">142.40375</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="Steward.1" unit="M">
 				<x>6.1825018</x>
 				<y>0.6134898</y>
@@ -141,7 +151,8 @@
 		</pointmass>
 	
 		<pointmass name="Steward.2">
-			<weight unit="LBS">138.20019</weight>
+			<!-- weight unit="LBS">138.20019</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="Steward.2" unit="M">
 				<x>6.1825018</x>
 				<y>-0.6803095</y>
@@ -150,7 +161,8 @@
 		</pointmass>
 	
 		<pointmass name="Steward.3">
-			<weight unit="LBS">145.16145</weight>
+			<!-- weight unit="LBS">145.16145</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="Steward.3" unit="M">
 				<x>24.7852058</x>
 				<y>0.6404023</y>
@@ -163,7 +175,8 @@
 		<!-- Already in the 1st row of the 1st class, the aisle seeats were hanging 5cm to the left, the window seats then 50cm -->
 		<!-- So, I work now with the average -->
 		<pointmass name="passenger.16">
-			<weight unit="LBS">137.98139</weight>
+			<!-- weight unit="LBS">137.98139</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassFirst.1" unit="M">
 				<!-- 1WR -->
 				<x>8.2438374</x>
@@ -173,7 +186,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.34">
-			<weight unit="LBS">121.47272</weight>
+			<!-- weight unit="LBS">121.47272</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassFirst.2" unit="M">
 				<!-- 1AR -->
 				<x>8.2438364</x>
@@ -183,7 +197,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.65">
-			<weight unit="LBS">118.05601</weight>
+			<!-- weight unit="LBS">118.05601</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassFirst.3" unit="M">
 				<!-- 1AL -->
 				<x>8.2438374</x>
@@ -193,7 +208,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.31">
-			<weight unit="LBS">125.71939</weight>
+			<!-- weight unit="LBS">125.71939</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassFirst.4" unit="M">
 				<!-- 1WL -->
 				<x>8.2438364</x>
@@ -203,7 +219,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.37">
-			<weight unit="LBS">104.05781</weight>
+			<!-- weight unit="LBS">104.05781</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassFirst.5" unit="M">
 				<!-- 1WR -->
 				<x>9.3611221</x>
@@ -213,7 +230,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.25">
-			<weight unit="LBS">143.90824</weight>
+			<!-- weight unit="LBS">143.90824</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassFirst.6" unit="M">
 				<!-- 1AR -->
 				<x>9.3611221</x>
@@ -223,7 +241,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.59">
-			<weight unit="LBS">124.88726</weight>
+			<!-- weight unit="LBS">124.88726</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassFirst.7" unit="M">
 				<!-- 1AL -->
 				<x>9.3611231</x>
@@ -233,7 +252,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.27">
-			<weight unit="LBS">110.49392</weight>
+			<!-- weight unit="LBS">110.49392</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassFirst.8" unit="M">
 				<!-- 1WL -->
 				<x>9.3611221</x>
@@ -243,7 +263,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.51">
-			<weight unit="LBS">127.86019</weight>
+			<!-- weight unit="LBS">127.86019</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassFirst.9" unit="M">
 				<!-- 1WR -->
 				<x>10.4650249</x>
@@ -253,7 +274,8 @@
 		</pointmass>
 			
 		<pointmass name="passenger.53">
-			<weight unit="LBS">144.15553</weight>
+			<!-- weight unit="LBS">144.15553</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassFirst.10" unit="M">
 				<!-- 1AR -->
 				<x>10.4650259</x>
@@ -263,7 +285,8 @@
 		</pointmass>
 
 		<pointmass name="passenger.28">
-			<weight unit="LBS">141.87166</weight>
+			<!-- weight unit="LBS">141.87166</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassFirst.11" unit="M">
 				<!-- 1AL -->
 				<x>10.4650269</x>
@@ -273,7 +296,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.38">
-			<weight unit="LBS">125.4944</weight>
+			<!-- weight unit="LBS">125.4944</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassFirst.12" unit="M">
 				<!-- 1WL -->
 				<x>10.4650249</x>
@@ -288,7 +312,8 @@
 
 		<!-- row 4 -->	
 		<pointmass name="passenger.15">
-			<weight unit="LBS">105.14392</weight>
+			<!-- weight unit="LBS">105.14392</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.1" unit="M">
 				<!-- 3WR -->
 				<x>11.9053917</x>
@@ -298,7 +323,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.22">
-			<weight unit="LBS">143.37847</weight>
+			<!-- weight unit="LBS">143.37847</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.2" unit="M">
 				<!-- 3MR -->
 				<x>11.9053917</x>
@@ -308,7 +334,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.55">
-			<weight unit="LBS">144.91988</weight>
+			<!-- weight unit="LBS">144.91988</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.3" unit="M">
 				<!-- 3AR -->
 				<x>11.9053936</x>
@@ -318,7 +345,8 @@
 		</pointmass>
 			
 		<pointmass name="passenger.43">
-			<weight unit="LBS">111.6851</weight>
+			<!-- weight unit="LBS">111.6851</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.63" unit="M">
 				<!-- 3AL -->
 				<x>11.8973627</x>
@@ -328,7 +356,8 @@
 		</pointmass>
 
 		<pointmass name="passenger.11">
-			<weight unit="LBS">131.87657</weight>
+			<!-- weight unit="LBS">131.87657</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.64" unit="M">
 				<!-- 3WL -->
 				<x>11.8973637</x>
@@ -341,7 +370,8 @@
 	
 		<!-- row 5 -->
 		<pointmass name="passenger.64">
-			<weight unit="LBS">133.98133</weight>
+			<!-- weight unit="LBS">133.98133</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.4" unit="M">
 				<!-- 3WR -->
 				<x>12.7965412</x>
@@ -351,7 +381,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.21">
-			<weight unit="LBS">99.69366</weight>
+			<!-- weight unit="LBS">99.69366</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.5" unit="M">
 				<!-- 3MR -->
 				<x>12.7965412</x>
@@ -361,7 +392,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.52">
-			<weight unit="LBS">130.71013</weight>
+			<!-- weight unit="LBS">130.71013</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.6" unit="M">
 				<!-- 3AR -->
 				<x>12.7965412</x>
@@ -371,7 +403,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.40">
-			<weight unit="LBS">147.51406</weight>
+			<!-- weight unit="LBS">147.51406</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.7" unit="M">
 				<!-- 3AL -->
 				<x>12.7885122</x>
@@ -381,7 +414,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.67">
-			<weight unit="LBS">122.94841</weight>
+			<!-- weight unit="LBS">122.94841</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.8" unit="M">
 				<!-- 3WL -->
 				<x>12.7885113</x>
@@ -393,7 +427,8 @@
 
 		<!-- row 6 -->	
 		<pointmass name="passenger.18">
-			<weight unit="LBS">206.5594</weight>
+			<!-- weight unit="LBS">206.5594</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.9" unit="M">
 				<!-- 3WR -->
 				<x>13.6796665</x>
@@ -403,7 +438,8 @@
 		</pointmass>
 
 		<pointmass name="passenger.48">
-			<weight unit="LBS">119.52815</weight>
+			<!-- weight unit="LBS">119.52815</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.10" unit="M">
 				<!-- 3MR -->
 				<x>13.6796627</x>
@@ -413,7 +449,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.32">
-			<weight unit="LBS">134.6806</weight>
+			<!-- weight unit="LBS">134.6806</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.11" unit="M">
 				<!-- 3AR -->
 				<x>13.6796656</x>
@@ -423,7 +460,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.30">
-			<weight unit="LBS">150.04277</weight>
+			<!-- weight unit="LBS">150.04277</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.12" unit="M">
 				<!-- 3AL -->
 				<x>13.6716347</x>
@@ -433,7 +471,8 @@
 		</pointmass>
 
 		<pointmass name="passenger.8">
-			<weight unit="LBS">145.93409</weight>
+			<!-- weight unit="LBS">145.93409</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.13" unit="M">
 				<!-- 3WL -->
 				<x>13.6716347</x>
@@ -445,7 +484,8 @@
 	
 		<!-- row 7 -->
 		<pointmass name="passenger.58">
-			<weight unit="LBS">113.77789</weight>
+			<!-- weight unit="LBS">113.77789</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.14" unit="M">
 				<!-- 3WR -->
 				<x>14.5467339</x>
@@ -455,7 +495,8 @@
 		</pointmass>
 
 		<pointmass name="passenger.10">
-			<weight unit="LBS">118.17457</weight>
+			<!-- weight unit="LBS">118.17457</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.15" unit="M">
 				<!-- 3MR -->
 				<x>14.5467358</x>
@@ -465,7 +506,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.36">
-			<weight unit="LBS">124.88479</weight>
+			<!-- weight unit="LBS">124.88479</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.16" unit="M">
 				<!-- 3AR -->
 				<x>14.5467377</x>
@@ -475,7 +517,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.12">
-			<weight unit="LBS">151.09945</weight>
+			<!-- weight unit="LBS">151.09945</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.17" unit="M">
 				<!-- 3AL -->
 				<x>14.5387001</x>
@@ -485,7 +528,8 @@
 		</pointmass>
 
 		<pointmass name="passenger.23">
-			<weight unit="LBS">129.90332</weight>
+			<!-- weight unit="LBS">129.90332</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.18" unit="M">
 				<!-- 3WL -->
 				<x>14.5387001</x>
@@ -497,7 +541,8 @@
 
 		<!-- row 8 -->	
 		<pointmass name="passenger.5">
-			<weight unit="LBS">140.47939</weight>
+			<!-- weight unit="LBS">140.47939</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.19" unit="M">
 				<!-- 3WR -->
 				<x>15.4057636</x>
@@ -507,7 +552,8 @@
 		</pointmass>
 
 		<pointmass name="passenger.4">
-			<weight unit="LBS">121.4433</weight>
+			<!-- weight unit="LBS">121.4433</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.20" unit="M">
 				<!-- 3MR -->
 				<x>15.4057655</x>
@@ -517,7 +563,8 @@
 		</pointmass>
 
 		<pointmass name="passenger.35">
-			<weight unit="LBS">132.81288</weight>
+			<!-- weight unit="LBS">132.81288</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.21" unit="M">
 				<!-- 3AR -->
 				<x>15.4057636</x>
@@ -527,7 +574,8 @@
 		</pointmass>
 		
 		<pointmass name="passenger.60">
-			<weight unit="LBS">144.1954</weight>
+			<!-- weight unit="LBS">144.1954</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.22" unit="M">
 				<!-- 3AL -->
 				<x>15.3977432</x>
@@ -537,7 +585,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.62">
-			<weight unit="LBS">142.80407</weight>
+			<!-- weight unit="LBS">142.80407</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.23" unit="M">
 				<!-- 3WL -->
 				<x>15.3977404</x>
@@ -549,7 +598,8 @@
 
 		<!-- row 9 -->
 		<pointmass name="passenger.72">
-			<weight unit="LBS">134.66391</weight>
+			<!-- weight unit="LBS">134.66391</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.24" unit="M">
 				<!-- 3WR -->
 				<x>16.2648125</x>
@@ -559,7 +609,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.73">
-			<weight unit="LBS">129.56529</weight>
+			<!-- weight unit="LBS">129.56529</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.25" unit="M">
 				<!-- 3MR -->
 				<x>16.2648067</x>
@@ -569,7 +620,8 @@
 		</pointmass>
 
 		<pointmass name="passenger.20">
-			<weight unit="LBS">138.41333</weight>
+			<!-- weight unit="LBS">138.41333</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.26" unit="M">
 				<!-- 3AR -->
 				<x>16.2648125</x>
@@ -579,7 +631,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.61">
-			<weight unit="LBS">116.20223</weight>
+			<!-- weight unit="LBS">116.20223</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.27" unit="M">
 				<!-- 3AL -->
 				<x>16.2567787</x>
@@ -589,7 +642,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.45">
-			<weight unit="LBS">144.57251</weight>
+			<!-- weight unit="LBS">144.57251</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.28" unit="M">
 				<!-- 3WL -->
 				<x>16.2567749</x>
@@ -601,7 +655,8 @@
 
 		<!-- row 10 -->
 		<pointmass name="passenger.14">
-			<weight unit="LBS">140.5418</weight>
+			<!-- weight unit="LBS">140.5418</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.29" unit="M">
 				<!-- 3WR -->
 				<x>17.1639919</x>
@@ -611,7 +666,8 @@
 		</pointmass>
 		
 		<pointmass name="passenger.47">
-			<weight unit="LBS">131.73589</weight>
+			<!-- weight unit="LBS">131.73589</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.30" unit="M">
 				<!-- 3MR -->
 				<x>17.1639748</x>
@@ -621,7 +677,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.75">
-			<weight unit="LBS">138.7183</weight>
+			<!-- weight unit="LBS">138.7183</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.31" unit="M">
 				<!-- 3AR -->
 				<x>17.1639748</x>
@@ -631,7 +688,8 @@
 		</pointmass>
 		
 		<pointmass name="passenger.42">
-			<weight unit="LBS">136.98623</weight>
+			<!-- weight unit="LBS">136.98623</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.32" unit="M">
 				<!-- 3AL -->
 				<x>17.1559372</x>
@@ -641,7 +699,8 @@
 		</pointmass>
 		
 		<pointmass name="passenger.2">
-			<weight unit="LBS">127.34103</weight>
+			<!-- weight unit="LBS">127.34103</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.33" unit="M">
 				<!-- 3WL -->
 				<x>17.155941</x>
@@ -653,7 +712,8 @@
 
 		<!-- row 11 -->
 		<pointmass name="passenger.6">
-			<weight unit="LBS">110.11978</weight>
+			<!-- weight unit="LBS">110.11978</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.34" unit="M">
 				<!-- 3WR -->
 				<x>18.0631752</x>
@@ -663,7 +723,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.71">
-			<weight unit="LBS">124.89853</weight>
+			<!-- weight unit="LBS">124.89853</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.35" unit="M">
 				<!-- 3MR -->
 				<x>18.0631638</x>
@@ -673,7 +734,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.9">
-			<weight unit="LBS">114.62736</weight>
+			<!-- weight unit="LBS">114.62736</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.36" unit="M">
 				<!-- 3AR -->
 				<x>18.063158</x>
@@ -683,7 +745,8 @@
 		</pointmass>
 
 		<pointmass name="passenger.7">
-			<weight unit="LBS">141.84422</weight>
+			<!-- weight unit="LBS">141.84422</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.37" unit="M">
 				<!-- 3AL -->
 				<x>18.0551262</x>
@@ -693,7 +756,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.26">
-			<weight unit="LBS">121.04746</weight>
+			<!-- weight unit="LBS">121.04746</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.38" unit="M">
 				<!-- 3WL -->
 				<x>18.0551205</x>
@@ -705,7 +769,8 @@
 
 		<!-- row 12 -->
 		<pointmass name="passenger.13">
-			<weight unit="LBS">123.30449</weight>
+			<!-- weight unit="LBS">123.30449</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.39" unit="M">
 				<!-- 3WR -->
 				<x>19.0185452</x>
@@ -715,7 +780,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.1">
-			<weight unit="LBS">122.47899</weight>
+			<!-- weight unit="LBS">122.47899</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.40" unit="M">
 				<!-- 3MR -->
 				<x>19.0185356</x>
@@ -725,7 +791,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.49">
-			<weight unit="LBS">137.22372</weight>
+			<!-- weight unit="LBS">137.22372</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.41" unit="M">
 				<!-- 3AR -->
 				<x>19.0185356</x>
@@ -735,7 +802,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.50">
-			<weight unit="LBS">125.94436</weight>
+			<!-- weight unit="LBS">125.94436</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.42" unit="M">
 				<!-- 3AL -->
 				<x>19.0105114</x>
@@ -745,7 +813,8 @@
 		</pointmass>
 		
 		<pointmass name="passenger.33">
-			<weight unit="LBS">142.40145</weight>
+			<!-- weight unit="LBS">142.40145</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.43" unit="M">
 				<!-- 3WL -->
 				<x>19.0105076</x>
@@ -757,7 +826,8 @@
 
 		<!-- row 13 -->
 		<pointmass name="passenger.54">
-			<weight unit="LBS">141.86993</weight>
+			<!-- weight unit="LBS">141.86993</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.44" unit="M">
 				<!-- 3WR -->
 				<x>19.9016685</x>
@@ -767,7 +837,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.68">
-			<weight unit="LBS">139.99359</weight>
+			<!-- weight unit="LBS">139.99359</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.45" unit="M">
 				<!-- 3MR -->
 				<x>19.9016418</x>
@@ -777,7 +848,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.39">
-			<weight unit="LBS">130.93973</weight>
+			<!-- weight unit="LBS">130.93973</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.46" unit="M">
 				<!-- 3AR -->
 				<x>19.9016438</x>
@@ -787,7 +859,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.17">
-			<weight unit="LBS">135.56209</weight>
+			<!-- weight unit="LBS">135.56209</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.47" unit="M">
 				<!-- 3AL -->
 				<x>19.8936157</x>
@@ -797,7 +870,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.19">
-			<weight unit="LBS">145.42397</weight>
+			<!-- weight unit="LBS">145.42397</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.48" unit="M">
 				<!-- 3WL -->
 				<x>19.8936119</x>
@@ -809,7 +883,8 @@
 	
 		<!-- row 14 -->
 		<pointmass name="passenger.74">
-			<weight unit="LBS">208.5535</weight>
+			<!-- weight unit="LBS">208.5535</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.49" unit="M">
 				<!-- 3WR -->
 				<x>20.8008537</x>
@@ -819,7 +894,8 @@
 		</pointmass>
 
 		<pointmass name="passenger.3">
-			<weight unit="LBS">143.72353</weight>
+			<!-- weight unit="LBS">143.72353</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.50" unit="M">
 				<!-- 3MR -->
 				<x>20.8008385</x>
@@ -829,7 +905,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.66">
-			<weight unit="LBS">121.71637</weight>
+			<!-- weight unit="LBS">121.71637</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.51" unit="M">
 				<!-- 3AR -->
 				<x>20.8008404</x>
@@ -839,7 +916,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.41">
-			<weight unit="LBS">120.37926</weight>
+			<!-- weight unit="LBS">120.37926</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.52" unit="M">
 				<!-- 3AL -->
 				<x>20.7928047</x>
@@ -849,7 +927,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.46">
-			<weight unit="LBS">126.72832</weight>
+			<!-- weight unit="LBS">126.72832</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.53" unit="M">
 				<!-- 3WL -->
 				<x>20.7928047</x>
@@ -861,7 +940,8 @@
 
 		<!-- row 15 -->
 		<pointmass name="passenger.57">
-			<weight unit="LBS">138.65072</weight>
+			<!-- weight unit="LBS">138.65072</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.54" unit="M">
 				<!-- 3WR -->
 				<x>21.5796089</x>
@@ -871,7 +951,8 @@
 		</pointmass>
 		
 		<pointmass name="passenger.24">
-			<weight unit="LBS">155.77062</weight>
+			<!-- weight unit="LBS">155.77062</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.55" unit="M">
 				<!-- 3MR -->
 				<x>21.5795898</x>
@@ -881,7 +962,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.70">
-			<weight unit="LBS">134.47718</weight>
+			<!-- weight unit="LBS">134.47718</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.56" unit="M">
 				<!-- 3AR -->
 				<x>21.5795898</x>
@@ -891,7 +973,8 @@
 		</pointmass>
 
 		<pointmass name="passenger.56">
-			<weight unit="LBS">123.00018</weight>
+			<!-- weight unit="LBS">123.00018</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.57" unit="M">
 				<!-- 3AL -->
 				<x>21.5715561</x>
@@ -901,7 +984,8 @@
 		</pointmass>
 	
 		<pointmass name="passenger.69">
-			<weight unit="LBS">113.6687</weight>
+			<!-- weight unit="LBS">113.6687</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.58" unit="M">
 				<!-- 3WL -->
 				<x>21.5715504</x>
@@ -913,7 +997,8 @@
 
 		<!-- row 16 -->
 		<pointmass name="passenger.44">
-			<weight unit="LBS">128.88429</weight>
+			<!-- weight unit="LBS">128.88429</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.59" unit="M">
 				<!-- 3AL -->
 				<x>22.5349693</x>
@@ -923,7 +1008,8 @@
 		</pointmass>
 		
 		<pointmass name="passenger.29">
-			<weight unit="LBS">108.84105</weight>
+			<!-- weight unit="LBS">108.84105</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.60" unit="M">
 				<!-- 3WL -->
 				<x>22.5349693</x>
@@ -935,7 +1021,8 @@
 
 		<!-- row 17 -->
 		<pointmass name="passenger.76">
-			<weight unit="LBS">132.87543</weight>
+			<!-- weight unit="LBS">132.87543</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.61" unit="M">
 				<!-- 3AL -->
 				<x>23.4502068</x>
@@ -945,7 +1032,8 @@
 		</pointmass>
 
 		<pointmass name="passenger.63">
-			<weight unit="LBS">132.15214</weight>
+			<!-- weight unit="LBS">132.15214</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="ClassTourist.62" unit="M">
 				<!-- 3WL -->
 				<x>23.4501896</x>
@@ -957,7 +1045,8 @@
 
 		<!-- Cargo compartments -->
 		<pointmass name="Cargo.port.beam">
-			<weight unit="LBS">1181.361</weight>
+			<!-- weight unit="LBS">1181.361</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="Cargo.port.beam" unit="M">
 				<x>17.3798313</x>
 				<y>-0.8778431</y>
@@ -966,7 +1055,8 @@
 		</pointmass>
 	
 		<pointmass name="Cargo.port.bow">
-			<weight unit="LBS">1253.405</weight>
+			<!-- weight unit="LBS">1253.405</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="Cargo.port.bow" unit="M">
 				<x>9.0059357</x>
 				<y>-0.8778438</y>
@@ -975,7 +1065,8 @@
 		</pointmass>
 	
 		<pointmass name="Cargo.port.quarter">
-			<weight unit="LBS">1204.179</weight>
+			<!-- weight unit="LBS">1204.179</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="Cargo.port.quarter" unit="M">
 				<x>23.7526131</x>
 				<y>-0.8778433</y>
@@ -984,7 +1075,8 @@
 		</pointmass>
 	
 		<pointmass name="Cargo.starboard.beam">
-			<weight unit="LBS">1244.073</weight>
+			<!-- weight unit="LBS">1244.073</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="Cargo.starboard.beam" unit="M">
 				<x>17.3798294</x>
 				<y>0.8798073</y>
@@ -993,7 +1085,8 @@
 		</pointmass>
 	
 		<pointmass name="Cargo.starboard.bow">
-			<weight unit="LBS">1197.652</weight>
+			<!-- weight unit="LBS">1197.652</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="Cargo.starboard.bow" unit="M">
 				<x>9.0059357</x>
 				<y>0.8798073</y>
@@ -1002,7 +1095,8 @@
 		</pointmass>
 	
 		<pointmass name="Cargo.starboard.quarter">
-			<weight unit="LBS">1192.678</weight>
+			<!-- weight unit="LBS">1192.678</weight -->
+			<weight unit="LBS">135.00</weight>
 			<location name="Cargo.starboard.quarter" unit="M">
 				<x>23.7526131</x>
 				<y>0.8798073</y>
@@ -1015,32 +1109,42 @@
 	<ground_reactions>
 
 		<contact type="BOGEY" name="NOSE_RIGHT">
-			<location unit="M">
+			<!-- location unit="M">
 				<x>5.82243</x>
 				<y>0.20453</y>
-				<z>-2.33325</z>
+				<z>-2.63325</z>
+			</location -->
+			<location unit="IN">
+				<x>229.2295276</x>
+				<y>-8.052362205</y>
+				<z>-103.6712598</z>
 			</location>
 			<static_friction>0.7292402</static_friction>
 			<dynamic_friction>0.4915179</dynamic_friction>
 			<rolling_friction>0.02150569</rolling_friction>
 			<spring_coeff  unit="LBS/FT">64402.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">76113.61</damping_coeff>
+			<damping_coeff unit="LBS/FT/SEC">26113.61</damping_coeff>
 			<max_steer unit="DEG">25.00</max_steer>
 			<brake_group>NONE</brake_group>
 			<retractable>1</retractable>
 		</contact>
 
 		<contact type="BOGEY" name="NOSE_LEFT">
-			<location unit="M">
+			<!-- location unit="M">
 				<x>5.82243</x>
 				<y>-0.20453</y>
-				<z>-2.33325</z>
+				<z>-2.63325</z>
+			</location -->
+			<location unit="IN">
+				<x>229.2295276</x>
+				<y>8.052362205</y>
+				<z>-103.6712598</z>
 			</location>
 			<static_friction>0.7098506</static_friction>
 			<dynamic_friction>0.5564869</dynamic_friction>
 			<rolling_friction>0.01770725</rolling_friction>
 			<spring_coeff  unit="LBS/FT">64402.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">76113.61</damping_coeff>
+			<damping_coeff unit="LBS/FT/SEC">26113.61</damping_coeff>
 			<max_steer unit="DEG">25.00</max_steer>
 			<brake_group>NONE</brake_group>
 			<retractable>1</retractable>
@@ -1051,13 +1155,13 @@
 			<location unit="M">
 				<x>18.07187</x>
 				<y>-3.06776</y>
-				<z>-2.51755</z>
+				<z>-2.81755</z>
 			</location>
 			<static_friction>0.8225295</static_friction>
 			<dynamic_friction>0.5765024</dynamic_friction>
 			<rolling_friction>0.01610338</rolling_friction>
 			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">42894.93</damping_coeff>
+			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>LEFT</brake_group>
 			<retractable>1</retractable>
@@ -1067,13 +1171,13 @@
 			<location unit="M">
 				<x>18.07187</x>
 				<y>-2.70421</y>
-				<z>-2.51755</z>
+				<z>-2.81755</z>
 			</location>
 			<static_friction>0.8262161</static_friction>
 			<dynamic_friction>0.5274378</dynamic_friction>
 			<rolling_friction>0.02109028</rolling_friction>
 			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">42894.93</damping_coeff>
+			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>LEFT</brake_group>
 			<retractable>1</retractable>
@@ -1083,13 +1187,13 @@
 			<location unit="M">
 				<x>19.17659</x>
 				<y>-3.06776</y>
-				<z>-2.51755</z>
+				<z>-2.81755</z>
 			</location>
 			<static_friction>0.8047358</static_friction>
 			<dynamic_friction>0.4550411</dynamic_friction>
 			<rolling_friction>0.02358706</rolling_friction>
 			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">42894.93</damping_coeff>
+			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>LEFT</brake_group>
 			<retractable>1</retractable>
@@ -1099,13 +1203,13 @@
 			<location unit="M">
 				<x>19.17659</x>
 				<y>-2.70421</y>
-				<z>-2.51755</z>
+				<z>-2.81755</z>
 			</location>
 			<static_friction>0.7894144</static_friction>
 			<dynamic_friction>0.5008035</dynamic_friction>
 			<rolling_friction>0.01767678</rolling_friction>
 			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">42894.93</damping_coeff>
+			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>LEFT</brake_group>
 			<retractable>1</retractable>
@@ -1116,13 +1220,13 @@
 			<location unit="M">
 				<x>18.07187</x>
 				<y>2.70421</y>
-				<z>-2.51755</z>
+				<z>-2.81755</z>
 			</location>
 			<static_friction>0.7560863</static_friction>
 			<dynamic_friction>0.4766751</dynamic_friction>
 			<rolling_friction>0.02290951</rolling_friction>
-			<spring_coeff  unit="LBS/FT">34627.12</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">41642.098</damping_coeff>
+			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>RIGHT</brake_group>
 			<retractable>1</retractable>
@@ -1132,13 +1236,13 @@
 			<location unit="M">
 				<x>18.07187</x>
 				<y>3.06776</y>
-				<z>-2.51755</z>
+				<z>-2.81755</z>
 			</location>
 			<static_friction>0.7584304</static_friction>
 			<dynamic_friction>0.4634785</dynamic_friction>
 			<rolling_friction>0.02074758</rolling_friction>
-			<spring_coeff  unit="LBS/FT">34627.12</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">41642.098</damping_coeff>
+			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>RIGHT</brake_group>
 			<retractable>1</retractable>
@@ -1148,13 +1252,13 @@
 			<location unit="M">
 				<x>19.17659</x>
 				<y>2.70421</y>
-				<z>-2.51755</z>
+				<z>-2.81755</z>
 			</location>
 			<static_friction>0.8888532</static_friction>
 			<dynamic_friction>0.4940983</dynamic_friction>
 			<rolling_friction>0.02356636</rolling_friction>
-			<spring_coeff  unit="LBS/FT">34627.12</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">41642.098</damping_coeff>
+			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>RIGHT</brake_group>
 			<retractable>1</retractable>
@@ -1164,13 +1268,13 @@
 			<location unit="M">
 				<x>19.17659</x>
 				<y>3.06776</y>
-				<z>-2.51755</z>
+				<z>-2.81755</z>
 			</location>
 			<static_friction>0.8657917</static_friction>
 			<dynamic_friction>0.4126235</dynamic_friction>
 			<rolling_friction>0.01235962</rolling_friction>
-			<spring_coeff  unit="LBS/FT">34627.12</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">41642.098</damping_coeff>
+			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>RIGHT</brake_group>
 			<retractable>1</retractable>
@@ -1628,6 +1732,7 @@
 			</location>
 			<capacity unit="LBS">18770</capacity>
 			<contents unit="LBS">9000</contents>
+			<!-- contents unit="LBS">1000</contents -->
 		</tank>
 
 		<tank type="FUEL" number="1">
@@ -1638,6 +1743,7 @@
 			</location>
 			<capacity unit="LBS">18770</capacity>
 			<contents unit="LBS">9000</contents>
+			<!-- contents unit="LBS">1000</contents -->
 		</tank>
 
 		<tank type="FUEL" number="2">
@@ -1975,7 +2081,7 @@
 							 0.60  1.300
 						</tableData>
 					</table>
-					<value>2.0</value>
+					<value>1.0</value>
 				</product>
 			</function>
 
@@ -2096,6 +2202,7 @@
 							 1.57	 1.230
 						</tableData>
 					</table>
+					<value>0.8</value>
 				</product>
 			</function>
 
