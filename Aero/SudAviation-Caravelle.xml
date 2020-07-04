@@ -69,21 +69,21 @@
 		<vtailarm unit="FT">63.1693</vtailarm>
 
 		<location name="AERORP" unit="IN">
-			<x>638.0000</x>
+			<x>713.34015748</x>
 			<y>0.00</y>
-			<z>0.30</z>
+			<z>12.55826772</z>
 		</location>
 
 		<location name="EYEPOINT" unit="M">
-			<x>1.08895</x>
-			<y>-0.14834</y>
-			<z>0.77088</z>
+			<x>1.48991</x>
+			<y>-0.45118</y>
+			<z>0.77092</z>
 		</location>
 
-		<location name="VRP" unit="IN">
+		<location name="VRP" unit="M">
 			<x>0.00</x>
 			<y>0.00</y>
-			<z>1.75</z>
+			<z>0.525</z>
 		</location>
 	</metrics>
 
@@ -94,9 +94,9 @@
 		<emptywt unit="LBS" >59256</emptywt>
 
 		<location name="CG" unit="IN">
-			<x>607.0000</x>
+			<x>713.34015748</x>
 			<y>0.00</y>
-			<z>0.50</z>
+			<z>12.55826772</z>
 		</location>
 
 	        <!-- cargo, passengers, and crew as pointmasses -->
@@ -1012,12 +1012,11 @@
 	</mass_balance>
 
 	<ground_reactions>
-
 		<contact type="BOGEY" name="NOSE_RIGHT">
-			<location unit="IN">
-				<x>229.2295276</x>
-				<y>-8.052362205</y>
-				<z>-103.6712598</z>
+			<location unit="M">
+				<x>5.82243</x>
+				<y>-0.20856</y>
+				<z>-2.32668</z>
 			</location>
 			<static_friction>0.7292402</static_friction>
 			<dynamic_friction>0.4915179</dynamic_friction>
@@ -1030,11 +1029,11 @@
 		</contact>
 
 		<contact type="BOGEY" name="NOSE_LEFT">
-			<location unit="IN">
-				<x>229.2295276</x>
-				<y>8.052362205</y>
-				<z>-103.6712598</z>
-			</location>
+		  <location unit="M">
+		    <x>5.82243</x>
+		    <y>0.20856</y>
+		    <z>-2.32668</z>
+		  </location>
 			<static_friction>0.7098506</static_friction>
 			<dynamic_friction>0.5564869</dynamic_friction>
 			<rolling_friction>0.01770725</rolling_friction>
@@ -1048,8 +1047,8 @@
 		<contact type="BOGEY" name="MAIN_LEFT.FRONT.1">
 			<location unit="M">
 				<x>18.07187</x>
-				<y>-3.06776</y>
-				<z>-2.81755</z>
+				<y>-3.06778</y>
+				<z>-2.51650</z>
 			</location>
 			<static_friction>0.8225295</static_friction>
 			<dynamic_friction>0.5765024</dynamic_friction>
@@ -1064,8 +1063,8 @@
 		<contact type="BOGEY" name="MAIN_LEFT.FRONT.2">
 			<location unit="M">
 				<x>18.07187</x>
-				<y>-2.70421</y>
-				<z>-2.81755</z>
+				<y>-2.70422</y>
+				<z>-2.51650</z>
 			</location>
 			<static_friction>0.8262161</static_friction>
 			<dynamic_friction>0.5274378</dynamic_friction>
@@ -1080,8 +1079,8 @@
 		<contact type="BOGEY" name="MAIN_LEFT.REAR.1">
 			<location unit="M">
 				<x>19.17659</x>
-				<y>-3.06776</y>
-				<z>-2.81755</z>
+				<y>-3.06778</y>
+				<z>-2.51755</z>
 			</location>
 			<static_friction>0.8047358</static_friction>
 			<dynamic_friction>0.4550411</dynamic_friction>
@@ -1096,8 +1095,8 @@
 		<contact type="BOGEY" name="MAIN_LEFT.REAR.2">
 			<location unit="M">
 				<x>19.17659</x>
-				<y>-2.70421</y>
-				<z>-2.81755</z>
+				<y>-2.70422</y>
+				<z>-2.51755</z>
 			</location>
 			<static_friction>0.7894144</static_friction>
 			<dynamic_friction>0.5008035</dynamic_friction>
@@ -1109,12 +1108,11 @@
 			<retractable>1</retractable>
 		</contact>
 
-
 		<contact type="BOGEY" name="MAIN_RIGHT.FRONT.1">
 			<location unit="M">
 				<x>18.07187</x>
-				<y>2.70421</y>
-				<z>-2.81755</z>
+				<y>2.70422</y>
+				<z>-2.51650</z>
 			</location>
 			<static_friction>0.7560863</static_friction>
 			<dynamic_friction>0.4766751</dynamic_friction>
@@ -1129,8 +1127,8 @@
 		<contact type="BOGEY" name="MAIN_RIGHT.FRONT.2">
 			<location unit="M">
 				<x>18.07187</x>
-				<y>3.06776</y>
-				<z>-2.81755</z>
+				<y>3.06778</y>
+				<z>-2.51650</z>
 			</location>
 			<static_friction>0.7584304</static_friction>
 			<dynamic_friction>0.4634785</dynamic_friction>
@@ -1145,8 +1143,8 @@
 		<contact type="BOGEY" name="MAIN_RIGHT.REAR.1">
 			<location unit="M">
 				<x>19.17659</x>
-				<y>2.70421</y>
-				<z>-2.81755</z>
+				<y>2.70422</y>
+				<z>-2.51755</z>
 			</location>
 			<static_friction>0.8888532</static_friction>
 			<dynamic_friction>0.4940983</dynamic_friction>
@@ -1161,8 +1159,8 @@
 		<contact type="BOGEY" name="MAIN_RIGHT.REAR.2">
 			<location unit="M">
 				<x>19.17659</x>
-				<y>3.06776</y>
-				<z>-2.81755</z>
+				<y>3.06778</y>
+				<z>-2.51755</z>
 			</location>
 			<static_friction>0.8657917</static_friction>
 			<dynamic_friction>0.4126235</dynamic_friction>
@@ -1563,12 +1561,11 @@
 	</ground_reactions>
 
 	<propulsion>
-
 		<engine file="Avon">
-			<location unit="IN">
-				<x>970.14685039</x>
-				<y>104.42322</y>
-				<z>30.10315</z>
+			<location unit="M">
+				<x>24.93972</x>
+				<y>2.71645</y>
+				<z>0.76367</z>
 			</location>
 			<orient unit="DEG">
 				<pitch>2.22</pitch>
@@ -1578,10 +1575,10 @@
 			<feed>2</feed>
 			<thruster file="direct">
 				<sense>1</sense>
-				<location unit="IN">
-					<x>918.43779528</x>
-					<y>104.42322</y>
-					<z>29.93346457</z>
+				<location unit="M">
+				  <x>24.64803</x>
+				  <y>2.65200</y>
+				  <z>0.75898</z>
 				</location>
 				<orient unit="DEG">
 					<pitch>2.22</pitch>
@@ -1592,30 +1589,30 @@
 		</engine>
 
 		<engine file="Avon">
-			<location unit="IN">
-				<x>970.14685039</x>
-				<y>-104.42322</y>
-				<z>30.10315</z>
-			</location>
-			<orient unit="DEG">
-				<pitch>2.22</pitch>
-				<roll>0.00</roll>
-				<yaw>-1.80</yaw>
-			</orient>
-			<feed>2</feed>
-			<thruster file="direct">
-				<sense>1</sense>
-				<location unit="IN">
-					<x>918.43779528</x>
-					<y>-104.42322</y>
-					<z>29.93346457</z>
-				</location>
-				<orient unit="DEG">
-					<pitch>2.22</pitch>
-					<roll>0.00</roll>
-					<yaw>-1.80</yaw>
-				</orient>
-			</thruster>
+		  <location unit="M">
+		                <x>24.93972</x>
+				<y>-2.71645</y>
+				<z>0.76367</z>
+		  </location>
+		  <orient unit="DEG">
+		    <pitch>2.22</pitch>
+		    <roll>0.00</roll>
+		    <yaw>-1.80</yaw>
+		  </orient>
+		  <feed>2</feed>
+		  <thruster file="direct">
+		    <sense>1</sense>
+		    <location unit="M">
+		      <x>24.64803</x>
+		      <y>-2.65200</y>
+		      <z>0.75898</z>
+		    </location>
+		    <orient unit="DEG">
+		      <pitch>2.22</pitch>
+		      <roll>0.00</roll>
+		      <yaw>-1.80</yaw>
+		    </orient>
+		  </thruster>
 		</engine>
 
 		<tank type="FUEL" number="0">
