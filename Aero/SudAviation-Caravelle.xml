@@ -83,7 +83,7 @@
 		<location name="VRP" unit="M">
 			<x>0.00</x>
 			<y>0.00</y>
-			<z>0.525</z>
+			<z>0.4345</z>
 		</location>
 	</metrics>
 
@@ -100,7 +100,6 @@
 		</location>
 
 	        <!-- cargo, passengers, and crew as pointmasses -->
-	
 		<!-- cockpit crew, asymetric because of 3 persons -->
 		<pointmass name="Captain">
 			<weight unit="LBS">124.44098</weight>
@@ -129,9 +128,6 @@
 			</location>
 		</pointmass>
 	
-		<!-- Cabin crew, also asymetric, 3 persons, to the same side as the cockpit and, according to their Y-posistions on the 		laps of passengers -->
-		<!-- Maybe because it's a French plane? -->
-
 		<pointmass name="Steward.1">
 			<weight unit="LBS">142.40375</weight>
 			<location name="Steward.1" unit="M">
@@ -160,11 +156,6 @@
 		</pointmass>
 	
 		<!-- PAX 1st Class -->
-	
-		<!-- Already in the 1st row of the 1st class, the aisle seats were hanging 5cm to the left, 
-		the window seats then 50cm -->
-		<!-- So, I work now with the average -->
-
 		<pointmass name="passenger.1">
 			<weight unit="LBS">137.98139</weight>
 			<location name="ClassFirst.1" unit="M">
@@ -286,7 +277,6 @@
 		</pointmass>
 
 		<!-- PAX Tourist class -->
-
 		<!-- row 4 -->	
 		<pointmass name="passenger.13">
 			<weight unit="LBS">105.14392</weight>
@@ -338,8 +328,6 @@
 			</location>
 		</pointmass>
 
-
-	
 		<!-- row 5 -->
 		<pointmass name="passenger.18">
 			<weight unit="LBS">133.98133</weight>
@@ -391,7 +379,6 @@
 			</location>
 		</pointmass>
 
-
 		<!-- row 6 -->	
 		<pointmass name="passenger.23">
 			<weight unit="LBS">206.5594</weight>
@@ -442,7 +429,6 @@
 				<z>0.3225821</z>
 			</location>
 		</pointmass>
-	
 	
 		<!-- row 7 -->
 		<pointmass name="passenger.28">
@@ -546,7 +532,6 @@
 			</location>
 		</pointmass>
 
-
 		<!-- row 9 -->
 		<pointmass name="passenger.38">
 			<weight unit="LBS">134.66391</weight>
@@ -598,7 +583,6 @@
 			</location>
 		</pointmass>
 
-
 		<!-- row 10 -->
 		<pointmass name="passenger.43">
 			<weight unit="LBS">140.5418</weight>
@@ -649,7 +633,6 @@
 				<z>0.322582</z>
 			</location>
 		</pointmass>
-	
 
 		<!-- row 11 -->
 		<pointmass name="passenger.48">
@@ -702,7 +685,6 @@
 			</location>
 		</pointmass>
 
-
 		<!-- row 12 -->
 		<pointmass name="passenger.53">
 			<weight unit="LBS">123.30449</weight>
@@ -754,7 +736,6 @@
 			</location>
 		</pointmass>
 
-
 		<!-- row 13 -->
 		<pointmass name="passenger.58">
 			<weight unit="LBS">141.86993</weight>
@@ -805,7 +786,6 @@
 				<z>0.322582</z>
 			</location>
 		</pointmass>
-
 	
 		<!-- row 14 -->
 		<pointmass name="passenger.63">
@@ -857,7 +837,6 @@
 				<z>0.322582</z>
 			</location>
 		</pointmass>
-	
 
 		<!-- row 15 -->
 		<pointmass name="passenger.68">
@@ -909,7 +888,6 @@
 				<z>0.322582</z>
 			</location>
 		</pointmass>
-		
 
 		<!-- row 16 -->
 		<pointmass name="passenger.73">
@@ -931,7 +909,6 @@
 				<z>0.322582</z>
 			</location>
 		</pointmass>
-	
 
 		<!-- row 17 -->
 		<pointmass name="passenger.75">
@@ -956,7 +933,7 @@
 
 		<!-- Cargo compartments -->
 		<pointmass name="Cargo.port.beam">
-			<weight unit="LBS">1181.361</weight>
+			<weight unit="LBS">4289.943</weight>
 			<location name="Cargo.port.beam" unit="M">
 				<x>17.3798313</x>
 				<y>-0.8778431</y>
@@ -965,7 +942,7 @@
 		</pointmass>
 	
 		<pointmass name="Cargo.port.bow">
-			<weight unit="LBS">1253.405</weight>
+			<weight unit="LBS">500.257</weight>
 			<location name="Cargo.port.bow" unit="M">
 				<x>9.0059357</x>
 				<y>-0.8778438</y>
@@ -974,7 +951,7 @@
 		</pointmass>
 	
 		<pointmass name="Cargo.port.quarter">
-			<weight unit="LBS">1204.179</weight>
+			<weight unit="LBS">9553.63</weight>
 			<location name="Cargo.port.quarter" unit="M">
 				<x>23.7526131</x>
 				<y>-0.8778433</y>
@@ -983,7 +960,7 @@
 		</pointmass>
 	
 		<pointmass name="Cargo.starboard.beam">
-			<weight unit="LBS">1244.073</weight>
+			<weight unit="LBS">3694.749</weight>
 			<location name="Cargo.starboard.beam" unit="M">
 				<x>17.3798294</x>
 				<y>0.8798073</y>
@@ -992,7 +969,7 @@
 		</pointmass>
 	
 		<pointmass name="Cargo.starboard.bow">
-			<weight unit="LBS">1197.652</weight>
+			<weight unit="LBS">825.254</weight>
 			<location name="Cargo.starboard.bow" unit="M">
 				<x>9.0059357</x>
 				<y>0.8798073</y>
@@ -1001,14 +978,13 @@
 		</pointmass>
 	
 		<pointmass name="Cargo.starboard.quarter">
-			<weight unit="LBS">1192.678</weight>
+			<weight unit="LBS">7472.909</weight>
 			<location name="Cargo.starboard.quarter" unit="M">
 				<x>23.7526131</x>
 				<y>0.8798073</y>
 				<z>-0.2929335</z>
 			</location>
 		</pointmass>
-
 	</mass_balance>
 
 	<ground_reactions>
@@ -1617,35 +1593,34 @@
 
 		<tank type="FUEL" number="0">
 			<location unit="M">
-				<x>17.32607</x>
-				<y>-3.58937</y>
-				<z>-0.62005</z>
+				<x>18.18818</x>
+				<y>-5.47192</y>
+				<z>-0.52150</z>
 			</location>
 			<capacity unit="LBS">18770</capacity>
 			<contents unit="LBS">9000</contents>
-			<!-- contents unit="LBS">1000</contents -->
 		</tank>
 
 		<tank type="FUEL" number="1">
 			<location unit="M">
-				<x>17.32607</x>
-				<y>3.58937</y>
-				<z>-0.62005</z>
+				<x>18.18818</x>
+				<y>5.47192</y>
+				<z>-0.52150</z>
 			</location>
 			<capacity unit="LBS">18770</capacity>
 			<contents unit="LBS">9000</contents>
-			<!-- contents unit="LBS">1000</contents -->
 		</tank>
 
 		<tank type="FUEL" number="2">
 			<location unit="M">
-				<x>22.62801</x>
-				<y>0</y>
-				<z>-0.86410</z>
+				<x>15.84130</x>
+				<y>0.0000</y>
+				<z>-0.80897</z>
 			</location>
 			<capacity unit="LBS">130</capacity>
 			<contents unit="LBS">115</contents>
 		</tank>
+
 
 	</propulsion>
 
