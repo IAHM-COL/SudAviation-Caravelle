@@ -1620,10 +1620,8 @@
 			<capacity unit="LBS">130</capacity>
 			<contents unit="LBS">115</contents>
 		</tank>
-
 	</propulsion>
 
-	<!-- let's hold back on the system files for now, that is a total different beast here -->
 	<!-- system file="Propulsion.xml"/ -->
 	<system file="Fuel.xml"/>
 	<!-- system file="AircraftControl.xml"/ -->
@@ -1927,20 +1925,18 @@
 		</function>-->
 
 	  <function name="aero/alpha-wing-deg">
-	    <product>
-	      <property>aero/alpha-wing-rad</property>
-	      <value>57.2958</value>
-	    </product>
+	    <todegrees><property>aero/alpha-wing-rad</property></todegrees>
 	  </function>
+	  
 	  <function name="aero/alpha-hstab-deg">
 	    <sum>
 	      <property>aero/alpha-wing-deg</property>
 	      <value>-4.22</value>
 	    </sum>
 	  </function>
-
+	  
 	  <axis name="LIFT">
-	    <function name="aero/coefficient/CLalpha">
+	    <function name="aero/coefficient/CL_alpha">
 	      <description>Lift_due_to_alpha</description>
 	      <table>
 		<independentVar lookup="row">aero/alpha-wing-deg</independentVar>
@@ -1975,8 +1971,8 @@
 	      </table>
 	    </function>
 
-	    <function name="aero/coefficient/CLalpha-hstab">
-	      <description>Lift_due_to_alpha</description>
+	    <function name="aero/coefficient/CL_alpha_hstab">
+	      <description>Lift_due_to_alpha horizontal stabilizer</description>
 	      <table>
 		<independentVar lookup="row">aero/alpha-hstab-deg</independentVar>
 		<tableData>
@@ -2006,14 +2002,14 @@
 		</tableData>
 	      </table>
 	    </function>
-
+	    
 	    <function name="aero/force/Lift_alpha">
 	      <description>Lift_due_to_alpha</description>
 	      <product>
 		<property>aero/qbar-psf</property>
 		<v>1.5</v>
 		<property>metrics/Sw-sqft</property>
-		<property>aero/coefficient/CLalpha</property>
+		<property>aero/coefficient/CL_alpha</property>
 	      </product>
 	    </function>
 
@@ -2022,7 +2018,7 @@
 	      <product>
 		<property>aero/qbar-psf</property>
 		<property>metrics/Sh-sqft</property>
-		<property>aero/coefficient/CLalpha-hstab</property>
+		<property>aero/coefficient/CL_alpha_hstab</property>
 	      </product>
 	    </function>
 	    
@@ -2049,7 +2045,7 @@
 	  </axis>
 
 	  <axis name="DRAG">
-	    <function name="aero/coefficient/CDalpha">
+	    <function name="aero/coefficient/CD_alpha">
 	      <description>Drag due to alpha</description>
 	      <table>
 		<independentVar lookup="row">aero/alpha-wing-deg</independentVar>
@@ -2087,7 +2083,7 @@
 	      </table>
 	    </function>
 
-	    <function name="aero/coefficient/CDalpha_hstab">
+	    <function name="aero/coefficient/CD_alpha_hstab">
 	      <description>Drag due to alpha horizontal stabilizer</description>
 	      <table>
 		<independentVar lookup="row">aero/alpha-hstab-deg</independentVar>
@@ -2116,7 +2112,7 @@
 	      </table>
 	    </function>
 
-	    <function name="aero/coefficient/CDbeta_vstab">
+	    <function name="aero/coefficient/CD_beta_vstab">
 	      <description>Drag due to beta vertical stabilizer</description>
 	      <table>
 		<independentVar lookup="row">aero/beta-deg</independentVar>
@@ -2157,7 +2153,7 @@
 	      <product>
 		<property>aero/qbar-psf</property>
 		<property>metrics/Sw-sqft</property>
-		<property>aero/coefficient/CDalpha</property>
+		<property>aero/coefficient/CD_alpha</property>
 	      </product>
 	    </function>
 
@@ -2166,7 +2162,7 @@
 	      <product>
 		<property>aero/qbar-psf</property>
 		<property>metrics/Sh-sqft</property>
-		<property>aero/coefficient/CDalpha_hstab</property>
+		<property>aero/coefficient/CD_alpha_hstab</property>
 	      </product>
 	    </function>
 
@@ -2175,7 +2171,7 @@
 	      <product>
 		<property>aero/qbar-psf</property>
 		<property>metrics/Sv-sqft</property>
-		<property>aero/coefficient/CDbeta_vstab</property>
+		<property>aero/coefficient/CD_beta_vstab</property>
 	      </product>
 	    </function>
 
@@ -2240,7 +2236,7 @@
 	  </axis>
 
 	  <axis name="SIDE">
-	    <function name="aero/coefficient/CSbeta_vstab">
+	    <function name="aero/coefficient/CS_beta_vstab">
 	      <description>Side due to beta vertical stabilizer</description>
 	      <table>
 		<independentVar lookup="row">aero/beta-deg</independentVar>
@@ -2276,13 +2272,13 @@
 		</tableData>
 	      </table>
 	    </function>
-
+	    
 	    <function name="aero/force/Side_beta">
 	      <description>Side due to beta vstab</description>
 	      <product>
 		<property>aero/qbar-psf</property>
 		<property>metrics/Sv-sqft</property>
-		<property>aero/coefficient/CSbeta_vstab</property>
+		<property>aero/coefficient/CS_beta_vstab</property>
 		<v>-1</v>
 	      </product>
 	    </function>
@@ -2331,77 +2327,77 @@
 	  </axis>
 
 	  <axis name="PITCH">
-	    <function name="aero/coefficient/CMalpha">
-	      <description>Pitch moment Coefficient due to alpha</description>
+	    <function name="aero/coefficient/CP_alpha">
+	      <description>Pitch moment coefficient due to alpha</description>
 	      <table>
-		  <independentVar lookup="row">aero/alpha-wing-deg</independentVar>
-		  <tableData>
-		    -11.763987	-0.020968
-		    -11.432592	-0.023172
-		    -11.237685	-0.026452
-		    -11.120729	-0.029839
-		    -10.925822	-0.033817
-		    -10.633432	-0.037796
-		    -10.496944	-0.040269
-		    -10.399520	-0.044677
-		    -10.068125	-0.048279
-		    -9.834213  	-0.045645
-		    -9.502818	-0.043011
-		    -9.093472	-0.040054
-		    -8.664653	-0.036935
-		    -8.489219	-0.035161
-		    -8.235834	-0.036290
-		    -7.865434	-0.039193
-		    -7.417142	-0.042634
-		    -6.968791	-0.045484
-		    -6.461962	-0.045806
-		    -6.130626	-0.044785
-		    -5.350880	-0.042796
-		    -4.688149	-0.041075
-		    -3.927935	-0.040215
-		    -2.992287	-0.039731
-		    -1.744776	-0.039731
-		    -0.575216	-0.039785
-		    0.589491	-0.040134
-		    1.393563	-0.040457
-		    2.314592	-0.040618
-		    3.104045	-0.039691
-		    3.703444	-0.038844
-		    4.361322	-0.037352
-		    4.814526	-0.035013
-		    5.223872	-0.032312
-		    5.618599	-0.029691
-		    5.969467	-0.027433
-		    6.349574	-0.028078
-		    6.832017	-0.027755
-		    7.660475	-0.025672
-		    8.440162	-0.022661
-		    9.258854	-0.020215
-		    10.145790	-0.017258
-		    10.974189	-0.013898
-		    11.286111	-0.010430
-		    11.451779	-0.007258
-		    11.724696	-0.005054
-		    11.939076	-0.002715
-		    12.153515	-0.000968
-		    12.406900	0.000296
-		    12.650578	0.000860
-		    12.874724	-0.000161
-		    13.284070	-0.002177
-		    13.420558	-0.004301
-		    13.449797	-0.006774
-		    13.586226	-0.010511
-		    13.820138	-0.012150
-		    14.073523	-0.014597
-		    14.190479	-0.016236
-		    14.502401	-0.045296
-		    14.687542	-0.048441
-		  </tableData>
-		</table>
+		<independentVar lookup="row">aero/alpha-wing-deg</independentVar>
+		<tableData>
+		  -11.763987	-0.020968
+		  -11.432592	-0.023172
+		  -11.237685	-0.026452
+		  -11.120729	-0.029839
+		  -10.925822	-0.033817
+		  -10.633432	-0.037796
+		  -10.496944	-0.040269
+		  -10.399520	-0.044677
+		  -10.068125	-0.048279
+		  -9.834213  	-0.045645
+		  -9.502818	-0.043011
+		  -9.093472	-0.040054
+		  -8.664653	-0.036935
+		  -8.489219	-0.035161
+		  -8.235834	-0.036290
+		  -7.865434	-0.039193
+		  -7.417142	-0.042634
+		  -6.968791	-0.045484
+		  -6.461962	-0.045806
+		  -6.130626	-0.044785
+		  -5.350880	-0.042796
+		  -4.688149	-0.041075
+		  -3.927935	-0.040215
+		  -2.992287	-0.039731
+		  -1.744776	-0.039731
+		  -0.575216	-0.039785
+		  0.589491	-0.040134
+		  1.393563	-0.040457
+		  2.314592	-0.040618
+		  3.104045	-0.039691
+		  3.703444	-0.038844
+		  4.361322	-0.037352
+		  4.814526	-0.035013
+		  5.223872	-0.032312
+		  5.618599	-0.029691
+		  5.969467	-0.027433
+		  6.349574	-0.028078
+		  6.832017	-0.027755
+		  7.660475	-0.025672
+		  8.440162	-0.022661
+		  9.258854	-0.020215
+		  10.145790	-0.017258
+		  10.974189	-0.013898
+		  11.286111	-0.010430
+		  11.451779	-0.007258
+		  11.724696	-0.005054
+		  11.939076	-0.002715
+		  12.153515	-0.000968
+		  12.406900	0.000296
+		  12.650578	0.000860
+		  12.874724	-0.000161
+		  13.284070	-0.002177
+		  13.420558	-0.004301
+		  13.449797	-0.006774
+		  13.586226	-0.010511
+		  13.820138	-0.012150
+		  14.073523	-0.014597
+		  14.190479	-0.016236
+		  14.502401	-0.045296
+		  14.687542	-0.048441
+		</tableData>
+	      </table>
 	    </function>
 	    
-	    <function name="aero/coefficient/CMalpha-hstab">
-	      <description>Pitch moment Coefficient due to alpha</description>
+	    <function name="aero/coefficient/CP_alpha_hstab">
+	      <description>Pitch moment coefficient due to alpha hstab</description>
 	      <table>
 		<independentVar lookup="row">aero/alpha-hstab-deg</independentVar>
 		<tableData>
@@ -2455,14 +2451,14 @@
 		</tableData>
 	      </table>
 	    </function>
-
+	    
 	    <function name="aero/moment/Pitch_alpha">
 	      <description>Pitch moment due to alpha</description>
 	      <product>
 		<property>aero/qbar-psf</property>
 		<property>metrics/Sw-sqft</property>
 		<property>metrics/cbarw-ft</property>
-		<property>aero/coefficient/CMalpha</property>
+		<property>aero/coefficient/CP_alpha</property>
 		<v>-1</v>
 	      </product>
 	    </function>
@@ -2473,7 +2469,7 @@
 		<property>aero/qbar-psf</property>
 		<property>metrics/Sh-sqft</property>
 		<property>metrics/lh-ft</property>
-		<property>aero/coefficient/CMalpha-hstab</property>
+		<property>aero/coefficient/CP_alpha_hstab</property>
 	      </product>
 	    </function>
 	    
@@ -2604,7 +2600,7 @@
 		</axis>
 
 		<axis name="YAW">
-		  <function name="aero/coefficient/CMbeta-vstab">
+		  <function name="aero/coefficient/CY_beta_vstab">
 		    <description>Yaw moment coefficient due to beta vertical stab</description>
 		    <table>
 		      <independentVar lookup="row">aero/beta-deg</independentVar>
@@ -2660,14 +2656,14 @@
 		      </tableData>
 		    </table>
 		  </function>
-
+		  
 		  <function name="aero/moment/Yaw_beta_vstab">
 		    <description>Yaw moment due to beta vstab</description>
 		    <product>
 		      <property>aero/qbar-psf</property>
 		      <property>metrics/Sv-sqft</property>
 		      <property>metrics/lv-ft</property>
-		      <property>aero/coefficient/CMbeta-vstab</property>
+		      <property>aero/coefficient/CY_beta_vstab</property>
 		    </product>
 		  </function>
 
