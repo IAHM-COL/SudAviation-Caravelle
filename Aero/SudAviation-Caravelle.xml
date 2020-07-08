@@ -2529,6 +2529,38 @@
 	      </product>
 	    </function>
 	    
+	    <function name="aero/coefficient/CR_beta_vstab">
+	      <description>Roll coefficient due to beta vstab</description>
+	      <table>
+		<independentVar lookup="row">aero/beta-deg</independentVar>
+		<tableData>
+		  -40	0.041225
+		  -30	0.039821
+		  -25	0.034974
+		  -20	0.029056
+		  -15	0.022347
+		  -10	0.015108
+		  -5	0.007436
+		  0	0.000000
+		  5	-0.007436
+		  10	-0.015108
+		  15	-0.022347
+		  20	-0.029056
+		  25	-0.034974
+		  30	-0.039821
+		  40	-0.041225
+		</tableData>
+	      </table>
+	    </function>
+
+	    <function name="aero/coefficient/CR_rudder">
+	      <description>Roll coefficient given rudder deflection</description>
+	      <product>
+		<property>fcs/rudder-pos-deg</property>
+		<value>0.00003167560</value>
+	      </product>
+	    </function>
+	    
 	    <function name="aero/moment/Roll_aileron">
 	      <description>Roll moment due to aileron</description>
 	      <product>
@@ -2539,58 +2571,32 @@
 	      </product>
 	    </function>
 
-		  <!--
-		  <function name="aero/moment/Roll_beta">
-		    <description>Roll moment due to beta</description>
-		    <product>
-		      <property>aero/qbar-psf</property>
-		      <property>metrics/Sw-sqft</property>
-		      <property>metrics/bw-ft</property>
-		      <property>aero/beta-rad</property>
-		      <table>
-			<independentVar lookup="row">aero/alpha-wing-rad</independentVar>
-			<independentVar lookup="column">aero/Re</independentVar>
-			<tableData>
-			  79088544	86997400 	118632808	157806896
-			  -0.0349		-0.2540		-0.1122		-0.1075		-0.1083
-			  0.3491		-2.7002		-0.3492		-0.3590		-0.3882
-			</tableData>
-		      </table>
-		    </product>
-		  </function>
-
-		  <function name="aero/moment/Roll_damp">
-		    <description>Roll moment due to roll rate</description>
-		    <product>
-		      <property>aero/qbar-psf</property>
-		      <property>metrics/Sw-sqft</property>
-		      <property>metrics/bw-ft</property>
-		      <property>aero/bi2vel</property>
-		      <property>velocities/p-aero-rad_sec</property>
-		      <value>-0.8478</value>
-		    </product>
-		  </function>
-
-		  <function name="aero/moment/Roll_yaw">
-		    <description>Roll moment due to yaw rate</description>
-		    <product>
-		      <property>aero/qbar-psf</property>
-		      <property>metrics/Sw-sqft</property>
-		      <property>metrics/bw-ft</property>
-		      <property>aero/bi2vel</property>
-		      <property>velocities/r-aero-rad_sec</property>
-		      <table>
-			<independentVar lookup="row">aero/alpha-wing-rad</independentVar>
-			<independentVar lookup="column">aero/Re</independentVar>
-			<tableData>
-			  79088544	86997400 	118632808	157806896
-			  -0.0349  	 0.0446  	 0.0446  	 0.0446  	 0.0446
-			  0.3491  	 5.2494  	 0.5431  	 0.5431  	 0.5431
-			</tableData>
-		      </table>
-		    </product>
-		  </function>
-		  -->
+	    <function name="aero/moment/Roll_beta_vstab">
+	      <description>Roll moment vstab due to beta</description>
+	      <product>
+		<property>aero/qbar-psf</property>
+		<property>metrics/Sv-sqft</property>
+		<property>metrics/lv-ft</property>
+		<sum>
+		  <property>aero/coefficient/CY_beta_vstab</property>
+		  <property>aero/coefficient/CY_rudder</property>
+		</sum>
+	      </product>
+	    </function>
+	    
+	    <!--
+	    <function name="aero/moment/Roll_damp">
+	      <description>Roll moment due to roll rate</description>
+	      <product>
+		<property>aero/qbar-psf</property>
+		<property>metrics/Sw-sqft</property>
+		<property>metrics/bw-ft</property>
+		<property>aero/bi2vel</property>
+		<property>velocities/p-aero-rad_sec</property>
+		<value>-0.8478</value>
+	      </product>
+	    </function>
+	    -->
 	  </axis>
 	  
 	  <axis name="YAW">
@@ -2689,64 +2695,42 @@
 		<property>aero/coefficient/CY_aileron</property>
 	      </product>
 	    </function>
-		  <!-- Stall initiator -->
-		  <!--
-		  <function name="aero/moment/Yaw_alpha">
-		    <description>Yaw moment due to alpha</description>
-		    <product>
-		      <property>aero/qbar-psf</property>
-		      <property>metrics/Sw-sqft</property>
-		      <property>metrics/bw-ft</property>
-		      <property>aero/alpha-wing-rad</property>
-		      <property>fcs/gear-no-wow</property>
-		      <table>
-			<independentVar lookup="row">aero/beta-rad</independentVar>
-			<independentVar lookup="column">aero/Re</independentVar>
-			<tableData>
-			  79088544	86997400
-			  -0.3491 	-1.0000 	 0.0000
-			  0.3491  	 1.0000  	 0.0000
-			</tableData>
-		      </table>
-		    </product>
-		  </function>
+	    <!-- Stall initiator -->
+	    <!--
+	    <function name="aero/moment/Yaw_alpha">
+	      <description>Yaw moment due to alpha</description>
+	      <product>
+		<property>aero/qbar-psf</property>
+		<property>metrics/Sw-sqft</property>
+		<property>metrics/bw-ft</property>
+		<property>aero/alpha-wing-rad</property>
+		<property>fcs/gear-no-wow</property>
+		<table>
+		  <independentVar lookup="row">aero/beta-rad</independentVar>
+		  <independentVar lookup="column">aero/Re</independentVar>
+		  <tableData>
+		    79088544	86997400
+		    -0.3491 	-1.0000 	 0.0000
+		    0.3491  	 1.0000  	 0.0000
+		  </tableData>
+		</table>
+	      </product>
+	    </function>
 
-		  <function name="aero/moment/Yaw_roll_rate">
-		    <description>Yaw moment due to roll rate</description>
-		    <product>
-		      <property>aero/qbar-psf</property>
-		      <property>metrics/Sw-sqft</property>
-		      <property>metrics/bw-ft</property>
-		      <property>aero/bi2vel</property>
-		      <property>velocities/p-rad_sec</property>
-		      <table>
-			<independentVar lookup="row">aero/Re</independentVar>
-			<tableData>
-			  79088544	-0.2206
-			  86997400	-0.0159
-			  118632808	-0.0071
-			  157806896	-0.0040
-			</tableData>
-		      </table>
-		    </product>
-		  </function>
-
-		  <function name="aero/moment/Yaw_damp">
-		    <description>Yaw moment due to yaw rate</description>
-		    <product>
-		      <property>aero/qbar-psf</property>
-		      <property>metrics/Sw-sqft</property>
-		      <property>metrics/bw-ft</property>
-		      <property>aero/bi2vel</property>
-		      <property>velocities/r-aero-rad_sec</property>
-		      <value>-0.2354</value>
-		    </product>
-		  </function>
-		  -->
-		  <!--
-		  -->
-		</axis>
-     </aerodynamics>
+	    <function name="aero/moment/Yaw_damp">
+	      <description>Yaw moment due to yaw rate</description>
+	      <product>
+		<property>aero/qbar-psf</property>
+		<property>metrics/Sw-sqft</property>
+		<property>metrics/bw-ft</property>
+		<property>aero/bi2vel</property>
+		<property>velocities/r-aero-rad_sec</property>
+		<value>-0.2354</value>
+	      </product>
+	    </function>
+	    -->
+	  </axis>
+	</aerodynamics>
 
                 <external_reactions>
 		</external_reactions>
