@@ -10,8 +10,9 @@
 
 	<fileheader>
 		<author>Israel Hernandez, IAHM-COL</author>
+		<author>Peter Brendt, JWocky</author>
 		<filecreationdate>07/05/2020</filecreationdate>
-		<version>$Revision: 2.20 $</version>
+		<version>$Revision: 3.01 $</version>
 		<description>SudAviation Caravelle FDM. License: GPL 3.0+</description>
 	</fileheader>
 
@@ -19,19 +20,19 @@
 		File:     SudAviation-Caravelle.xml
 
 		Inputs:
-			name:          SudAviation-Caravelle
+			name:         SudAviation-Caravelle
 			type:          Multi-engine Passenger Jet Airliner, Transonic Jet Transport
-			stall speed:   95.00kts
-			max weight:    101410.00 lb
+			stall speed:  95.00kts
+			max weight: 101410.00 lb
 			length:        32 m
 			wing: 
-				span:         35 m
-				area:         146.7 sq-m
+				span:            35 m
+				area:           146.7 sq-m
 				mean chord:   24 m
-				aspect ratio: 8.00:1
-				taper ratio:  5.11:1
-				incidence:    4.00 degrees
-				dihedral:     3.00 degrees
+				aspect ratio:    8.00:1
+				taper ratio:      5.11:1
+				incidence:      4.00 degrees
+				dihedral:        3.00 degrees
 				sweep:        20.00 degrees
 
 			no. engines:   2
@@ -43,19 +44,6 @@
 			gear type:     tricycle
 			steering type: steering
 			retractable?:  yes
-
-		Outputs:
-			wing loading:       64.22 lb/sq-ft
-			- thickness ratio: 36.80%
-			payload:            20001.43 lbs
-			CL-alpha:           5.19 per radian
-			CL-0:               0.38
-			CL-max:             2.10
-			CD-0:               0.07
-			K:                  0.04
-			Mcrit:              0.79
-			min. turn radius    134.5 m
-			max. turn rate:     0.40 deg/s
 	-->
 
 	<metrics>
