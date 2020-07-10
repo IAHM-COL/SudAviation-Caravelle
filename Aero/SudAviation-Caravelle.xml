@@ -4763,38 +4763,6 @@
 		<v>-1</v>
 	      </product>
 	    </function>
-	    
-	    <!--	    
-	    <function name="aero/force/Side_roll_rate">
-	      <description>Side force due to roll rate</description>
-	      <product>
-		<property>aero/qbar-psf</property>
-		<property>metrics/Sw-sqft</property>
-		<property>aero/bi2vel</property>
-		<property>velocities/p-aero-rad_sec</property>
-		<table>
-		  <independentVar lookup="row">aero/Re</independentVar>
-		  <tableData>
-		    79088544   0.3930
-		    86997400   0.0284
-		    118632808   0.0126
-		    157806896   0.0071
-		  </tableData>
-		</table>
-	      </product>
-	    </function>
-
-	    <function name="aero/force/Side_yaw_rate">
-	      <description>Side force due to yaw rate</description>
-	      <product>
-		<property>aero/qbar-psf</property>
-		<property>metrics/Sw-sqft</property>
-		<property>aero/bi2vel</property>
-		<property>velocities/r-aero-rad_sec</property>
-		<value>0.6164</value>
-	      </product>
-	    </function>
-	    -->
 	  </axis>
 
 	  <axis name="PITCH">
@@ -5597,28 +5565,21 @@
 	  </axis>
 
 	  <axis name="ROLL">
-	    <function name="aero/force/Roll_damper">
-	      <description>Roll due to roll rate</description>
-	      <product>
-		<property>aero/qbar-psf</property>
-		<property>metrics/Sw-sqft</property>
-		<property>metrics/bw-ft</property>
-		<property>aero/bi2vel</property>
-		<property>velocities/phidot-rad_sec</property>
-		<table>
-		  <independentVar lookup="row">aero/beta-rad</independentVar>
-		  <tableData>
-                    -60 -0.11
-                    -15 -0.37
-                    15 -0.37
-                    25 -0.3
-                    35 -0.28
-                    50 -0.17
-                    80 -0.065
-                    100 -0.05
-		  </tableData>
-		</table>
-	      </product>
+	    <function name="aero/coefficient/CR_damper">
+	      <description>Roll coefficient given beta-rad</description>
+	      <table>
+		<independentVar lookup="row">aero/beta-rad</independentVar>
+		<tableData>
+                  -60 -0.11
+                  -15 -0.37
+                  15 -0.37
+                  25 -0.3
+                  35 -0.28
+                  50 -0.17
+                  80 -0.065
+                  100 -0.05
+		</tableData>
+	      </table>
 	    </function>
 	    
 	    <function name="aero/coefficient/CR_aileron">
@@ -5660,7 +5621,7 @@
 		<value>0.00003167560</value>
 	      </product>
 	    </function>
-	    
+
 	    <function name="aero/moment/Roll_aileron">
 	      <description>Roll moment due to aileron</description>
 	      <product>
@@ -5683,9 +5644,38 @@
 		</sum>
 	      </product>
 	    </function>
+	    
+	    <function name="aero/moment/Roll_damper">
+	      <description>Roll due to roll rate</description>
+	      <product>
+		<property>aero/qbar-psf</property>
+		<property>metrics/Sw-sqft</property>
+		<property>metrics/bw-ft</property>
+		<property>aero/bi2vel</property>
+		<property>velocities/phidot-rad_sec</property>
+		<property>aero/coefficient/CR_damper</property>
+	      </product>
+	    </function>
 	  </axis>
 	  
 	  <axis name="YAW">
+	    <function name="aero/coefficient/CY_damper">
+	      <description>Yaw coefficient given alpha</description>
+	      <table>
+		<independentVar lookup="row">aero/alpha-rad</independentVar>
+		<tableData>
+                  -60 -0.11
+                  -15 -0.37
+                  15 -0.37
+                  25 -0.3
+                  35 -0.28
+                  50 -0.17
+                  80 -0.065
+                  100 -0.05
+		</tableData>
+	      </table>
+	    </function>
+	    
 	    <function name="aero/coefficient/CY_aileron">
 	      <description>Yaw coefficient given aileron deflection</description>
 	      <product>
@@ -5703,7 +5693,7 @@
 	    </function>
 	    
 	    <function name="aero/coefficient/CY_beta_vstab">
-	      <description>Yaw moment coefficient due to beta vertical stab</description>
+	      <description>Yaw coefficient due to beta vertical stab</description>
 	      <table>
 		<independentVar lookup="row">aero/beta-deg</independentVar>
 		<independentVar lookup="column">aero/Re</independentVar>
@@ -6303,8 +6293,8 @@
 		<property>aero/coefficient/CY_aileron</property>
 	      </product>
 	    </function>
-
-	    <function name="aero/coefficient/CY_yaw">
+	    
+	    <function name="aero/moment/Yaw_damper">
 	      <description>Yaw due to yaw rate</description>
 	      <product>
 		<property>aero/qbar-psf</property>
@@ -6312,19 +6302,7 @@
 		<property>metrics/bw-ft</property>
 		<property>aero/bi2vel</property>
 		<property>velocities/r-rad_sec</property>
-		<table>
-		  <independentVar lookup="row">aero/alpha-rad</independentVar>
-		  <tableData>
-                    -60 -0.11
-                    -15 -0.37
-                    15 -0.37
-                    25 -0.3
-                    35 -0.28
-                    50 -0.17
-                    80 -0.065
-                    100 -0.05
-		  </tableData>
-		</table>
+		<property>aero/coefficient/CY_damper</property>
 	      </product>
 	    </function>
 	    <!-- Stall initiator -->
