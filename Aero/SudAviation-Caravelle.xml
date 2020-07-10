@@ -1628,24 +1628,23 @@
 	<!-- system file="LandingGear.xml"/ -->
 	<!-- system file="Flaps.xml"/ -->
 	<!-- system file="Spoilers.xml"/ -->
-	<!-- system file="Speedbrake.xml"/ -->
 
 	<flight_control name="FCS: SudAviation-Caravelle">
-	  <channel name="Pitch">
+	  <channel name="PITCH">
 	    <summer name="Pitch Trim Sum">
 	      <input>fcs/elevator-cmd-norm</input>
 	      <input>fcs/pitch-trim-cmd-norm</input>
 	      <clipto>
-		<min> -1 </min>
-		<max>  1 </max>
+		<min>-1</min>
+		<max>1</max>
 	      </clipto>
 	    </summer>
 
 	    <aerosurface_scale name="Elevator Control">
 	      <input>fcs/pitch-trim-sum</input>
 	      <range>
-		<min> -0.35 </min>
-		<max>  0.35 </max>
+		<min>-0.35</min>
+		<max>0.35</max>
 	      </range>
 	      <output>fcs/elevator-pos-rad</output>
 	    </aerosurface_scale>
@@ -1653,28 +1652,28 @@
 	    <aerosurface_scale name="elevator normalization">
 	      <input>fcs/elevator-pos-rad</input>
 	      <range>
-		<min> -1 </min>
-		<max>  1 </max>
+		<min>-1</min>
+		<max>1</max>
 	      </range>
 	      <output>fcs/elevator-pos-norm</output>
 	    </aerosurface_scale>
 	  </channel>
 
-	  <channel name="Roll">
+	  <channel name="ROLL">
 	    <summer name="Roll Trim Sum">
 	      <input>fcs/aileron-cmd-norm</input>
 	      <input>fcs/roll-trim-cmd-norm</input>
 	      <clipto>
-		<min> -1 </min>
-		<max>  1 </max>
+		<min>-1</min>
+		<max>1</max>
 	      </clipto>
 	    </summer>
 
 	    <aerosurface_scale name="Left Aileron Control">
 	      <input>fcs/roll-trim-sum</input>
 	      <range>
-		<min> -0.25 </min>
-		<max>  0.25 </max>
+		<min>-0.25</min>
+		<max>0.25</max>
 	      </range>
 	      <output>fcs/left-aileron-pos-rad</output>
 	    </aerosurface_scale>
@@ -1682,8 +1681,8 @@
 	    <aerosurface_scale name="Right Aileron Control">
 	      <input>fcs/roll-trim-sum</input>
 	      <range>
-		<min> -0.25 </min>
-		<max>  0.25 </max>
+		<min>-0.25</min>
+		<max>0.25</max>
 	      </range>
 	      <output>fcs/right-aileron-pos-rad</output>
 	    </aerosurface_scale>
@@ -1691,12 +1690,12 @@
 	    <aerosurface_scale name="left aileron normalization">
 	      <input>fcs/left-aileron-pos-rad</input>
 	      <domain>
-		<min> -0.25 </min>
-		<max>  0.25 </max>
+		<min>-0.25</min>
+		<max>0.25</max>
 	      </domain>
 	      <range>
-		<min> -1 </min>
-		<max>  1 </max>
+		<min>-1</min>
+		<max>1</max>
 	      </range>
 	      <output>fcs/left-aileron-pos-norm</output>
 	    </aerosurface_scale>
@@ -1704,24 +1703,24 @@
 	    <aerosurface_scale name="right aileron normalization">
 	      <input>fcs/right-aileron-pos-rad</input>
 	      <domain>
-		<min> -0.25 </min>
-		<max>  0.25 </max>
+		<min>-0.25</min>
+		<max>0.25</max>
 	      </domain>
 	      <range>
-		<min> -1 </min>
-		<max>  1 </max>
+		<min>-1</min>
+		<max>1</max>
 	      </range>
 	      <output>fcs/right-aileron-pos-norm</output>
 	    </aerosurface_scale>
 	  </channel>
 
-	  <channel name="Yaw">
+	  <channel name="YAW">
 	    <summer name="Rudder Command Sum">
 	      <input>fcs/rudder-cmd-norm</input>
 	      <input>fcs/yaw-trim-cmd-norm</input>
 	      <clipto>
-		<min> -0.35 </min>
-		<max>  0.35 </max>
+		<min>-0.35</min>
+		<max>0.35</max>
 	      </clipto>
 	    </summer>
 
@@ -1771,16 +1770,16 @@
 	      <input>fcs/rudder-command-sum</input>
 	      <input>fcs/yaw-damper-final</input>
 	      <clipto>
-		<min> -1 </min>
-		<max>  1 </max>
+		<min>-1</min>
+		<max>1</max>
 	      </clipto>
 	    </summer>
 
 	    <aerosurface_scale name="Rudder Control">
 	      <input>fcs/rudder-sum</input>
 	      <range>
-		<min> -0.35 </min>
-		<max>  0.35 </max>
+		<min>-0.35</min>
+		<max>0.35</max>
 	      </range>
 	      <output>fcs/rudder-pos-rad</output>
 	    </aerosurface_scale>
@@ -1788,18 +1787,18 @@
 	    <aerosurface_scale name="rudder normalization">
 	      <input>fcs/rudder-pos-rad</input>
 	      <domain>
-		<min> -0.35 </min>
-		<max>  0.35 </max>
+		<min>-0.35</min>
+		<max>0.35</max>
 	      </domain>
 	      <range>
-		<min> -1 </min>
-		<max>  1 </max>
+		<min>-1</min>
+		<max>1</max>
 	      </range>
 	      <output>fcs/rudder-pos-norm</output>
 	    </aerosurface_scale>
 	  </channel>
 
-	  <channel name="Flaps">
+	  <channel name="FLAPS">
 	    <kinematic name="Flaps Control">
 	      <input>fcs/flap-cmd-norm</input>
 	      <traverse>
@@ -1822,18 +1821,18 @@
 	    <aerosurface_scale name="flap normalization">
 	      <input>fcs/flap-pos-deg</input>
 	      <domain>
-		<min>  0 </min>
-		<max> 36 </max>
+		<min>0</min>
+		<max>36</max>
 	      </domain>
 	      <range>
-		<min> 0 </min>
-		<max> 1 </max>
+		<min>0</min>
+		<max>1</max>
 	      </range>
 	      <output>fcs/flap-pos-norm</output>
 	    </aerosurface_scale>
 	  </channel>
 	  
-	  <channel name="Landing Gear">
+	  <channel name="GEAR">
 	    <switch name="fcs/gear-no-wow">
 	      <default value="1"/>
 	      <test logic="AND" value="0">
@@ -1846,19 +1845,19 @@
 	      <input>gear/gear-cmd-norm</input>
 	      <traverse>
 		<setting>
-		  <position> 0 </position>
-		  <time>     0 </time>
+		  <position>0</position>
+		  <time>0</time>
 		</setting>
 		<setting>
-		  <position> 1 </position>
-		  <time>    15 </time>
+		  <position>1</position>
+		  <time>15</time>
 		</setting>
 	      </traverse>
 	      <output>gear/gear-pos-norm</output>
 	    </kinematic>
 	  </channel>
 
-	  <channel name="Spoilers">
+	  <channel name="SPOILERS">
 	    <kinematic name="Spoilers Control">
 	      <input>fcs/spoiler-cmd-norm</input>
 	      <traverse>
@@ -1868,27 +1867,10 @@
 		</setting>
 		<setting>
 		  <position>1</position>
-		  <time>1 </time>
+		  <time>1</time>
 		</setting>
 	      </traverse>
 	      <output>fcs/spoilers-pos-norm</output>
-	    </kinematic>
-	  </channel>
-
-	  <channel name="Speedbrake">
-	    <kinematic name="Speedbrake Control">
-	      <input>fcs/speedbrake-cmd-norm</input>
-	      <traverse>
-		<setting>
-		  <position> 0 </position>
-		  <time>     0 </time>
-		</setting>
-		<setting>
-		  <position> 1 </position>
-		  <time>     1 </time>
-		</setting>
-	      </traverse>
-	      <output>fcs/speedbrake-pos-norm</output>
 	    </kinematic>
 	  </channel>
 	</flight_control>
@@ -5566,18 +5548,91 @@
 
 	  <axis name="ROLL">
 	    <function name="aero/coefficient/CR_damper">
-	      <description>Roll coefficient given beta-rad</description>
+	      <description>Roll coefficient given beta</description>
 	      <table>
-		<independentVar lookup="row">aero/beta-rad</independentVar>
+		<independentVar lookup="row">aero/beta-deg</independentVar>
 		<tableData>
-                  -60 -0.11
-                  -15 -0.37
-                  15 -0.37
-                  25 -0.3
-                  35 -0.28
-                  50 -0.17
-                  80 -0.065
-                  100 -0.05
+		  -60.00	-0.11000
+		  -58.00	-0.11524
+		  -56.00	-0.12174
+		  -54.00	-0.12941
+		  -52.00	-0.13814
+		  -50.00	-0.14784
+		  -48.00	-0.15841
+		  -46.00	-0.16975
+		  -44.00	-0.18176
+		  -42.00	-0.19433
+		  -40.00	-0.20738
+		  -38.00	-0.22081
+		  -36.00	-0.23451
+		  -34.00	-0.24838
+		  -32.00	-0.26233
+		  -30.00	-0.27626
+		  -28.00	-0.29006
+		  -26.00	-0.30365
+		  -24.00	-0.31691
+		  -22.00	-0.32976
+		  -20.00	-0.34209
+		  -18.00	-0.35380
+		  -16.00	-0.36480
+		  -14.00	-0.37498
+		  -12.00	-0.38425
+		  -10.00	-0.39251
+		  -8.00	-0.39966
+		  -6.00	-0.40560
+		  -4.00	-0.41023
+		  -2.00	-0.41345
+		  0.00	-0.41516
+		  2.00	-0.41527
+		  4.00	-0.41367
+		  6.00	-0.41027
+		  8.00	-0.40497
+		  10.00	-0.39767
+		  12.00	-0.38826
+		  14.00	-0.37666
+		  16.00	-0.36279
+		  18.00	-0.34729
+		  20.00	-0.33152
+		  22.00	-0.31687
+		  24.00	-0.30471
+		  26.00	-0.29637
+		  28.00	-0.29169
+		  30.00	-0.28902
+		  32.00	-0.28667
+		  34.00	-0.28293
+		  36.00	-0.27614
+		  38.00	-0.26582
+		  40.00	-0.25265
+		  42.00	-0.23738
+		  44.00	-0.22075
+		  46.00	-0.20348
+		  48.00	-0.18632
+		  50.00	-0.17000
+		  52.00	-0.15513
+		  54.00	-0.14175
+		  56.00	-0.12978
+		  58.00	-0.11914
+		  60.00	-0.10973
+		  62.00	-0.10148
+		  64.00	-0.09430
+		  66.00	-0.08810
+		  68.00	-0.08279
+		  70.00	-0.07830
+		  72.00	-0.07453
+		  74.00	-0.07140
+		  76.00	-0.06883
+		  78.00	-0.06672
+		  80.00	-0.06500
+		  82.00	-0.06357
+		  84.00	-0.06236
+		  86.00	-0.06127
+		  88.00	-0.06023
+		  90.00	-0.05913
+		  92.00	-0.05791
+		  94.00	-0.05647
+		  96.00	-0.05473
+		  98.00	-0.05260
+		  100.00	-0.05000
 		</tableData>
 	      </table>
 	    </function>
@@ -5662,16 +5717,89 @@
 	    <function name="aero/coefficient/CY_damper">
 	      <description>Yaw coefficient given alpha</description>
 	      <table>
-		<independentVar lookup="row">aero/alpha-rad</independentVar>
+		<independentVar lookup="row">aero/alpha-deg</independentVar>
 		<tableData>
-                  -60 -0.11
-                  -15 -0.37
-                  15 -0.37
-                  25 -0.3
-                  35 -0.28
-                  50 -0.17
-                  80 -0.065
-                  100 -0.05
+		  -60.00	-0.11000
+		  -58.00	-0.11524
+		  -56.00	-0.12174
+		  -54.00	-0.12941
+		  -52.00	-0.13814
+		  -50.00	-0.14784
+		  -48.00	-0.15841
+		  -46.00	-0.16975
+		  -44.00	-0.18176
+		  -42.00	-0.19433
+		  -40.00	-0.20738
+		  -38.00	-0.22081
+		  -36.00	-0.23451
+		  -34.00	-0.24838
+		  -32.00	-0.26233
+		  -30.00	-0.27626
+		  -28.00	-0.29006
+		  -26.00	-0.30365
+		  -24.00	-0.31691
+		  -22.00	-0.32976
+		  -20.00	-0.34209
+		  -18.00	-0.35380
+		  -16.00	-0.36480
+		  -14.00	-0.37498
+		  -12.00	-0.38425
+		  -10.00	-0.39251
+		  -8.00	-0.39966
+		  -6.00	-0.40560
+		  -4.00	-0.41023
+		  -2.00	-0.41345
+		  0.00	-0.41516
+		  2.00	-0.41527
+		  4.00	-0.41367
+		  6.00	-0.41027
+		  8.00	-0.40497
+		  10.00	-0.39767
+		  12.00	-0.38826
+		  14.00	-0.37666
+		  16.00	-0.36279
+		  18.00	-0.34729
+		  20.00	-0.33152
+		  22.00	-0.31687
+		  24.00	-0.30471
+		  26.00	-0.29637
+		  28.00	-0.29169
+		  30.00	-0.28902
+		  32.00	-0.28667
+		  34.00	-0.28293
+		  36.00	-0.27614
+		  38.00	-0.26582
+		  40.00	-0.25265
+		  42.00	-0.23738
+		  44.00	-0.22075
+		  46.00	-0.20348
+		  48.00	-0.18632
+		  50.00	-0.17000
+		  52.00	-0.15513
+		  54.00	-0.14175
+		  56.00	-0.12978
+		  58.00	-0.11914
+		  60.00	-0.10973
+		  62.00	-0.10148
+		  64.00	-0.09430
+		  66.00	-0.08810
+		  68.00	-0.08279
+		  70.00	-0.07830
+		  72.00	-0.07453
+		  74.00	-0.07140
+		  76.00	-0.06883
+		  78.00	-0.06672
+		  80.00	-0.06500
+		  82.00	-0.06357
+		  84.00	-0.06236
+		  86.00	-0.06127
+		  88.00	-0.06023
+		  90.00	-0.05913
+		  92.00	-0.05791
+		  94.00	-0.05647
+		  96.00	-0.05473
+		  98.00	-0.05260
+		  100.00	-0.05000
 		</tableData>
 	      </table>
 	    </function>
