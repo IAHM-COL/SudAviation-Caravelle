@@ -6025,9 +6025,6 @@
 	    <function name="aero/coefficient/CY_rudder">
 	      <description>Yaw coefficient given rudder deflection without autocoordination</description>
 	      <product>
-		<not>
-		  <property>/autopilot/settings/autocoordination</property>
-		</not>
 		<property>fcs/rudder-pos-deg</property>
 		<value>-0.01846678028</value>
 	      </product>
@@ -6611,25 +6608,6 @@
 		</tableData>
 	      </table>
 	    </function>
-
-	    <function name="aero/coefficient/CY_rudderAutocoordination">
-	      <description>Coefficient given rudder deflection with autocoordination</description>
-	      <product>
-		<property>/autopilot/settings/autocoordination</property>
-		<value>-1</value>
-		<quotient>
-		  <product>
-		    <property>aero/coefficient/CY_aileron</property>
-		    <property>metrics/Sw-sqft</property>
-		    <property>metrics/bw-ft</property>	    
-		  </product>
-		  <product>
-		    <property>metrics/Sv-sqft</property>
-		    <property>metrics/lv-ft</property>
-		  </product>
-		</quotient>
-	      </product>
-	    </function>
 	    
 	    <function name="aero/moment/Yaw_beta_vstab">
 	      <description>Yaw moment due to beta vstab</description>
@@ -6640,7 +6618,6 @@
 		<sum>
 		  <property>aero/coefficient/CY_beta_vstab</property>
 		  <property>aero/coefficient/CY_rudder</property>
-		  <property>aero/coefficient/CY_rudderAutocoordination</property>
 		</sum>
 	      </product>
 	    </function>
