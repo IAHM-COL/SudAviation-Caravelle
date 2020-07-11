@@ -71,7 +71,7 @@
 		<location name="VRP" unit="M">
 			<x>0.00</x>
 			<y>0.00</y>
-			<z>0.4345</z>
+			<z>0.5345</z>
 		</location>
 	</metrics>
 
@@ -985,8 +985,8 @@
 			<static_friction>0.7292402</static_friction>
 			<dynamic_friction>0.4915179</dynamic_friction>
 			<rolling_friction>0.07375046</rolling_friction>
-			<spring_coeff  unit="LBS/FT">64402.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">26113.61</damping_coeff>
+			<spring_coeff  unit="LBS/FT">132356.4</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">38130.61</damping_coeff>
 			<max_steer unit="DEG">25.00</max_steer>
 			<brake_group>NONE</brake_group>
 			<retractable>1</retractable>
@@ -1001,8 +1001,8 @@
 			<static_friction>0.7098506</static_friction>
 			<dynamic_friction>0.5564869</dynamic_friction>
 			<rolling_friction>0.07708218</rolling_friction>
-			<spring_coeff  unit="LBS/FT">64402.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">26113.61</damping_coeff>
+			<spring_coeff  unit="LBS/FT">132356.4</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">38130.61</damping_coeff>
 			<max_steer unit="DEG">25.00</max_steer>
 			<brake_group>NONE</brake_group>
 			<retractable>1</retractable>
@@ -1017,8 +1017,8 @@
 			<static_friction>0.8225295</static_friction>
 			<dynamic_friction>0.5765024</dynamic_friction>
 			<rolling_friction>0.07401899</rolling_friction>
-			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
+			<spring_coeff  unit="LBS/FT">101812.6</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">32940.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>LEFT</brake_group>
 			<retractable>1</retractable>
@@ -1033,8 +1033,8 @@
 			<static_friction>0.8262161</static_friction>
 			<dynamic_friction>0.5274378</dynamic_friction>
 			<rolling_friction>0.07330274</rolling_friction>
-			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
+			<spring_coeff  unit="LBS/FT">101812.6</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">32940.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>LEFT</brake_group>
 			<retractable>1</retractable>
@@ -1049,8 +1049,8 @@
 			<static_friction>0.8047358</static_friction>
 			<dynamic_friction>0.4550411</dynamic_friction>
 			<rolling_friction>0.07368409</rolling_friction>
-			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
+			<spring_coeff  unit="LBS/FT">101812.6</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">32940.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>LEFT</brake_group>
 			<retractable>1</retractable>
@@ -1065,8 +1065,8 @@
 			<static_friction>0.7894144</static_friction>
 			<dynamic_friction>0.5008035</dynamic_friction>
 			<rolling_friction>0.07473419</rolling_friction>
-			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
+			<spring_coeff  unit="LBS/FT">101812.6</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">32940.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>LEFT</brake_group>
 			<retractable>1</retractable>
@@ -1081,8 +1081,8 @@
 			<static_friction>0.7560863</static_friction>
 			<dynamic_friction>0.4766751</dynamic_friction>
 			<rolling_friction>0.07600020</rolling_friction>
-			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
+			<spring_coeff  unit="LBS/FT">101812.6</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">32940.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>RIGHT</brake_group>
 			<retractable>1</retractable>
@@ -1097,8 +1097,8 @@
 			<static_friction>0.7584304</static_friction>
 			<dynamic_friction>0.4634785</dynamic_friction>
 			<rolling_friction>0.07780839</rolling_friction>
-			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
+			<spring_coeff  unit="LBS/FT">101812.6</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">32940.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>RIGHT</brake_group>
 			<retractable>1</retractable>
@@ -1113,8 +1113,8 @@
 			<static_friction>0.8888532</static_friction>
 			<dynamic_friction>0.4940983</dynamic_friction>
 			<rolling_friction>0.07274515</rolling_friction>
-			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
+			<spring_coeff  unit="LBS/FT">101812.6</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">32940.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>RIGHT</brake_group>
 			<retractable>1</retractable>
@@ -1129,8 +1129,8 @@
 			<static_friction>0.8657917</static_friction>
 			<dynamic_friction>0.4126235</dynamic_friction>
 			<rolling_friction>0.07371412</rolling_friction>
-			<spring_coeff  unit="LBS/FT">34623.43</spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">12894.93</damping_coeff>
+			<spring_coeff  unit="LBS/FT">101812.6</spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">32940.93</damping_coeff>
 			<max_steer unit="DEG">0.00</max_steer>
 			<brake_group>RIGHT</brake_group>
 			<retractable>1</retractable>
@@ -6023,8 +6023,11 @@
 	    </function>
 
 	    <function name="aero/coefficient/CY_rudder">
-	      <description>Yaw coefficient given rudder deflection</description>
+	      <description>Yaw coefficient given rudder deflection without autocoordination</description>
 	      <product>
+		<not>
+		  <property>/autopilot/settings/autocoordination</property>
+		</not>
 		<property>fcs/rudder-pos-deg</property>
 		<value>-0.01846678028</value>
 	      </product>
@@ -6608,6 +6611,25 @@
 		</tableData>
 	      </table>
 	    </function>
+
+	    <function name="aero/coefficient/CY_rudderAutocoordination">
+	      <description>Coefficient given rudder deflection with autocoordination</description>
+	      <product>
+		<property>/autopilot/settings/autocoordination</property>
+		<value>-1</value>
+		<quotient>
+		  <product>
+		    <property>aero/coefficient/CY_aileron</property>
+		    <property>metrics/Sw-sqft</property>
+		    <property>metrics/bw-ft</property>	    
+		  </product>
+		  <product>
+		    <property>metrics/Sv-sqft</property>
+		    <property>metrics/lv-ft</property>
+		  </product>
+		</quotient>
+	      </product>
+	    </function>
 	    
 	    <function name="aero/moment/Yaw_beta_vstab">
 	      <description>Yaw moment due to beta vstab</description>
@@ -6618,6 +6640,7 @@
 		<sum>
 		  <property>aero/coefficient/CY_beta_vstab</property>
 		  <property>aero/coefficient/CY_rudder</property>
+		  <property>aero/coefficient/CY_rudderAutocoordination</property>
 		</sum>
 	      </product>
 	    </function>

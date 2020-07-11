@@ -371,9 +371,10 @@
 	<autopilot>
 
 		<settings>
-			<ap-armed type="bool">false</ap-armed>
+		        <autocoordination type="bool">false</autocoordination>
+		        <ap-armed type="bool">false</ap-armed>
 			<kts-mach-select type="string">kts</kts-mach-select>
-			<max-pitch type="float"> 8.0</max-pitch>
+			<max-pitch type="float">8.0</max-pitch>
 			<min-pitch type="float">-6.0</min-pitch>
 			<bank-angle-limit-deg type="int">35</bank-angle-limit-deg>
 			<propgain-roll type="float">-4.0</propgain-roll>
