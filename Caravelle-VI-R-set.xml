@@ -369,7 +369,8 @@
     
 	<!-- Autopilot initialization -->
 	<autopilot>
-
+	  <pitchadjuster type="float">1</pitchadjuster>
+	  <dragadjuster type="float">1</dragadjuster>
 		<settings>
 		        <autocoordination type="bool">false</autocoordination>
 		        <ap-armed type="bool">false</ap-armed>

@@ -76,9 +76,9 @@
 	</metrics>
 
 	<mass_balance>
-		<ixx unit="SLUG*FT2">704014.30</ixx>
-		<iyy unit="SLUG*FT2">1416910.00</iyy>
-		<izz unit="SLUG*FT2">2227259.00</izz>
+		<ixx unit="SLUG*FT2">66216.95</ixx>
+		<iyy unit="SLUG*FT2">307463.7</iyy>
+		<izz unit="SLUG*FT2">235571.4</izz>
 		<emptywt unit="LBS" >66260</emptywt>
 
 		<location name="CG" unit="M">
@@ -2670,6 +2670,7 @@
 	      <product>
 		<property>aero/qbar-psf</property>
 		<property>metrics/Sw-sqft</property>
+		<value>0.43</value>
 		<sum>
 		  <property>aero/coefficient/CL_alpha</property>
 		  <!--<property>aero/coefficient/CL_flaps</property>-->
@@ -4299,6 +4300,7 @@
 	      <product>
 		<property>aero/qbar-psf</property>
 		<property>metrics/Sw-sqft</property>
+		<value>0.57</value>
 		<sum>
 		  <property>aero/coefficient/CD_alpha</property>
 		  <property>aero/coefficient/CD_aileron</property>
