@@ -76,9 +76,9 @@
 	</metrics>
 
 	<mass_balance>
-		<ixx unit="SLUG*FT2">66216.95</ixx>
-		<iyy unit="SLUG*FT2">307463.7</iyy>
-		<izz unit="SLUG*FT2">235571.4</izz>
+		<ixx unit="SLUG*FT2">2162121</ixx>
+		<iyy unit="SLUG*FT2">3931332</iyy>
+		<izz unit="SLUG*FT2">5903289</izz>
 		<emptywt unit="LBS" >66260</emptywt>
 
 		<location name="CG" unit="M">
